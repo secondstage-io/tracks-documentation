@@ -1,0 +1,61 @@
+site_name: Documentation
+site_url: https://tracks.github.io/documentation/
+extra_css:
+  - stylesheets/extra.css
+theme:
+  name: material
+  logo: assets/tracks-home-logo.png
+  favicon: assets/favicon.png
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - navigation.instant
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to dark mode
+      primary: root
+      accent: red 
+    - scheme: slate 
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode    
+      primary: root
+      accent: red
+
+
+extra:
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/secondstage/
+  homepage: https://tracks.secondstage.io    
+  
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - attr_list
+
+plugins:
+  - search
+
+copyright: |
+  &copy; 2024 <a href="https://secondstage.io"  target="_blank" rel="noopener">Second Stage GmbH</a>
