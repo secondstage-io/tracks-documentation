@@ -1,24 +1,52 @@
 name: ci 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    branches:
+      - master 
+      - main
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
   deploy:
+    environment:
+      name: github_pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/deploy-pages@v4.0.5
-      - uses: actions/setup-python@v4
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v2
         with:
           python-version: 3.x
-      - uses: actions/cache@v2
+      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV 
+      - uses: actions/cache@v4
         with:
-          key: ${{ github.ref }}
+          key: mkdocs-material-${{ env.cache_id }}
           path: .cache
-      - run: pip install mkdocs-material
-      - run: pip install pillow cairosvg
+          restore-keys: |
+            mkdocs-material-
+      - run: pip install mkdocs-material 
       - run: mkdocs gh-deploy --force
+      - name: Commit documentation changes
+        run: |
+           sphinx-build -nW --keep-going -b html docs/ rendered_docs/_build/html
+           cd rendered_docs
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          # Upload entire repository
+          path: 'rendered_docs/_build/html'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
+
