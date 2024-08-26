@@ -39,10 +39,7 @@ jobs:
             mkdocs-material-
       - run: pip install mkdocs-material 
       - run: mkdocs gh-deploy --force
-      - name: Commit documentation changes
-        run: |
-           sphinx-build -nW --keep-going -b html docs/ rendered_docs/_build/html
-           cd rendered_docs
+    
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
