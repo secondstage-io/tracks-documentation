@@ -10,3 +10,6 @@ https://squidfunk.github.io/mkdocs-material/
 
 https://squidfunk.github.io/mkdocs-material/setup/
 
+
+Deploy on gh-pages branch
+
