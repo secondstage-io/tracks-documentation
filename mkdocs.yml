@@ -71,5 +71,11 @@ copyright: |
 nav:
   - TRACKS:
     - tracks/index.md 
-    - Overview: tracks/attribution-tracking.md
+    - Marketing Analytics: tracks/marketing-analytics.md
+    - Attribution Tracking: tracks/attribution-tracking.md
+  - REFERENCES:
+    - references/index.md 
+  - Changelog:
+    - changelog.ml
+
 
