@@ -1,5 +1,5 @@
-site_name: Documentation
-site_url: https://tracks.github.io/documentation/
+site_name: Second Stage Documentation
+site_url: https://documentation.secondstage.io
 extra_css:
   - stylesheets/extra.css
 theme:
@@ -37,7 +37,7 @@ extra:
   social:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/company/secondstage/
-  homepage: https://tracks.secondstage.io    
+  homepage: https://secondstage.io    
   
 
 markdown_extensions:
