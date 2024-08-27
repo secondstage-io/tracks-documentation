@@ -1,6 +1,6 @@
 # Guide
-## Explanation what it unlocks on dashboards 
-ROAS, CPI metrics)
+## Attribution Tracking
+Explanation on what it unlocks on the dashboards -> ROAS, CPI metrics
 ## Attributed vs modelled approaches based on tiers 
 Steam modelling only vs full accurate attribution + Markov model approach
 
@@ -16,16 +16,16 @@ Some text
 ## Test Environment (?)
 Some text
 
-## Data & Security
-# Data Controller / Processor information
+# Data & Security
+## Data Controller / Processor information
 Some text
-# Data Retention
+## Data Retention
 Some text
-# EULA information
+## EULA information
 Some text
-# TRACKS GDPR API
+## TRACKS GDPR API
 Some text
-# Right to Access / Erasure
+## Right to Access / Erasure
 Some text
-# IP Truncation
+## IP Truncation
 Some text
