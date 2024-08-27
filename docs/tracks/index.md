@@ -1,4 +1,4 @@
-**TRACKS Overview**
+**Overview**
 
 *Generic explanation on Tracks*
 - Marketing Intelligence platform combining marketing analytics + attribution tracking
