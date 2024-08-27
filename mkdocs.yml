@@ -69,7 +69,7 @@ copyright: |
   &copy; 2024 <a href="https://secondstage.io"  target="_blank" rel="noopener">Second Stage GmbH</a>
 
 nav:
-  - Section:
+  - TRACKS:
     - tracks/index.md 
-    - Page 1: tracks/attribution-tracking.md
+    - Overview: tracks/attribution-tracking.md
 
