@@ -37,7 +37,7 @@ extra:
   social:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/company/secondstage/
-  homepage: https://secondstage.io    
+  homepage: https://documentation.secondstage.io    
   
 
 markdown_extensions:
