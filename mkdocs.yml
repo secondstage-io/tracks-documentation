@@ -65,6 +65,6 @@ copyright: |
 
 nav:
   - Section:
-    - section/index.md 
-    - Page 1: section/page-1.md
-    - Page n: section/page-n.md
+    - tracks/overview.md 
+    - Page 1: tracks/marketing-analytics.md
+    - Page 2: section/attribution-tracking.md
