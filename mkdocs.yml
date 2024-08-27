@@ -9,14 +9,17 @@ theme:
   features:
     - navigation.tabs
     - navigation.sections
-    - toc.integrate
+    - navigation.expand
     - navigation.top
     - navigation.instant
+    - navigation.path
+    - navigation.indexes
     - search.suggest
     - search.highlight
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
+    - toc.integrate
   language: en
   palette:
     - scheme: default
