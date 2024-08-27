@@ -60,6 +60,10 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.mark
   - attr_list
+  - toc:
+      permalink: true
+      title: On this page
+      permalink: true
 
 plugins:
   - search
