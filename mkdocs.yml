@@ -64,7 +64,15 @@ copyright: |
   &copy; 2024 <a href="https://secondstage.io"  target="_blank" rel="noopener">Second Stage GmbH</a>
 
 nav:
-  - Section:
+  - Overview:
     - tracks/overview.md 
     - Page 1: tracks/marketing-analytics.md
-    - Page 2: section/attribution-tracking.md
+    - Page 2: tracks/attribution-tracking.md
+  - Marketing Analytics:
+    - tracks/overview.md 
+    - Page 1: tracks/marketing-analytics.md
+    - Page 2: tracks/attribution-tracking.md
+ - Attribution Tracking:
+    - tracks/overview.md 
+    - Page 1: tracks/marketing-analytics.md
+    - Page 2: tracks/attribution-tracking.md
