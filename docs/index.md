@@ -1,4 +1,8 @@
-# Homepage
+# Welcome
+
+Welcome to the Documentation for the Second Stage TRACKS and GATEWAY marketing intelligence platforms.
+
+# MK Docs Homepage
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
