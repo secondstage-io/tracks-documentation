@@ -35,6 +35,11 @@ theme:
       primary: root
       accent: red
 
+markdown_extensions:
+  - toc:
+      permalink: true
+      title: On this page
+      permalink: true
 
 extra:
   social:
