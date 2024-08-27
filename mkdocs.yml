@@ -77,9 +77,13 @@ nav:
     - tracks/index.md 
     - Marketing Analytics: tracks/marketing-analytics.md
     - Attribution Tracking: tracks/attribution-tracking.md
-  - REFERENCES:
-    - references/index.md 
+  - GATEWAY:
+    - gateway/index.md 
+    - Audience Discovery: gateway/audience-discovery.md
+    - Campaign Management: gateway/campaign-management.md
+  - References:
+    - references.md 
   - Changelog:
-    - changelog.ml
+    - changelog.md
 
 
