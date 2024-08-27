@@ -2,29 +2,18 @@
 
 ## Features
 
-Sample text, find me in page2.md
+Tracks has a lot of features. We explain how they work
 
-Add /abc.md inside /docs folder 
+### Campaign Overview
+
+In this view, you can see something.
 
 ## Setup
 
-Sample text, find me in page2.md
-
-Add /abc.md inside /docs folder 
+Sample text.
 
 ## GDPR & CCPA Compliance
 
-Sample text, find me in page2.md
+Sample text.
 
-Add /abc.md inside /docs folder 
-
-# TRACKS
-
-## Features
-
-Sample text, find me in page2.md
-
-Add /abc.md inside /docs folder 
-
-## Setup
 
