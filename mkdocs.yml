@@ -62,3 +62,9 @@ plugins:
 
 copyright: |
   &copy; 2024 <a href="https://secondstage.io"  target="_blank" rel="noopener">Second Stage GmbH</a>
+
+nav:
+  - Section:
+    - section/index.md 
+    - Page 1: section/page-1.md
+    - Page n: section/page-n.md
