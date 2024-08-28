@@ -1,21 +1,18 @@
-# Welcome
+# Introduction
 
-Welcome to the Documentation for the Second Stage TRACKS and GATEWAY marketing intelligence platforms.
+At SECOND STAGE, we empower gaming publishers, indie devs, agencies and brands by offering cutting-edge digital marketing and ad tech solutions.
 
-# MK Docs Homepage
+We use marketing intelligence to unlock your potential through our platforms TRACKS and GATEWAY, offering holistic media analytics, full funnel attribution tracking and granular targeted performance advertising options dedicated to gaming clients.
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+# TRACKS
 
-## Commands
+TRACKS is a marketing intelligence platform for gaming that offers full-funnel attribution tracking and media analytics, delivering holistic views of ROAS, media performance, creative performance, brand health and more for PC and console games in a single environment.
+As an enterprise-grade Hybrid SaaS solution, TRACKS offers complete control over sensitive data, along with in-depth analysis at every stage of the marketing funnel and customer journey.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+# GATEWAY
 
-## Project layout
+GATEWAY is an advertising platform designed to reach gaming audiences through granular targeting capabilities powered by marketing intelligence and data-driven insights.
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## Second Stage Homepage
+
+For more information visit [secondstage.io](https://secondstage.io).
