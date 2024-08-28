@@ -19,7 +19,7 @@ theme:
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
-    - toc.integrate
+    <!-- - toc.integrate -->
   language: en
   palette:
     - scheme: default
