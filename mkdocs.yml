@@ -76,6 +76,7 @@ nav:
     - tracks/index.md 
     - Marketing Analytics: tracks/marketing-analytics.md
     - Attribution Tracking: tracks/attribution-tracking.md
+    - Data Handling & Security: tracks/data-security.md
   - GATEWAY:
     - gateway/index.md 
     - Audience Discovery: gateway/audience-discovery.md
