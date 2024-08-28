@@ -62,7 +62,7 @@ markdown_extensions:
   - attr_list
   - toc:
       permalink: true
-      title: On this page
+      title: Table of contents
       permalink: true
 
 plugins:
