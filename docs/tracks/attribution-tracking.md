@@ -36,31 +36,3 @@ Some text
 ### Test Environment (?)
 
 Some text
-
-## Data & Security
-
-This is important because...
-
-### Data Controller / Processor information
-
-Some text
-
-### Data Retention
-
-Some text
-
-### EULA information
-
-Some text
-
-### TRACKS GDPR API
-
-Some text
-
-### Right to Access / Erasure
-
-Some text
-
-### IP Truncation
-
-Some text
