@@ -21,7 +21,7 @@ We use marketing intelligence to unlock your potential through our platforms [TR
 
     Check out our comprehensive guide to the different attribution tracking solutions available out-of-the-box with TRACKS.
 
-    [:octicons-arrow-right-24: Use attribution Tracking with TRACKS](/tracks/attribution-tracking/)
+    [:octicons-arrow-right-24: Use attribution tracking with TRACKS](/tracks/attribution-tracking/)
 
 -   :material-post:{ .lg .middle } __GATEWAY Platform__
 
