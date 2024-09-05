@@ -7,7 +7,7 @@ We use marketing intelligence to unlock your potential through our platforms [TR
 
 <div class="grid cards" markdown>
 
--   :material-poll:{ .lg .middle } __TRACKS Marketing Intelligence__
+-   :material-poll:{ .lg .middle } __TRACKS Platform__
 
     ---
 
@@ -23,7 +23,7 @@ We use marketing intelligence to unlock your potential through our platforms [TR
 
     [:octicons-arrow-right-24: Use attribution Tracking with TRACKS](/tracks/attribution-tracking/)
 
--   :material-post:{ .lg .middle } __GATEWAY Ad Platform__
+-   :material-post:{ .lg .middle } __GATEWAY Platform__
 
     ---
 
