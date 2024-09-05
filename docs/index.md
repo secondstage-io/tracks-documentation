@@ -6,49 +6,40 @@ We use marketing intelligence to unlock your potential through our platforms TRA
 
 <div class="grid cards" markdown>
 
--   :material-clock-fast:{ .lg .middle } __Set up in 5 minutes__
+-   :material-poll:{ .lg .middle } __TRACKS Marketing Intelligence__
 
     ---
 
-    Install [`mkdocs-material`](#) with [`pip`](#) and get up
-    and running in minutes
+    Learn about the features, functionality and setup of TRACKS, Second Stage's marketing intelligence platform for gaming.
 
-    [:octicons-arrow-right-24: Getting started](#)
+    [:octicons-arrow-right-24: Getting started with TRACKS](#)
 
--   :fontawesome-brands-markdown:{ .lg .middle } __It's just Markdown__
-
-    ---
-
-    Focus on your content and generate a responsive and searchable static site
-
-    [:octicons-arrow-right-24: Reference](#)
-
--   :material-format-font:{ .lg .middle } __Made to measure__
+-   :material-file:{ .lg .middle } __TRACKS Attribution__
 
     ---
 
-    Change the colors, fonts, language, icons, logo and more with a few lines
+    Check out our comprehensive guide to the different attribution tracking solutions available out-of-the-box with TRACKS.
 
-    [:octicons-arrow-right-24: Customization](#)
+    [:octicons-arrow-right-24: Use attribution Tracking with TRACKS](/tracks/attribution-tracking/)
 
--   :material-scale-balance:{ .lg .middle } __Open Source, MIT__
+-   :material-post:{ .lg .middle } __Gateway__
 
     ---
 
-    Material for MkDocs is licensed under MIT and available on [GitHub]
+    Learn more about GATEWAY, our ad platform for gaming environments.
 
-    [:octicons-arrow-right-24: License](#)
+    [:octicons-arrow-right-24: Getting started wiht GATEWAY](/gateway/overview/)
+
+-   :material-information:{ .lg .middle } __Glossary__
+
+    ---
+
+    For more details on specific terms, see our comprehensive glossary.
+
+    [:octicons-arrow-right-24: Learn more](/glossary/)
 
 </div>
 
-# TRACKS
-
-TRACKS is a marketing intelligence platform for gaming that offers full-funnel attribution tracking and media analytics, delivering holistic views of ROAS, media performance, creative performance, brand health and more for PC and console games in a single environment.
-As an enterprise-grade Hybrid SaaS solution, TRACKS offers complete control over sensitive data, along with in-depth analysis at every stage of the marketing funnel and customer journey.
-
-# GATEWAY
-
-GATEWAY is an advertising platform designed to reach gaming audiences through granular targeting capabilities powered by marketing intelligence and data-driven insights.
 
 ## Second Stage Homepage
 
