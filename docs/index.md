@@ -2,7 +2,9 @@
 
 At SECOND STAGE, we empower gaming publishers, indie devs, agencies and brands by offering cutting-edge digital marketing and ad tech solutions.
 
-We use marketing intelligence to unlock your potential through our platforms TRACKS and GATEWAY, offering holistic media analytics, full funnel attribution tracking and granular targeted performance advertising options dedicated to gaming clients.
+We use marketing intelligence to unlock your potential through our platforms TRACKS and GATEWAY, offering holistic media analytics, full funnel attribution tracking and granular targeted performance advertising options dedicated to gaming clients. Learn more about the features, functionality and setup of our platforms through our documentation or [contact us](https://secondstage.io/contact/) directly for more answers.
+
+---
 
 <div class="grid cards" markdown>
 
@@ -12,7 +14,7 @@ We use marketing intelligence to unlock your potential through our platforms TRA
 
     Learn about the features, functionality and setup of TRACKS, Second Stage's marketing intelligence platform for gaming.
 
-    [:octicons-arrow-right-24: Getting started with TRACKS](#)
+    [:octicons-arrow-right-24: Getting started with TRACKS](/tracks/overview/)
 
 -   :material-file:{ .lg .middle } __TRACKS Attribution__
 
@@ -22,13 +24,13 @@ We use marketing intelligence to unlock your potential through our platforms TRA
 
     [:octicons-arrow-right-24: Use attribution Tracking with TRACKS](/tracks/attribution-tracking/)
 
--   :material-post:{ .lg .middle } __Gateway__
+-   :material-post:{ .lg .middle } __GATEWAY Ad Platform__
 
     ---
 
     Learn more about GATEWAY, our ad platform for gaming environments.
 
-    [:octicons-arrow-right-24: Getting started wiht GATEWAY](/gateway/overview/)
+    [:octicons-arrow-right-24: Getting started with GATEWAY](/gateway/overview/)
 
 -   :material-information:{ .lg .middle } __Glossary__
 
@@ -40,6 +42,7 @@ We use marketing intelligence to unlock your potential through our platforms TRA
 
 </div>
 
+---
 
 ## Second Stage Homepage
 
