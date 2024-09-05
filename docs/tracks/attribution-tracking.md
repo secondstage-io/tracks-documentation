@@ -60,9 +60,9 @@ In addition, based on your onboarding call and the status of your game release, 
 - Brand Health metrics
 
 
-### Attribution Tracking Options with TRACKS 
+### Attribution Tracking Options 
 
-**Modelled Attribution Tracking**
+#### Modelled Attribution Tracking
 
 This method calculates conversions using our data modeling solution. Due to the specific data requirements, this approach is available only for games released through Steam.
 
@@ -80,11 +80,11 @@ The following metrics will be available:
 - CR% (Conversion Rate)
 - ROAS (Return on Ad Spend)
 
-**Measured Attribution Tracking**
+#### Measured Attribution Tracking
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 
-**Measured Attribution Tracking + Modeling (TRACKS Suggested Solution)**
+#### Measured Attribution Tracking + Modeling (TRACKS Suggested Solution)
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 
