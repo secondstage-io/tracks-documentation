@@ -3,7 +3,7 @@
 ## A
 
 **Ad Format**  
-The structure or layout of an advertisement, such as banner ads, video ads, or interactive ads.
+The structure or layout of an advertisement, such as static ads or video ads.
 
 **Ad Group (Ad Set)**  
 A collection of ads within a campaign that share the same targeting criteria and budget.
@@ -28,7 +28,7 @@ Metrics that assess the overall health and perception of a brand, including aspe
 A coordinated series of marketing activities aimed at achieving specific goals, such as promoting a new game or feature.
 
 **Channel**  
-The medium through which marketing messages are delivered, such as social media, email, or search engines.
+The medium through which marketing messages are delivered, such as gaming websites or social media platforms.
 
 **Creative (Ad)**  
 The actual content of the advertisement, including the visual and textual elements.
@@ -42,12 +42,12 @@ The percentage of users who complete a desired action, such as making a purchase
 The number of installs of downloadable content (DLC) for a game.
 
 **Estimated CPI**  
-The estimated cost per install of an app or game, calculated based on various data sources and predictive models.
+The estimated cost per install of a game, calculated based on various data sources and predictive models.
 
 ## E
 
 **eCPI**  
-Effective Cost Per Install; the average cost incurred to acquire a user who installs an app or game, adjusted for various factors.
+Effective Cost Per Install; the average cost incurred to acquire a user who installs a game, adjusted for various factors.
 
 **Event Timestamp**  
 The specific time at which an event or action, such as a user interaction or conversion, occurs.
@@ -102,7 +102,7 @@ Estimates of the number of installs based on predictive models, which may use hi
 ## P
 
 **Platform**  
-The environment on which a game runs, such as PC, PlayStation or Xbox.
+The system on which a game is played, such as PC, PlayStation or Xbox.
 
 ## Q
 
@@ -114,7 +114,7 @@ A metric that measures the revenue generated from advertising campaigns relative
 ## S
 
 **Strategy**  
-The overall plan or approach used to achieve marketing objectives, including the selection of channels, targeting, and creative elements.
+The overall plan or approach used to achieve marketing objectives, including the selection of audiences, channels, targeting, and creative elements.
 
 **Storefront**  
 The digital marketplace where a game or application is sold, such as Steam, PSN, Microsoft Store or eShop.
