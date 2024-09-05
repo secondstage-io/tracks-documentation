@@ -1,7 +1,5 @@
 # Attribution Tracking
 
-TRACKS comes with integrated full funnel blablabla
-
 ## Overview
 
 With TRACKS Attribution, our proprietary full-funnel attribution tracking solution that is part of the TRACKS platform, we can provide valuable insight into your lower-funnel media campaigns. This solution consists of three components, all managed and supported by the Second Stage team.
