@@ -25,24 +25,28 @@ theme:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
       toggle:
-        icon: material/brightness-auto
+        icon: material/material-link
         name: Switch to light mode
+      primary: root
+      accent: red
 
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default 
       toggle:
-        icon: material/brightness-7
+        icon: material/toggle-switch-off-outline 
         name: Switch to dark mode
+      primary: root
+      accent: red
 
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       toggle:
-        icon: material/brightness-4
+        icon: material/toggle-switch
         name: Switch to system preference
-
-
+      primary: root
+      accent: red
 
       
 extra:
