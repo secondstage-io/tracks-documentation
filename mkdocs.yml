@@ -74,14 +74,15 @@ copyright: |
 nav:
   - Home: index.md
   - TRACKS: 
+    - Overview: tracks/overview.md
     - Marketing Analytics: tracks/marketing-analytics.md
     - Attribution Tracking: tracks/attribution-tracking.md
     - Data Handling & Security: tracks/data-security.md
   - GATEWAY: 
-    - Audience Discovery: gateway/audience-discovery.md
-    - Campaign Management: gateway/campaign-management.md
+    - Overview: gateway/overview.md
   - Reference:
-    - Glossary: references.md 
+    - Glossary: glossary.md 
+    - Further Reading: resources.md
   - Changelog:
     - changelog.md
 
