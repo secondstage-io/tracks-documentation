@@ -2,7 +2,7 @@
 
 At SECOND STAGE, we empower gaming publishers, indie devs, agencies and brands by offering cutting-edge digital marketing and ad tech solutions.
 
-We use marketing intelligence to unlock your potential through our platforms TRACKS and GATEWAY, offering holistic media analytics, full funnel attribution tracking and granular targeted performance advertising options dedicated to gaming clients. Learn more about the features, functionality and setup of our platforms through our documentation or [contact us](https://secondstage.io/contact/) directly for more answers.
+We use marketing intelligence to unlock your potential through our platforms [TRACKS](https://tracks.secondstage.io) and [GATEWAY](https://secondstage.io/gateway/), offering holistic media analytics, full funnel attribution tracking and granular targeted performance advertising options dedicated to gaming clients. Learn more about the features, functionality and setup of our platforms through our documentation.
 
 
 <div class="grid cards" markdown>
@@ -43,6 +43,4 @@ We use marketing intelligence to unlock your potential through our platforms TRA
 
 ---
 
-# Second Stage Homepage
-
-For more information visit [secondstage.io](https://secondstage.io).
+For more information visit [secondstage.io](https://secondstage.io) or [get in touch](https://secondstage.io/contact/).
