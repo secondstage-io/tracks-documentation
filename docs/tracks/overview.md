@@ -1,4 +1,4 @@
-# Platform Overview
+# Overview
 
 ## Features
 
