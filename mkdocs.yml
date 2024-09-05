@@ -25,7 +25,7 @@ theme:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
       toggle:
-        icon: material/material-link
+        icon: material/toggle-switch
         name: Switch to light mode
       primary: root
       accent: red
