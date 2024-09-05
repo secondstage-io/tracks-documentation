@@ -163,7 +163,9 @@ The number of completed actions on a website that align with marketing goals, su
 
 ## Z
 
+# Additional Resources
 
+[Marketeres Are Embracing Advanced Marketing Mesaurement](https://customerthink.com/marketers-are-embracing-advanced-marketing-measurement/)
 
 
 
