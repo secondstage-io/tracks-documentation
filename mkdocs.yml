@@ -21,22 +21,29 @@ theme:
     - content.code.copy
   language: en
   palette:
-  # Palette toggle for light mode
+
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
-      scheme: default
+      scheme: default 
       toggle:
-        icon: material/toggle-switch-off-outline 
+        icon: material/brightness-7
         name: Switch to dark mode
-      primary: root
-      accent: red 
-  # Palette toggle for dark mode
+
+    # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
-      scheme: slate 
+      scheme: slate
       toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode    
-      primary: root
-      accent: red
+        icon: material/brightness-4
+        name: Switch to system preference
+
+
+
       
 extra:
   social:
