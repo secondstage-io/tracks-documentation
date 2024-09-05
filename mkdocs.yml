@@ -37,20 +37,14 @@ theme:
         name: Switch to light mode    
       primary: root
       accent: red
-
-markdown_extensions:
-  - toc:
-      permalink: true
-      title: On this page
-      permalink: true
-
+      
 extra:
   social:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/company/secondstage/
   homepage: https://documentation.secondstage.io    
   
-
+# Extensions 
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -76,18 +70,18 @@ plugins:
 copyright: |
   &copy; 2024 <a href="https://secondstage.io"  target="_blank" rel="noopener">Second Stage GmbH</a>
 
+# Page tree 
 nav:
-  - TRACKS:
-    - tracks/index.md 
+  - Home: index.md
+  - TRACKS: 
     - Marketing Analytics: tracks/marketing-analytics.md
     - Attribution Tracking: tracks/attribution-tracking.md
     - Data Handling & Security: tracks/data-security.md
-  - GATEWAY:
-    - gateway/index.md 
+  - GATEWAY: 
     - Audience Discovery: gateway/audience-discovery.md
     - Campaign Management: gateway/campaign-management.md
-  - References:
-    - references.md 
+  - Reference:
+    - Glossary: references.md 
   - Changelog:
     - changelog.md
 
