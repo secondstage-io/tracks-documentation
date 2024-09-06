@@ -70,6 +70,7 @@ TRACKS offers three different approaches to attribution tracking that can be imp
 | Measured Attribution Tracking   | This method uses server-side integration to track game installs directly through the TRACKS attribution solution. It requires no SDK implementation and collects telemetry data to accurately attribute installs.  | It enables real-time, accurate install tracking without client-side risks, requires no changes to game code, and is optimized for PC/console games following industry best practices.   |
 | Measured Attribution Tracking + Modeling (Best Practice)   | This methodology combines measured attribution (server-side) with a Markov chain modeling solution for untracked installs. This unified approach compensates for untraceable sources by redistributing untracked installs to their potential origins.  | This approach ensures up to 98% attribution accuracy within a 24-hour window, combines measured and modeled data for a complete attribution view, and increases install tracking accuracy by redistributing untracked game opens.   |
 
+
 #### Modelled Attribution Tracking
 
 This method calculates conversions using our data modeling solution. Due to the specific data requirements, this approach is available only for games released through Steam.
@@ -92,11 +93,12 @@ TRACKS uses a Marketing Mix Modeling (MMM) approach enhanced with Steam UTM Anal
 
 > If you're interested in this method but don't have a landing page or are unsure of your current setup, Second Stage can help you create a landing page or game website for marketing purposes. [Contact us](https://secondstage.io/contact/) for a quote!
 
+
 #### Measured Attribution Tracking
 
 Using this method, installs are tracked using the TRACKS Attribution solution, which is based on a data streaming pipeline.
 
-> If your game does not have a backend server for telemetry and event logging, we do not recommend integrating the TRACKS measured attribution solution or any other vendor's solution. In such cases, we recommend using our modeled attribution method instead.
+If your game does not have a backend server for telemetry and event logging, we do not recommend integrating the TRACKS measured attribution solution or any other vendor's solution. In such cases, we recommend using our modeled attribution method instead.
 
 **Server-side integration:** First, the TRACKS Measurement API needs to be deployed in a cloud environment (preferably Google Cloud). This API works as an HTTP webhook that connects to your backend or existing telemetry logging pipeline. When a game_open event signal is received from your server-side telemetry, the TRACKS API endpoint receives an HTTP POST request.
 
@@ -141,7 +143,10 @@ Implementation on your end can be managed by a DevOps or backend developer, or b
 
 > For each game added, the Second Stage Analytics team will fully support the integration, deployment and testing, starting with your onboarding call.
 
-#### Measured Attribution Tracking + Modeling (Best Practice)
+
+#### Measured Attribution Tracking + Modeling
+
+Measured Attribution Tracking combined with Modeling is the best practice approach to Attribution Tracking in PC & Console Gaming and our **recommended methodology**. 
 
 Due to the opacity of storefronts in the player acquisition journey, a fully deterministic measurement solution is not feasible for PC/Console marketing attribution. Like all attribution tracking vendors, TRACKS relies on IP addresses to identify the acquisition source of the game_open event. This approach, known as fingerprint tracking or probabilistic measurement, involves matching the ad click IP to the game_open IP, which can lead to decreased accuracy as the time between click and conversion increases.
 
