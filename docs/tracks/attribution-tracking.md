@@ -84,6 +84,27 @@ The following metrics will be available:
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 
+```
+# Example Python Code for server-side
+   import requests
+
+
+   url = "https://api.secondstage.io/tracks"  # (or https://api.your-game.com/tracks)
+   payload = {
+     'user_id': '1a23fd44c21f8l5r',
+     'event_name': 'game_open',
+     'ip': '175.124.248.15',
+     'time_stamp': '1724094783',
+     'platform': 'pc',
+     'storefront': 'steam'
+   }
+   headers = {
+     'Authorization': 'Bearer API_KEY_TOKEN'
+   }
+   response = requests.request("POST", url, headers=headers, data=payload)
+   print(response.text)   
+```
+
 #### Measured Attribution Tracking + Modeling (TRACKS Suggested Solution)
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
