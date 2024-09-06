@@ -40,7 +40,7 @@ To enable web conversion tracking, a TRACKS JavaScript snippet wraps your landin
 
 Post-view or impression-based tracking in video game marketing across paid media channels adds complexity and can negatively impact the accuracy of data-driven attribution. For top-of-funnel campaigns with awareness objectives, using awareness reports to evaluate performance is preferable. For consideration and conversion-focused campaigns, attribution is based on clicks, as a landing page session triggers the attribution touchpoint.
 
-By combining all components of the user flow with TRACKS Attribution, the standard dashboard allows reporting across the entire funnel, from:
+By combining all components of the user flow with TRACKS Attribution, the standard dashboard allows reporting across the entire funnel, e.g.:
 
 Impression \-\> Click \-\> Web Visit \-\> Web Conversion (button click) \-\> Steam Visit \-\> Steam Activation \-\> Install
 
@@ -90,17 +90,19 @@ The following metrics will be available:
 
 TRACKS uses a Marketing Mix Modeling (MMM) approach enhanced with Steam UTM Analytics, Traffic Breakdown data and Google Analytics (GA4) data. If you don't have a website or don't use it as a landing page, the efficiency of the model is reduced by 30% because it relies solely on Steam UTM Analytics, Visits and Traffic data.
 
-If you're interested in this method but don't have a landing page or are unsure of your current setup, Second Stage can help you create a landing page or game website for marketing purposes. [Contact us](https://secondstage.io/contact/) for a quote!
+> If you're interested in this method but don't have a landing page or are unsure of your current setup, Second Stage can help you create a landing page or game website for marketing purposes. [Contact us](https://secondstage.io/contact/) for a quote!
 
 #### Measured Attribution Tracking
 
 Using this method, installs are tracked using the TRACKS Attribution solution, which is based on a data streaming pipeline.
 
-**Server-side integration:** First, the TRACKS Measurement API needs to be deployed in a cloud environment (preferably Google Cloud). This API works as an HTTP webhook that connects to your backend or existing telemetry logging pipeline. When a game_open event signal is received from your server-side telemetry, the TRACKS API endpoint receives an HTTP POST request.
-**No SDK required:** TRACKS integration through the Measurement API is the only supported method and does not require any SDK implementation in your game code or server. This ensures there is no added latency or risk of client-side errors, while giving you full control over the data and parameters sent to TRACKS.
-**Best practice for PC/Console games:** This integration flow has been tested specifically for the PC/Console gaming ecosystem, following best practices for both gamers and studios.
+> If your game does not have a backend server for telemetry and event logging, we do not recommend integrating the TRACKS measured attribution solution or any other vendor's solution. In such cases, we recommend using our modeled attribution method instead.
 
-If your game does not have a backend server for telemetry and event logging, we do not recommend integrating the TRACKS measured attribution solution or any other vendor's solution. In such cases, we recommend using our modeled attribution method instead.
+**Server-side integration:** First, the TRACKS Measurement API needs to be deployed in a cloud environment (preferably Google Cloud). This API works as an HTTP webhook that connects to your backend or existing telemetry logging pipeline. When a game_open event signal is received from your server-side telemetry, the TRACKS API endpoint receives an HTTP POST request.
+
+**No SDK required:** TRACKS integration through the Measurement API is the only supported method and does not require any SDK implementation in your game code or server. This ensures there is no added latency or risk of client-side errors, while giving you full control over the data and parameters sent to TRACKS.
+
+**Best practice for PC/Console games:** This integration flow has been tested specifically for the PC/Console gaming ecosystem, following best practices for both gamers and studios.
 
 The Measurement API endpoint uses the following parameters:
 
@@ -113,8 +115,6 @@ The Measurement API endpoint uses the following parameters:
 If any of these parameters are not currently collected by your telemetry server, you will need to ensure that they are collected before providing them to the TRACKS Measurement API after deployment.
 
 Below is a pseudocode snippet that demonstrates how to build the API request. The API should be triggered every time a game_open (session start) event is logged in your telemetry system. If you choose to host TRACKS Attribution on your cloud servers, the API endpoint domain will be updated accordingly.
-
-For each game added, the Second Stage Analytics team will fully support the integration, deployment and testing, starting with your onboarding call.
 
 ```
 # Example Python Code for server-side
@@ -139,6 +139,8 @@ For each game added, the Second Stage Analytics team will fully support the inte
 
 Implementation on your end can be managed by a DevOps or backend developer, or by your business intelligence / data science teams - game developers do not need to be directly involved. On average, the process should take about 2 hours for a mid-level backend developer or data engineer.
 
+> For each game added, the Second Stage Analytics team will fully support the integration, deployment and testing, starting with your onboarding call.
+
 #### Measured Attribution Tracking + Modeling (Best Practice)
 
 Due to the opacity of storefronts in the player acquisition journey, a fully deterministic measurement solution is not feasible for PC/Console marketing attribution. Like all attribution tracking vendors, TRACKS relies on IP addresses to identify the acquisition source of the game_open event. This approach, known as fingerprint tracking or probabilistic measurement, involves matching the ad click IP to the game_open IP, which can lead to decreased accuracy as the time between click and conversion increases.
@@ -160,7 +162,7 @@ TRACKS uses the UMM methodology to integrate three different data sources:
 - **Web Analytics (GA4):** Leverages Markov Chain for multi-touch attribution
 - **Steam UTM Analytics & Traffic Breakdown:** For Marketing Mix Modeling (MMM)
 
-For more information on Markov Chain Attribution, Marketing Mix Modeling, or Unified Marketing Measurement, please visit our [Further Reading](https://documentation.secondstage.io/resources/) section.
+> For more information on Markov Chain Attribution, Marketing Mix Modeling, or Unified Marketing Measurement, please visit our [Further Reading](https://documentation.secondstage.io/resources/) section.
 
 ## Integration 
 
