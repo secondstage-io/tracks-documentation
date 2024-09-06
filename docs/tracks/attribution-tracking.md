@@ -62,6 +62,8 @@ In addition, based on your onboarding call and the status of your game release, 
 
 ### Attribution Tracking Options 
 
+TRACKS offers three different approaches to attribution tracking that can be implemented based on different requirements, which are detailed here. Our recommended solution for best results is the **Measured Attribution Tracking & Modeling** approach.
+
 #### Modelled Attribution Tracking
 
 This method calculates conversions using our data modeling solution. Due to the specific data requirements, this approach is available only for games released through Steam.
@@ -131,7 +133,7 @@ For each game added, the Second Stage Analytics team will fully support the inte
 
 Implementation on your end can be managed by a DevOps or backend developer, or by your business intelligence / data science teams - game developers do not need to be directly involved. On average, the process should take about 2 hours for a mid-level backend developer or data engineer.
 
-#### Measured Attribution Tracking + Modeling (TRACKS Suggested Solution)
+#### Measured Attribution Tracking + Modeling (Best Practice)
 
 Due to the opacity of storefronts in the player acquisition journey, a fully deterministic measurement solution is not feasible for PC/Console marketing attribution. Like all attribution tracking vendors, TRACKS relies on IP addresses to identify the acquisition source of the game_open event. This approach, known as fingerprint tracking or probabilistic measurement, involves matching the ad click IP to the game_open IP, which can lead to decreased accuracy as the time between click and conversion increases.
 
@@ -139,7 +141,7 @@ Effective attribution depends on a number of factors, including game setup, camp
 
 Research shows a 98% accuracy rate within a 24-hour window, meaning the ad click and game launch occur on the same device. However, this accuracy drops significantly after 24 hours. With a typical attribution window of seven days from click to purchase for PC and console games, accuracy drops to approximately 85%. In addition, cross-device measurement typically achieves about 80% accuracy. These factors are taken into account based on our experience with PC/console game attribution.
 
-For example, if there are 100 ad clicks resulting in 100 game opens (installs), Second Stage TRACKS targets at least 65% accuracy in measured attribution and before modeling. This means that 65 game opens will be correctly attributed to the source, while 35 will be reported as organic. The accuracy rate may be higher if your game has a lower barrier to entry and is available on more storefronts.
+For example, if there are 100 ad clicks resulting in 100 game opens (installs), TRACKS Attribution targets at least 65% accuracy in measured attribution and before modeling. This means that 65 game opens will be correctly attributed to the source, while 35 will be reported as organic. The accuracy rate may be higher if your game has a lower barrier to entry and is available on more storefronts.
 
 By enabling the modeling solution alongside the measured attribution solution, untracked game opens are redistributed to attribution sources using a Markov chain model, similar to Google's conversion modeling in Google Analytics 4. This approach allows marketers to view both measured and modeled installs for a complete understanding of their data.
 While the 65% attribution accuracy of measured data is typically sufficient for data-driven insights, the TRACKS modeling solution is valuable for capturing the remaining 35% and providing a complete picture.
@@ -151,7 +153,7 @@ TRACKS uses the UMM methodology to integrate three different data sources:
 - **TRACKS Measurement API:** For measured, attributed installs
 - **Web Analytics (GA4):** Leverages Markov Chain for multi-touch attribution
 - **Steam UTM Analytics & Traffic Breakdown:** For Marketing Mix Modeling (MMM)
-- 
+
 For more information on Markov Chain Attribution, Marketing Mix Modeling, or Unified Marketing Measurement, please visit our [Further Reading](https://documentation.secondstage.io/resources/) section.
 
 ## Integration 
