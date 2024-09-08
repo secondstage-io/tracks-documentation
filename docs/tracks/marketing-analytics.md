@@ -12,7 +12,7 @@ TRACKS integrates ad, website and attribution data into an holistic view to enab
 
 To set up a game for marketing analytics with TRACKS, log into your TRACKS account and select the "Add New Game" option. For more details, refer to the relevant section.
 
-Next, follow the steps below to allow us to connect your campaign data to our marketing analytics dashboard. If you're interested in using attribution tracking, please refer to the [corresponding section[(/attribution-tracking/) in our documentation and complete the required steps. For further assistance, please feel free to contact our team at any time.
+Next, follow the steps below to allow us to connect your campaign data to our marketing analytics dashboard. If you're interested in using attribution tracking, please refer to the [corresponding section](/attribution-tracking/) in our documentation and complete the required steps. For further assistance, please feel free to contact our team at any time.
 
 ### Media Platforms & Ad Networks Integration
 
@@ -23,7 +23,7 @@ Example Gsheet for Tracking Links
 
 #### Google Tag Manager Integration & Access
 
-In Google Tag Manager, please grant Editor access to analytics@secondstage.io. For guidance on installing GTM, refer to the documentation [here] (https://support.google.com/tagmanager/answer/14842164).
+In Google Tag Manager, please grant Editor access to analytics@secondstage.io. For guidance on installing GTM, refer to the documentation [here](https://support.google.com/tagmanager/answer/14842164).
 
 TRACKS will implement events and conversion pixels on your website to optimize landing page interactions and improve media platform targeting algorithms, as detailed above.
 
@@ -35,7 +35,7 @@ Please refer to the [Quick Start Guide](https://support.google.com/tagmanager/an
 
 #### Google Analytics Integration & Access
 
-In Google Analytics (GA4), please grant Editor access to analytics@secondstage.io. For guidance on creating a GA4 account, refer to the documentation [here] (https://support.google.com/analytics/answer/9304153). Alternatively, the Second Stage team can create one for you if needed.
+In Google Analytics (GA4), please grant Editor access to analytics@secondstage.io. For guidance on creating a GA4 account, refer to the documentation [here](https://support.google.com/analytics/answer/9304153). Alternatively, the Second Stage team can create one for you if needed.
 
 ### Steamworks Integration
 
@@ -63,7 +63,7 @@ Something about this view etc
 
 ### Creative Performance
 
-*Available with the Silver, Gold or Enterprise plans**
+*Available with Silver, Gold or Enterprise plans**
 
 In TRACKS, the Creative Performance feature shows detailed performance of individual creatives and helps to optimize towards best performing creatives and avoid ad fatigue.
 
@@ -74,7 +74,7 @@ In TRACKS, the Creative Performance feature shows detailed performance of indivi
 
 ### Audience Insights
 
-*Available with the Silver, Gold or Enterprise plans**
+*Available with Silver, Gold or Enterprise plans**
 
 TRACKS is able to provide granular insights into audiences based on day-to-day campaign performance, providing detailed socio-demographic information on the userbase of your game.
 
@@ -85,7 +85,7 @@ TRACKS is able to provide granular insights into audiences based on day-to-day c
 
 ### Awareness Tracker
 
-*Available with the Gold or Enterprise plans**
+*Available with Gold or Enterprise plans**
 
 To deliver granular reporting on top-of-funnel activations, the TRACKS Awareness Tracker delivers detailed breakdowns on metrics such as Impressions, Views, Engagement Rates or Viewability.
 
@@ -96,7 +96,7 @@ To deliver granular reporting on top-of-funnel activations, the TRACKS Awareness
 
 ### Brand Health Tracker
 
-*Available with the Gold or Enterprise plans**
+*Available with Gold or Enterprise plans**
 
 The TRACKS Brand Health Tracker allows to highlight top-of-funnel awareness from social, media and UGC and enables to make data-driven key decisions on strategic direction and timings.
 
@@ -113,4 +113,4 @@ Something about this view etc
 
 If you require additional support, our team of gaming media specialists can manage your digital marketing campaigns from planning to execution. Leveraging TRACKS and our data-driven insights, we continuously optimize campaigns to deliver the best results for our clients. Our experts specialize in all major performance marketing channels and offer direct media buying with key gaming partners.
 
-Using TRACKS, we craft full-funnel media strategies, managing and optimizing campaigns from the upper funnel through to purchase. From planning and setup to execution and reporting, we provide support wherever needed, allowing you to focus on what matters most. Please contact us for further information and assistance.
+Using TRACKS, we craft full-funnel media strategies, managing and optimizing campaigns from the upper funnel through to purchase. From planning and setup to execution and reporting, we provide support wherever needed, allowing you to focus on what matters most. Please [contact us](https://secondstage.io/contact/) for further information and assistance.
