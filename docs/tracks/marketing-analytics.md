@@ -29,7 +29,7 @@ TRACKS will implement events and conversion pixels on your website to optimize l
 
 Below is an example of the Google Tag Manager code:
 
-![Google Tag Manager Setup](/assets/marketing-analytics_gtm.png "Google Tag Manager Setup")
+<div style="border: 1px solid black;">![Google Tag Manager Setup](/assets/marketing-analytics_gtm.png "Google Tag Manager Setup")</div>
 
 Please refer to the [Quick Start Guide](https://support.google.com/tagmanager/answer/14842164) for more information.
 
