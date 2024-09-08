@@ -1,4 +1,4 @@
-# Overviewhttps://github.com/secondstage-io/2s-documentation/tree/main/docs/tracks
+# Overview
 
 TRACKS provides comprehensive data tracking and analysis, enabling a complete understanding of your marketing performance at every stage of the funnel. This ensures precise media spend planning and insightful reporting. With full attribution tracking, TRACKS allows for the precise targeting of high-impact audiences and strategic ad placements, maximizing Return on Ad Spend (ROAS) and ensuring every marketing dollar is effectively utilized. By leveraging data-driven insights, TRACKS empowers publishers, developers, and advertisers to seamlessly integrate marketing intelligence into their gaming campaigns, driving superior results and enhancing overall marketing strategy.
 
