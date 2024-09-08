@@ -1,4 +1,4 @@
-# Overview
+# Overviewhttps://github.com/secondstage-io/2s-documentation/tree/main/docs/tracks
 
 TRACKS provides comprehensive data tracking and analysis, enabling a complete understanding of your marketing performance at every stage of the funnel. This ensures precise media spend planning and insightful reporting. With full attribution tracking, TRACKS allows for the precise targeting of high-impact audiences and strategic ad placements, maximizing Return on Ad Spend (ROAS) and ensuring every marketing dollar is effectively utilized. By leveraging data-driven insights, TRACKS empowers publishers, developers, and advertisers to seamlessly integrate marketing intelligence into their gaming campaigns, driving superior results and enhancing overall marketing strategy.
 
@@ -52,10 +52,17 @@ This streamlined process enhances both security and user experience by avoiding 
 
 ### “Add a  New Game” 
 
-Functionality + Tiers Explanation
+To add a new game to your TRACKS account, select the "Add a new game" option on the overview page.
+ 
+*Screenshot Tracks Overview*  
+
+In the next step, enter basic information such as the game's title, intended platforms, release date, and Steam ID, if available. You can also upload a cover image, such as keyart from the game. If no cover image is selected, TRACKS will temporarily display a placeholder image.
+
+Next, please select a plan from the available tiers based on the features you need. If you have any questions about the different plans, please visit our [product website](https://secondstage.io/tracks/) or contact us directly.
+
+Once the form is submitted, our team will get back to you within 24 hours with a quote and assist you with the full setup.
 
 ### Platform Settings 
 
-text
+In an upcoming TRACKS update, you will be able to edit a game's title, change the cover image, and invite additional users to your dashboard. Until these features are available on the platform, please contact us directly to request any of these changes.
 
-Game, Profile, additional user Invites
