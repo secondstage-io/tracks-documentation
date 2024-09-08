@@ -42,7 +42,7 @@ Post-view or impression-based tracking in video game marketing across paid media
 
 By combining all components of the user flow with TRACKS Attribution, the standard dashboard allows reporting across the entire funnel, e.g.:
 
-Impression \-\> Click \-\> Web Visit \-\> Web Conversion (button click) \-\> Steam Visit \-\> Steam Activation \-\> Install
+Impression → Click → Web Visit → Web Conversion (button click) → Steam Visit → Steam Activation → Install
 
 Metrics available in TRACKS include
 
@@ -118,7 +118,7 @@ If any of these parameters are not currently collected by your telemetry server,
 
 Below is a pseudocode snippet that demonstrates how to build the API request. The API should be triggered every time a game_open (session start) event is logged in your telemetry system. If you choose to host TRACKS Attribution on your cloud servers, the API endpoint domain will be updated accordingly.
 
-```
+```json
 # Example Python Code for server-side
    import requests
 
