@@ -23,15 +23,12 @@ Example Gsheet for Tracking Links
 
 #### Google Tag Manager Integration & Access
 
-In Google Tag Manager, please grant Editor access to analytics@secondstage.io. For guidance on installing GTM, refer to the documentation [here](https://support.google.com/tagmanager/answer/14842164).
+In Google Tag Manager, please grant Editor access to analytics@secondstage.io. TRACKS will implement events and conversion pixels on your website to optimize landing page interactions and improve media platform targeting algorithms, as detailed above.
 
-TRACKS will implement events and conversion pixels on your website to optimize landing page interactions and improve media platform targeting algorithms, as detailed above.
+For guidance on installing GTM, refer to the documentation [here](https://support.google.com/tagmanager/answer/14842164).
+Below is an sample image of the Google Tag Manager integration code that needs to be implemented on your landing page. 
 
-Below is an example of the Google Tag Manager code:
-
-<div style="border: 1px solid black;">![Google Tag Manager Setup](/assets/marketing-analytics_gtm.png "Google Tag Manager Setup")</div>
-
-Please refer to the [Quick Start Guide](https://support.google.com/tagmanager/answer/14842164) for more information.
+> ![Google Tag Manager Setup](/assets/marketing-analytics_gtm.png "Google Tag Manager Setup")
 
 #### Google Analytics Integration & Access
 
@@ -67,7 +64,7 @@ Something about this view etc
 
 In TRACKS, the Creative Performance feature shows detailed performance of individual creatives and helps to optimize towards best performing creatives and avoid ad fatigue.
 
-- Key Dimensions
+Key Dimensions:
 - Display and Video Performance
 - Creative Performance by GEO, Audience
 - A/B Comparison
@@ -78,7 +75,7 @@ In TRACKS, the Creative Performance feature shows detailed performance of indivi
 
 TRACKS is able to provide granular insights into audiences based on day-to-day campaign performance, providing detailed socio-demographic information on the userbase of your game.
 
-- Key Dimensions
+Key Dimensions:
 - Users per country / city / gender / age
 - Campaign KPI per age and gender
 - User interest and engagement
@@ -89,7 +86,7 @@ TRACKS is able to provide granular insights into audiences based on day-to-day c
 
 To deliver granular reporting on top-of-funnel activations, the TRACKS Awareness Tracker delivers detailed breakdowns on metrics such as Impressions, Views, Engagement Rates or Viewability.
 
-- Key Dimensions
+Key Dimensions:
 - Ad Viewability
 - Ad Engagement
 - Reach & Penetration Rates
@@ -100,7 +97,7 @@ To deliver granular reporting on top-of-funnel activations, the TRACKS Awareness
 
 The TRACKS Brand Health Tracker allows to highlight top-of-funnel awareness from social, media and UGC and enables to make data-driven key decisions on strategic direction and timings.
 
-- Key Dimensions
+Key Dimensions:
 - Presence Score vs Competition
 - Share of Voice (SoV)
 - Social Buzz
