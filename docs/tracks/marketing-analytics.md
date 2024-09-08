@@ -29,7 +29,7 @@ TRACKS will implement events and conversion pixels on your website to optimize l
 
 Below is an example of the Google Tag Manager code:
 
-**image**
+![Google Tag Manager Setup](/assets/marketing-analytics_gtm.png "Google Tag Manager Setup")
 
 Please refer to the [Quick Start Guide](https://support.google.com/tagmanager/answer/14842164) for more information.
 
@@ -53,7 +53,7 @@ Something about this view etc
 
 ### Installs & UA Overview
 
-*Available only when using Attribution Tracking**
+*Available only when using Attribution Tracking*
 
 Something about this view etc
 
@@ -63,7 +63,7 @@ Something about this view etc
 
 ### Creative Performance
 
-*Available with Silver, Gold or Enterprise plans**
+*Available with Silver, Gold or Enterprise plans*
 
 In TRACKS, the Creative Performance feature shows detailed performance of individual creatives and helps to optimize towards best performing creatives and avoid ad fatigue.
 
@@ -74,7 +74,7 @@ In TRACKS, the Creative Performance feature shows detailed performance of indivi
 
 ### Audience Insights
 
-*Available with Silver, Gold or Enterprise plans**
+*Available with Silver, Gold or Enterprise plans*
 
 TRACKS is able to provide granular insights into audiences based on day-to-day campaign performance, providing detailed socio-demographic information on the userbase of your game.
 
@@ -85,7 +85,7 @@ TRACKS is able to provide granular insights into audiences based on day-to-day c
 
 ### Awareness Tracker
 
-*Available with Gold or Enterprise plans**
+*Available with Gold or Enterprise plans*
 
 To deliver granular reporting on top-of-funnel activations, the TRACKS Awareness Tracker delivers detailed breakdowns on metrics such as Impressions, Views, Engagement Rates or Viewability.
 
@@ -96,7 +96,7 @@ To deliver granular reporting on top-of-funnel activations, the TRACKS Awareness
 
 ### Brand Health Tracker
 
-*Available with Gold or Enterprise plans**
+*Available with Gold or Enterprise plans*
 
 The TRACKS Brand Health Tracker allows to highlight top-of-funnel awareness from social, media and UGC and enables to make data-driven key decisions on strategic direction and timings.
 
