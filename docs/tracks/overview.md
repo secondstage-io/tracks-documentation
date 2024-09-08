@@ -39,26 +39,31 @@ Using TRACKS Attribution, our inhouse solution to track full-funnel attribution,
 *Marketing Campaign Timeline Visualisation* 
 
 **Announcement Phase**  
+
 During the announcement phase, publishers and developers aim to build awareness and excitement for their upcoming game. TRACKS helps monitor media analytics to assess the reach and impact of campaigns across multiple channels — paid advertising, social media or influencers.
 
 At this stage of the campaign, TRACKS can measure the impact of media campaigns and creative assets, track performance in the awareness funnel, and provide helpful brand health insights to support critical decision making on key marketing beats.
 
 **Pre-Order or Early Access**  
+
 In the pre-order or early access phase, upper funnel activations that drive brand recognition are still important. This stage also puts significant emphasize on measuring website traffic and optimizing conversion rates through detailed web analytics, ensuring that campaigns are reaching high quality users and delivering on wishlists or pre-purchases.
 
 TRACKS enables precise tracking of where users are coming from — whether through web traffic, referrals, paid ads, or influencer promotions. It connects campaign data with wishlists, preorders or installs, helping gaming companies identify which platforms or channels are key to create demand. 
 
 **Launch Phase**  
+
 When the game launches, TRACKS provides real-time insights into user acquisition. Here, attribution tracking becomes critical.
 
 TRACKS blends data from all sources - media, website and attribution - enabling us to identify which campaigns lead to the most sales across PC and console. This granular data allows companies to understand which players are not only visiting a storefront, but actually purchasing the game.
 
-**Post-Launch (Ongoing Campaigns + User Retention)**  
+**Post-Launch**  
+
 Beyond launch, ongoing marketing campaigns focus on retention and maximizing in-game purchases. 
 
 TRACKS continues to analyze the effectiveness of media campaigns, providing insights on how to re-engage lapsed players or drive additional in-game purchases through targeted advertising. Web analytics provide deeper insight into how players interact with updates, events, or expansions on the game's website. With postbacks enabled, attribution tracking can provide valuable data on in-game segments, allowing us to optimize for DLC sales and other events.
 
  **Summary**
+ 
 Throughout the entire customer journey, TRACKS empowers gaming companies with the marketing intelligence needed to make data-driven decisions. From the initial announcement to long after launch, it integrates media analytics, PC & console attribution, install and purchase tracking, and web analytics to provide a full-funnel view of campaign performance. This holistic approach ensures that every stage of the customer journey is optimized for maximum impact and revenue growth.
 
 ## Functionality
@@ -77,7 +82,7 @@ TRACKS uses Magic Link technology to simplify the account setup process, elimina
 
 This streamlined process enhances both security and user experience by avoiding the need for traditional passwords while ensuring account access remains secure.
 
-### “Add a  New Game” 
+### Game / Campaign Setup
 
 To add a new game to your TRACKS account, select the "Add a new game" option on the overview page.
  
