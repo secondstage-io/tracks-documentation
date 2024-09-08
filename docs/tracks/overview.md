@@ -80,6 +80,14 @@ TRACKS uses Magic Link technology to simplify the account setup process, elimina
 
 This streamlined process enhances both security and user experience by avoiding the need for traditional passwords while ensuring account access remains secure.
 
+### User Account Settings 
+
+*screenshot user account*
+
+In the user account option, you can add more information to your account, such as a profile picture, company, job title, or LinkedIn account.
+
+This information helps us to have more inisghts and get in touch with you if we need to, but is completely optional, as we deliberately try to collect as little personal information as possible.
+
 ### Game / Campaign Setup
 
 To add a new game to your TRACKS account, select the "Add a new game" option on the overview page.
@@ -92,7 +100,6 @@ Next, please select a plan from the available tiers based on the features you ne
 
 Once the form is submitted, our team will get back to you within 24 hours with a quote and assist you with the full setup.
 
-### Platform Settings 
+### Game / Campaign Settings 
 
 In an upcoming TRACKS update, you will be able to edit a game's title, change the cover image, and invite additional users to your dashboard. Until these features are available on the platform, please contact us directly to request any of these changes.
-
