@@ -88,23 +88,25 @@ After logging in, you'll be directed to the main overview. Initially, you'll see
 
 In the main menu under "Your Games," you'll find this overview. The "Attribution Tracking" section provides a high-level summary of our in-house attribution tracking solution and overall campaign setup. For more details, check out our FAQ, which addresses common questions.
 
-> ![Navigation](/assets/overview_navigation.png "Navigation")
-
 By clicking on the profile icon or your email address/profile name, you'll find links to "Profile" options as well as a sign-out option.
 
-### User Account Settings 
+The footer menu provides links to Imprint, Terms & Conditions and the Privacy Policy.
 
-*screenshot user account*
+> ![Navigation](/assets/overview_navigation.png "Navigation")
+
+### User Account Settings 
 
 In the user account option, you can add more information to your account, such as a profile picture, company, job title, or LinkedIn account.
 
 This information helps us to have more inisghts and get in touch with you if we need to, but is completely optional, as we deliberately try to collect as little personal information as possible.
 
+> ![User Account](/assets/overview_profile.png "User Account")
+
 ### Game / Campaign Setup
 
-To add a new game to your TRACKS account, select the "Add a new game" option on the overview page.
+To add a new game to your TRACKS account, select the "Add a New Game" option on the overview page.
  
-*Screenshot Tracks Overview*  
+> ![Add a New Game](/assets/overview_addgame.png "Add a New Game") 
 
 In the next step, enter basic information such as the game's title, intended platforms, release date, and Steam ID, if available. You can also upload a cover image, such as keyart from the game. If no cover image is selected, TRACKS will temporarily display a placeholder image.
 
