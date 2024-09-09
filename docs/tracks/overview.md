@@ -4,6 +4,10 @@ TRACKS delivers *marketing intelligence for gaming* by the process of gathering,
 
 TRACKS combines in-depth **marketing analytics** and **attribution tracking** to deliver actionable insights. By tracking user behavior, media performance, and campaign effectiveness at every stage of the funnel, gaming companies can identify high-impact audiences, optimize ad placements, and make data-driven decisions. This approach ensures that marketing efforts are not only measurable but also strategically targeted, maximizing Return on Ad Spend (ROAS) and overall campaign success. 
 
+!!! tip "Tip"
+
+    By leveraging data-driven insights, TRACKS empowers publishers, developers, and advertisers to seamlessly integrate marketing intelligence into their gaming campaigns, driving superior results and enhancing overall marketing strategy.
+
 > By leveraging data-driven insights, TRACKS empowers publishers, developers, and advertisers to seamlessly integrate marketing intelligence into their gaming campaigns, driving superior results and enhancing overall marketing strategy.
 
 ### Marketing Analytics
