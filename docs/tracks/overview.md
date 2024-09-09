@@ -36,7 +36,7 @@ Attribution tracking is the process of identifying and measuring which marketing
 
 ### Use Cases
 
-> ![Timeline](/assets/overview_timeline.png "Marketing Timeline")
+![Timeline](/assets/overview_timeline.png "Marketing Timeline")
 
 **Announcement Phase**  
 
