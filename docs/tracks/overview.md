@@ -88,7 +88,7 @@ After logging in, you'll be directed to the main overview. Initially, you'll see
 
 In the main menu under "Your Games," you'll find this overview. The "Attribution Tracking" section provides a high-level summary of our in-house attribution tracking solution and overall campaign setup. For more details, check out our FAQ, which addresses common questions.
 
-*screenshot*
+> ![Navigation](/assets/overview_navigation.png "Navigation")
 
 By clicking on the profile icon or your email address/profile name, you'll find links to "Profile" options as well as a sign-out option.
 
