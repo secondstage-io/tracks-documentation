@@ -13,7 +13,8 @@ We use marketing intelligence to unlock your potential through our platforms [TR
 
     Learn about the features, functionality and setup of TRACKS, Second Stage's marketing intelligence platform for gaming.
 
-    [:octicons-arrow-right-24: Getting started with TRACKS](/tracks/overview/)
+    [:octicons-arrow-right-24: Get Started with TRACKS](/tracks/overview/)
+    [:octicons-arrow-right-24: Set Up Marketing Analytics](/tracks/marketing-analytics/)
 
 -   :material-file:{ .lg .middle } __TRACKS Attribution__
 
@@ -29,15 +30,15 @@ We use marketing intelligence to unlock your potential through our platforms [TR
 
     Learn more about GATEWAY, our ad platform for gaming environments.
 
-    [:octicons-arrow-right-24: Getting started with GATEWAY](/gateway/overview/)
+    [:octicons-arrow-right-24: Get started with GATEWAY](/gateway/overview/)
 
--   :material-information:{ .lg .middle } __Glossary__
+-   :material-information:{ .lg .middle } __Data Handling & Security__
 
     ---
 
-    For more details on specific terms, see our comprehensive glossary.
+    For more details on data handling and security, see our comprehensive documentation.
 
-    [:octicons-arrow-right-24: Learn more](/glossary/)
+    [:octicons-arrow-right-24: Learn more](/tracks/data-security/)
 
 </div>
 
