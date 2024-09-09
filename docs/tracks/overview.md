@@ -80,6 +80,18 @@ TRACKS uses Magic Link technology to simplify the account setup process, elimina
 
 This streamlined process enhances both security and user experience by avoiding the need for traditional passwords while ensuring account access remains secure.
 
+### Navigation
+
+After logging in, you'll be directed to the main overview. Initially, you'll see our demo dashboard, along with an option to add your own game. After you've set up one or multiple games, they will be presented here as well. 
+
+*screenshot*
+
+In the main menu under "Your Games," you'll find this overview. The "Attribution Tracking" section provides a high-level summary of our in-house attribution tracking solution and overall campaign setup. For more details, check out our FAQ, which addresses common questions.
+
+*screenshot*
+
+By clicking on the profile icon or your email address/profile name, you'll find links to "Profile" options as well as a sign-out option.
+
 ### User Account Settings 
 
 *screenshot user account*
