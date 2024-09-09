@@ -98,6 +98,10 @@ To view a demo of our campaign dashboards, please click on the demo tile.
 
 > ![Demo](/assets/overview_demo.png "Demo")
 
+In the dashboard view, use the menu on the left to navigate between different analytics dashboards for your game. The available dashboards vary based on your plan.
+
+> ![Dashboards](/assets/overview_dashboards.png "Dashboards")
+
 ### User Account Settings 
 
 In the user account option, you can add more information to your account, such as a profile picture, company, job title, or LinkedIn account.
