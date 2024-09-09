@@ -14,6 +14,7 @@ We use marketing intelligence to unlock your potential through our platforms [TR
     Learn about the features, functionality and setup of TRACKS, Second Stage's marketing intelligence platform for gaming.
 
     [:octicons-arrow-right-24: Get Started with TRACKS](/tracks/overview/)
+    
     [:octicons-arrow-right-24: Set Up Marketing Analytics](/tracks/marketing-analytics/)
 
 -   :material-file:{ .lg .middle } __TRACKS Attribution__
