@@ -94,6 +94,10 @@ The footer menu provides links to Imprint, Terms & Conditions and the Privacy Po
 
 > ![Navigation](/assets/overview_navigation.png "Navigation")
 
+To view a demo of our campaign dashboards, please click on the demo tile.
+
+> ![Demo](/assets/overview_demo.png "Demo")
+
 ### User Account Settings 
 
 In the user account option, you can add more information to your account, such as a profile picture, company, job title, or LinkedIn account.
