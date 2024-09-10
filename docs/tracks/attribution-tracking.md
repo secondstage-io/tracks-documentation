@@ -499,6 +499,21 @@ tracks("page_view", "2S-XXXXXX");
 
 Each game will be assigned a unique token to replace "2S-XXXXX." After granting Google Tag Manager access, you'll be able to see the TRACKS JavaScript snippet deployed in your GTM container.
 
+*Example*
+
+![GTM Web Snippet](/assets/attribution_gtmwebsnippet.png)
+
+![GTM Web Snippet](/assets/attribution_datasources.png)
+
+*Integration:*
+
+If you have already set up these accounts with Second Stage as part of the [Marketing Analytics](/marketing-analytics) setup for TRACKS, there is no additional step to take.
+For more information,
+- please refer to our section [Marketing Analytics > Setup > Google Tag Manager](marketing-analytics/#google-tag-manager-integration-access) on how to set up Google Tag Manager for TRACKS
+- please refer to our section [Marketing Analytics > Setup > Google Analytics (GA4)](/marketing-analytics/#google-analytics-integration-access)  on how to set up Google Analytics  for TRACKS.
+- please refer to our section [Marketing Analytics > Setup > Steamworks](/marketing-analytics/#steamworks-integration) on how to set up Steamworks for TRACKS.
+
+
 
 ### Postbacks 
 
