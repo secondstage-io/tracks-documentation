@@ -171,7 +171,21 @@ TRACKS uses the UMM methodology to integrate three different data sources:
 
 ## Integration 
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+TRACKS using Attribution Tracking consists of four primary data source components:
+
+- Media Analytics – Integrations with media channels
+- Web Integration – Incorporating the TRACKS JS code and Google Analytics 4
+- Steamworks UTM Analytics and Traffic Breakdown
+- Attribution Measurement API
+  
+Media platforms, Google Analytics (via Google Tag Manager), and Steamworks integrate by providing access to our service account: analytics@secondstage.io.
+
+However, the TRACKS Attribution Measurement API must be deployed into your Google Cloud Platform (GCP) account (a new account will be created if one doesn't exist).
+
+The TRACKS Attribution data source collects granular data for each web visit and game open event. This data is funneled into the partitioned tracks_attribution dataset. More information regarding data retention, GDPR compliance, and the Data Processing Agreement is available in the [Data Handling & Security](/tracks/data-security/) section.
+
+Once the ELT (Extract-Load-Transform) pipeline is deployed, all data sources will be consolidated into a Google Cloud BigQuery database.
+
 
 ### Managed Service Approach
 
