@@ -92,7 +92,7 @@ This streamlined process enhances both security and user experience by avoiding 
 
 After logging in, you'll be directed to the main overview. Initially, you'll see our demo dashboard, along with an option to add your own game. After you've set up one or multiple games, they will be presented here as well. 
 
-![select APM](/assets/overview_home.png){: .zoom}
+![Overview](/assets/overview_home.png "Overview"){: .zoom}
 
 
 test new
