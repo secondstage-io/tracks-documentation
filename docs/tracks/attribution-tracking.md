@@ -12,7 +12,9 @@ With TRACKS Attribution, our proprietary full-funnel attribution tracking soluti
 
     All aspects of using TRACKS Attribution are configurable and will be tailored during your onboarding call with the Second Stage team. This documentation outlines a standard best-practice approach to building an attribution and BI suite, based on years of expertise in user acquisition, media, BI, tracking, and attribution from the Second Stage team. 
 
-### Functionality
+---
+
+## Functionality
 
 A proper attribution setup can shine a light into the "black box" of where valuable game purchases, activations or installs are coming from. Once an attribution solution is integrated, whether it's TRACKS or a third-party solution, the dashboard will display key lower-funnel metrics.
 
@@ -61,8 +63,9 @@ In addition, based on your onboarding call and the status of your game release, 
 - Influencer / Streamer Analytics metrics  
 - Brand Health metrics
 
+---
 
-### Attribution Tracking Options 
+## Attribution Tracking Options 
 
 TRACKS offers three different approaches to attribution tracking that can be implemented based on different requirements, which are detailed here. Our recommended solution for best results is the **Measured Attribution Tracking & Modeling** approach.
 
@@ -73,7 +76,7 @@ TRACKS offers three different approaches to attribution tracking that can be imp
 | Measured Attribution Tracking + Modeling (Best Practice)   | This methodology combines measured attribution (server-side) with a Markov chain modeling solution for untracked installs. This unified approach compensates for untraceable sources by redistributing untracked installs to their potential origins.  | This approach ensures up to 98% attribution accuracy within a 24-hour window, combines measured and modeled data for a complete attribution view, and increases install tracking accuracy by redistributing untracked game opens.   |
 
 
-#### Modelled Attribution Tracking
+### Modelled Attribution Tracking
 
 This method calculates conversions using our data modeling solution. Due to the specific data requirements, this approach is available only for games released through Steam.
 
@@ -96,7 +99,7 @@ TRACKS uses a Marketing Mix Modeling (MMM) approach enhanced with Steam UTM Anal
 > If you're interested in this method but don't have a landing page or are unsure of your current setup, Second Stage can help you create a landing page or game website for marketing purposes. [Contact us](https://secondstage.io/contact/) for a quote!
 
 
-#### Measured Attribution Tracking
+### Measured Attribution Tracking
 
 Using this method, installs are tracked using the TRACKS Attribution solution, which is based on a data streaming pipeline.
 
@@ -146,7 +149,7 @@ Implementation on your end can be managed by a DevOps or backend developer, or b
 > For each game added, the Second Stage Analytics team will fully support the integration, deployment and testing, starting with your onboarding call.
 
 
-#### Measured Attribution Tracking + Modeling
+### Measured Attribution Tracking + Modeling
 
 Measured Attribution Tracking combined with Modeling is the best practice approach to Attribution Tracking in PC & Console Gaming and our **recommended methodology**. 
 
@@ -171,6 +174,8 @@ TRACKS uses the UMM methodology to integrate three different data sources:
 
 > For more information on Markov Chain Attribution, Marketing Mix Modeling, or Unified Marketing Measurement, please visit our [Further Reading](https://documentation.secondstage.io/resources/) section.
 
+---
+
 ## Integration 
 
 TRACKS using Attribution Tracking consists of four primary data source components:
@@ -189,6 +194,7 @@ The TRACKS Attribution data source collects granular data for each web visit and
 Once the ELT (Extract-Load-Transform) pipeline is deployed, all data sources will be consolidated into a Google Cloud BigQuery database.
 
 ![Integration](/assets/attribution_integration-1.png)
+
 
 ### Integration Plan & Checklist
 
@@ -214,11 +220,13 @@ Next, install Google Tag Manager on your website. Using the editor access provid
 
 The TRACKS attribution solution will then be ready to collect both web and in-game events, reporting attribution metrics in the reporting suite. Ensure that campaign naming conventions and UTM taxonomies are properly implemented as outlined in your ad operations guide.
 
+
 ### Deployment
 
 !!! tip "Important:"
 
     Required for Measured Attribution Tracking and, Measured Attribution Tracking + Modeling. If you only plan to use Modeled Attribution Tracking, please refer to Web (Landing Page) Setup in the Marketing Analytics section.
+
 
 #### Hybrid Cloud Approach
 
@@ -226,6 +234,7 @@ The recommended deployment approach for TRACKS is a "hybrid-hosted" solution, si
 This approach has been streamlined by the Second Stage team to maximize the effectiveness of performance media campaigns in gaming, without introducing latency or errors to game servers. It also ensures maximum data privacy, safeguards player data, and fully complies with GDPR regulations.
 
 ![Deplyoment](/assets/attribution_deployment-1.png)
+
 
 *Branded Domain*
 
@@ -237,6 +246,7 @@ To enable your branded domain, the Second Stage team will provide a CNAME record
 We do not recommend integrating the attribution measuement solution if your game lacks a backend server for telemetry and event logging, whether planned or currently in use. In such cases, instead of implementing TRACKS Attribution Measurement API or any other vendor's solution, we suggest leveraging our attribution modeling.
 
 However, if you do have a telemetry backend server but are unable to use Google Cloud Platform for deployment, the Second Stage team can assist by hosting the attribution solution in a dedicated cloud environment for you.
+
 
 ### TRACKS Attribution Measurement API
 
@@ -252,6 +262,7 @@ For each game added, the Second Stage Analytics team provides full support for i
 ### Postbacks 
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
 
 ### Test Environment 
 
