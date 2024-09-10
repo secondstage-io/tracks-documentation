@@ -55,7 +55,8 @@ extra:
   social:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/company/secondstage/
-  homepage: https://documentation.secondstage.io    
+  homepage: https://documentation.secondstage.io
+  generator: false
   
 # Extensions 
 markdown_extensions:
