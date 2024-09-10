@@ -339,19 +339,125 @@ If your organization does not use Google Workspace (Gsuite email account), you c
 
 To track media channel acquisition sources, you need to implement the API endpoint that records acquisition events.
 
-API Endpoint: /collect
+*API Endpoint:* `/collect`
 
+*Description:* This endpoint records web events, capturing details about the acquisition source.
+
+*Method:* POST
+
+*Endpoint URL:* `https://tracks.yourgame.com/v1/collect`
+
+*Headers:*
+`Authorization:` Bearer `<API_KEY>`
+`Content-Type: application/json`
+
+Here is an example of source code for your reference:
+
+```
+# Example Python Code for web client-side
+import config
+import requests
+
+
+def track_acquisition(data):
+   headers = {
+       'Authorization': f'Bearer {config.API_KEY}',
+       'Content-Type': 'application/json'
+   }
+   try:
+       response = requests.post(f"{https://tracks.yourgame.com/v1/collect", json=data, headers=headers)
+       response.raise_for_status()
+       print('Acquisition event recorded:', response.json())
+   except requests.exceptions.HTTPError as err:
+       print('Error recording acquisition event:', err.response.json())
+
+
+acquisition_data = {
+   "event_name": "web_visit",
+   "timestamp": "2024-08-29T12:00:00Z",
+   "channel": "paid_search",
+   "campaign": "summer_sale",
+   "source": "google",
+   "medium": "cpc",
+   "term": "summer+shoes",
+   "content": "ad_1",
+   "clientId": "12345",
+   "sessionId": "abcdef123456",
+   "ip": "175.124.248.15",
+   "device": "mobile",
+   "browser": "chrome"
+}
+
+
+track_acquisition(acquisition_data)
+```
+
+To track media channel acquisition sources, you need to implement the API endpoint that records acquisition events.
+API Endpoint: `/measure`
 Description: This endpoint records web events, capturing details about the acquisition source.
-
-Method: POST
-
-Endpoint URL: https://tracks.yourgame.com/v1/collect
-
+Method: `POST`
+Endpoint URL: `https://tracks.yourgame.com/v1/collect`
 Headers:
-Authorization: Bearer <API_KEY>
-Content-Type: application/json
+`Authorization:` Bearer `<API_KEY>`
+`Content-Type: application/json`
 
-Example Source Code for your consideration:
+Here is an example of source code for your reference:
+
+```
+# Example Python Code for server-side 
+import requests
+
+
+url = "https://tracks.yourgame.com/v1/measure" 
+
+
+payload = {
+ 'user_id': '1a23fd44c21f8l5r',
+ 'event_name': 'game_open',
+ 'ip': '175.124.248.15',
+ 'timestamp': '2024-08-29T12:00:00Z',
+ 'platform': 'pc',
+ 'storefront': 'steam'
+}
+headers = {
+  'Authorization': f'Bearer {config.API_KEY}',
+}
+response = requests.request("POST", url, headers=headers, data=payload)
+print(response.text)
+```
+
+**Step 4: Testing**
+
+Test the Integration:
+
+- Click on the UTM-tagged test link and open the game for the first time.
+- Ensure your server is running and correctly configured to handle HTTP requests.
+- Trigger acquisition events manually or through your application to test the integration.
+- Check Cloud Run logging to confirm that the endpoint logs show no errors.
+- Verify on the attribution tool dashboard that acquisition events are tracked accurately.
+- Ensure that the data (channels, campaigns, sources) aligns with your expectations.
+  
+Troubleshooting:
+
+- Invalid Credentials: Confirm that your API key and secret are correct and have the necessary permissions.
+- Network Errors: Review your server’s network configuration and API base URL.
+- Data Mismatches: Ensure the event payload matches the required schema and that timestamp formats are correct.
+
+**Architecture** 
+
+![Architecture](/assets/attribution_architecture.png)
+
+### Web (Landing Page) Integration
+
+!!! tip "Important:"
+
+    Required for Modeled Attribution Tracking, Measured Attribution Tracking, Measured Attribution Tracking + Modeling.
+    By linking TRACKS with Steamworks, Google Analytics 4 and Google Tag Manager access, you will be able to use the Modeled Installs reporting feature. Please note that postbacks only work if you are using the Measured Attribution Tracking or Measured Attribution Tracking + Modeling solution. 
+
+By embedding the TRACKS JavaScript code into your landing page, device fingerprints are collected from visitors during each website session. These fingerprints are then matched with those gathered in-game, allowing for precise user attribution.
+
+To ensure accurate attribution when using your website as the attribution source, it’s important to correctly implement UTM tagging in your paid media or content creator campaigns. We recommend using the TRACKS UTM builder sheet to properly generate tracking links for your landing page (please refer to Marketing Analytics > Setup for more information).
+
 
 
 ### Postbacks 
