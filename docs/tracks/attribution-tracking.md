@@ -8,8 +8,9 @@ With TRACKS Attribution, our proprietary full-funnel attribution tracking soluti
 2. **Ad Operations Support**: Once attribution tracking is verified, the Second Stage team will assist with media platform integrations. This process requires adherence to specific naming conventions for campaigns, ad groups, and ads to ensure accurate reporting. Additionally, UTM-tagged links must be used. The Second Stage team will provide a naming convention generator sheet tailored to your chosen ad platforms or activations. If you already have a naming convention in place, TRACKS can be adapted to your mapping.   
 3. **Postback Setup**: With access to your media platforms, TRACKS will create events/pixels for game\_opens and activate the platform’s Conversion API to feed back attributed in-game data.
 
-!!! Important
-   **All aspects of using TRACKS Attribution are configurable and will be tailored during your onboarding call with the Second Stage team. This documentation outlines a standard best-practice approach to building an attribution and BI suite, based on years of expertise in user acquisition, media, BI, tracking, and attribution from the Second Stage team.**
+!!! tip "Important:"
+
+    All aspects of using TRACKS Attribution are configurable and will be tailored during your onboarding call with the Second Stage team. This documentation outlines a standard best-practice approach to building an attribution and BI suite, based on years of expertise in user acquisition, media, BI, tracking, and attribution from the Second Stage team. 
 
 ### Functionality
 
@@ -189,13 +190,40 @@ Once the ELT (Extract-Load-Transform) pipeline is deployed, all data sources wil
 
 ![Integration](/assets/attribution_integration-1.png)
 
-### Managed Service Approach
+### Integration Plan & Checklist
 
-Integration Plan & Checklist
+**Marketing Analytics Integration**
 
-### Enterprise-Level Deployment (Hybrid SaaS)
+The TRACKS data automation backend integrates seamlessly with various media platforms, starting with access to our service account at analytics@secondstage.io. 
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+1. Users begin by completing the media channel information sheet provided by Second Stage.
+2. Based on the information supplied, TRACKS generates UTM-tagged URLs, allowing media specialists to deploy these URLs across ad platforms and configure campaign names, ad groups, and creative assets.
+3. The user then inputs this information into the media platforms. Once the campaign is live, TRACKS will notify you, and the data will be available in the reporting suite the following day.
+4. By integrating with Google Tag Manager, GA4, and Steamworks, TRACKS also implements a JavaScript snippet on the landing page to enable attribution session tracking and capture Steam page click-throughs. This step also includes setting up event and conversion pixels for the media platforms.
+5. To configure postbacks—such as sending signals for game_open, install, and other in-game events back to media platforms—a system user is assigned to your account. Editor-level access to the Events Manager or Events Builder on the media platforms is required for this.
+
+If you already have a Campaign Naming Convention in place, you can provide your taxonomy to TRACKS for automatic mapping.
+
+**Attribution Tracking Integration**
+
+The Second Stage team will assist in setting up a Google Cloud Platform (GCP) project for deployment on your side. If you already have an existing GCP account, start by creating a new project and grant Project Owner access to analytics@secondstage.io.
+
+Once deployment is complete, the TRACKS Measurement API will be available for connection to your telemetry backend server.
+
+Next, install Google Tag Manager on your website. Using the editor access provided to analytics@secondstage.io, a JavaScript snippet will be deployed to track web visits through the Attribution Measurement API, capturing the first touchpoint with acquisition source data.
+
+The TRACKS attribution solution will then be ready to collect both web and in-game events, reporting attribution metrics in the reporting suite. Ensure that campaign naming conventions and UTM taxonomies are properly implemented as outlined in your ad operations guide.
+
+### Deployment
+
+!!! tip "Important:"
+
+    Required for Measured Attribution Tracking and, Measured Attribution Tracking + Modeling. If you only plan to use Modeled Attribution Tracking, please continue with 3. Web (Landing Page) Setup
+Hybrid Cloud Approach 
+
+The recommended deployment approach for TRACKS is a "hybrid-hosted" solution, similar to an on-premise setup, where all granular data is processed and stored on the publisher or developer studio’s Google Cloud servers. This method can be considered as an enterprise level solution, and we are of the opinion that it is the optimal choice for the video game industry.
+This approach has been streamlined by the Second Stage team to maximize the effectiveness of performance media campaigns in gaming, without introducing latency or errors to game servers. It also ensures maximum data privacy, safeguards player data, and fully complies with GDPR regulations.
+
 
 ### TRACKS Attribution Measurement API
 
