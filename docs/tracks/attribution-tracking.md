@@ -225,7 +225,7 @@ The TRACKS attribution solution will then be ready to collect both web and in-ga
 
 !!! tip "Important:"
 
-    Required for Measured Attribution Tracking and, Measured Attribution Tracking + Modeling. If you only plan to use Modeled Attribution Tracking, please refer to Web (Landing Page) Setup in the Marketing Analytics section.
+    Required for Measured Attribution Tracking and Measured Attribution Tracking + Modeling. If you only plan to use Modeled Attribution Tracking, please refer to Web (Landing Page) Setup in the Marketing Analytics section.
 
 
 #### Hybrid Cloud Approach
@@ -252,7 +252,7 @@ However, if you do have a telemetry backend server but are unable to use Google 
 
 !!! tip "Important:"
 
-    Required for Measured Attribution Tracking and, Measured Attribution Tracking + Modeling. If you only plan to use Modeled Attribution Tracking, please refer to Web (Landing Page) Setup in the Marketing Analytics section.
+    Required for Measured Attribution Tracking and Measured Attribution Tracking + Modeling. If you only plan to use Modeled Attribution Tracking, please refer to Web (Landing Page) Setup in the Marketing Analytics section.
 
 The Measurement API tracks the customer acquisition source, enabling you to identify which channels, campaigns, ads drive install and other in-game events. By integrating with TRACKS Attribution, you can accurately attribute conversions to the correct media sources, helping you optimize your marketing efforts.
 
@@ -320,6 +320,38 @@ The integration process involves the following steps:
 1. Log in to your TRACKS account.
 2. Navigate to Settings > API Credentials.
 3. Copy the API key and secret for use in your server configuration.
+
+**Step 2: Set Up Google Cloud Platform (GCP) Environment**
+
+1. Go to [Google Cloud Console](https://console.cloud.google.com/), sign in with your email address. Create a new Project.
+If your organization does not use Google Workspace (Gsuite email account), you can link your email following these steps: https://support.google.com/accounts/answer/176347)
+
+![Google Cloud Access](/assets/attribution_gcp.png)
+
+2. [Enable billing for your account and link to your Project](https://cloud.google.com/billing/docs/how-to/modify-project#how-to-change-ba)
+    - Microservices enabled in your Google Cloud will autoscale depending on data ingestion volume.
+    - Estimated costs for 2 million installs in a single month should be around ~$40.
+3. Go to IAM and admin, click on Grant Access, select permission: Basic -> Owner for analytics@secondstage.io
+4. The Second Stage team will be notified after access is granted and TRACKS Attribution Measurement microservices are deployed for your instance.
+5. [Your API key and secret will be entered as environment variables to Google Cloud Run functions](https://cloud.google.com/functions/docs/configuring/env-var) 
+
+**Step 3: API Endpoints** 
+
+To track media channel acquisition sources, you need to implement the API endpoint that records acquisition events.
+
+API Endpoint: /collect
+
+Description: This endpoint records web events, capturing details about the acquisition source.
+
+Method: POST
+
+Endpoint URL: https://tracks.yourgame.com/v1/collect
+
+Headers:
+Authorization: Bearer <API_KEY>
+Content-Type: application/json
+
+Example Source Code for your consideration:
 
 
 ### Postbacks 
