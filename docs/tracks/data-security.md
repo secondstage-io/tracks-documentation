@@ -1,5 +1,9 @@
 # Data Handling & Security
 
+!!! tip "Important:"
+
+    We do not provide legal advice. This page is designed to help game developers gain a better understanding of managing their players' rights when working with Second Stage. You should consult your legal counsel before making decisions about how your company complies with the evolving landscape of consumer privacy. 
+    
 Second Stage is committed to providing our partners and clients with the highest level of transparency and governance, ensuring they comply with the GDPR and CCPA at all times. As a result, privacy is a fundamental principle of TRACKS.
 
 Tracks enhances privacy by minimizing data exposure through a smart and secure hybrid cloud setup. On top, TRACKS offers API-level access to GDPR compliance tools, enabling you to efficiently manage rights such as access requests, the right to be forgotten, and opt-outs. As a managed service provider, our team is always available to support you in maintaining GDPR compliance.
@@ -75,8 +79,5 @@ Our service is designed to comply with our customers' DPAs, which we execute as 
 
 We do not offer IP truncation, as it can result in inaccurate or poor data for Measured Attribution Tracking. In this case, we recommend using a Modeled Attribution Tracking solution instead.
 
-## Disclaimer
-
-We do not provide legal advice. This page is designed to help game developers gain a better understanding of managing their players' rights when working with Second Stage. You should consult your legal counsel before making decisions about how your company complies with the evolving landscape of consumer privacy.
 
 
