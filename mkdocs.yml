@@ -2,6 +2,8 @@ site_name: Documentation
 site_url: https://documentation.secondstage.io
 extra_css:
   - stylesheets/extra.css
+extra_javascript:
+  - javascripts/extra.js
 theme:
   name: material
   logo: assets/2s-logo.png
