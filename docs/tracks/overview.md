@@ -127,7 +127,7 @@ This information helps us to have more inisghts and get in touch with you if we 
 
 To add a new game to your TRACKS account, select the "Add a New Game" option on the overview page.
  
-> ![Add a New Game](/assets/overview_addgame.png "Add a New Game") 
+![Add a New Game](/assets/overview_addgame.png "Add a New Game") 
 
 In the next step, enter basic information such as the game's title, intended platforms, release date, and Steam ID, if available. You can also upload a cover image, such as keyart from the game. If no cover image is selected, TRACKS will temporarily display a placeholder image.
 
