@@ -29,7 +29,9 @@ In Google Tag Manager, please grant Editor access to analytics@secondstage.io. T
 For guidance on installing GTM, refer to the documentation [here](https://support.google.com/tagmanager/answer/14842164).
 Below is an sample image of the Google Tag Manager integration code that needs to be implemented on your landing page. 
 
-> ![Google Tag Manager Setup](/assets/marketing-analytics_gtm.png "Google Tag Manager Setup")
+<img src="/assets/marketing-analytics_gtm.png" border="1px solid black"/>
+
+![Google Tag Manager Setup](/assets/marketing-analytics_gtm.png "Google Tag Manager Setup")
 
 #### Google Analytics Integration & Access
 
