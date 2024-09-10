@@ -326,7 +326,7 @@ The integration process involves the following steps:
 1. Go to [Google Cloud Console](https://console.cloud.google.com/), sign in with your email address. Create a new Project.
 If your organization does not use Google Workspace (Gsuite email account), you can link your email following these steps: https://support.google.com/accounts/answer/176347)
 
-![Google Cloud Access](/assets/attribution_gcp.png)
+![Google Cloud Access](/assets/attribution_GCP.png)
 
 2. [Enable billing for your account and link to your Project](https://cloud.google.com/billing/docs/how-to/modify-project#how-to-change-ba)
     - Microservices enabled in your Google Cloud will autoscale depending on data ingestion volume.
@@ -353,7 +353,7 @@ To track media channel acquisition sources, you need to implement the API endpoi
 
 Here is an example of source code for your reference:
 
-```
+```json
 # Example Python Code for web client-side
 import config
 import requests
@@ -403,7 +403,7 @@ Headers:
 
 Here is an example of source code for your reference:
 
-```
+```json
 # Example Python Code for server-side 
 import requests
 
@@ -458,6 +458,46 @@ By embedding the TRACKS JavaScript code into your landing page, device fingerpri
 
 To ensure accurate attribution when using your website as the attribution source, it’s important to correctly implement UTM tagging in your paid media or content creator campaigns. We recommend using the TRACKS UTM builder sheet to properly generate tracking links for your landing page (please refer to Marketing Analytics > Setup for more information).
 
+![Landingpage](/assets/attribution_landingpage.png)
+
+An additional benefit of using your landing page with the TRACKS JavaScript snippet is the ability to track not only paid media, but also web referrals and organic traffic. This means that even without running paid media ads, you can still monitor and report on installs generated from organic referral sources. We also recommend applying UTM tagging to your owned media, such as CRM emails and social media, to further expand your attributed install data.
+
+In addition, the TRACKS JavaScript code automatically applies UTM parameters to your outbound storefront links. When a visitor with a defined acquisition source, medium, or referral clicks on the storefront buttons and navigates to platforms like Steam, the UTM information is captured and transferred to the storefront page. This allows for seamless integration between Google Analytics and Steamworks Analytics, providing a comprehensive view of your traffic sources.
+
+Implementation of the TRACKS JavaScript code is managed by the Second Stage team and requires access to Google Tag Manager as described below. If you do not already have Google Tag Manager installed on your landing page, we can help you integrate it.
+
+By providing access to Google Tag Manager, we will be able to configure the following:
+
+- **Google Analytics 4 (GA4) for website conversion measurement and identifying session/visit sources:**
+    TRACKS integrates with GA4 to capture a session's acquisition source and access multi-channel funnel data. As mentioned in the features section, TRACKS also uses web conversions as a key source of behavioral data that is included in the reporting suite as web conversion metrics.
+If GA4 is not already set up on your site, provide us with access to Google Tag Manager at analytics@secondstage.io and we will create and configure it for you. If GA4 is already installed, granting access will enable us to audit and optimize your analytics setup for your marketing campaigns.
+
+- **Media platform web pixel tagging**: 
+    By granting Google Tag Manager and media platform access to analytics@secondstage.io, TRACKS can set up a web conversion event or pixel if one is not already in place. You can use this event to optimize your media platform campaigns in addition to Install Postbacks. Since web conversion events provide valuable insights into user behavior, it’s recommended to include them in your conversion objective campaigns. When used alongside the Installs (game_opens) event, this creates an optimized conversion funnel, helping you achieve the best possible campaign performance.
+
+Here is an example of source code for your reference:
+
+```json
+<script>
+// TRACKS by Second STAGE Web Snippet
+(function (A, S, D, F, W, E) {
+ (A.tracks =
+   A.tracks ||
+   function () {
+     (A.tracks.q = A.tracks.q || []).push(arguments);
+   }),
+   (A.tracks.q = []),
+   (A.tracks.r = 1 * new Date());
+ (W = S.createElement(D)), (E = S.getElementsByTagName(D)[0]);
+ W.async = 1;
+ W.src = F;
+ E.parentNode.insertBefore(W, E);
+})(window, document, "script", "https://cdn.secondstage.io/tracks.js");
+tracks("page_view", "2S-XXXXXX");
+</script>
+```
+
+Each game will be assigned a unique token to replace "2S-XXXXX." After granting Google Tag Manager access, you'll be able to see the TRACKS JavaScript snippet deployed in your GTM container.
 
 
 ### Postbacks 
