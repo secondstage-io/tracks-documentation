@@ -12,6 +12,12 @@ Under the GDPR, the roles of data controller and data processor are defined as f
 
 Both controllers and processors have specific responsibilities and obligations under GDPR, particularly regarding data protection, breach notifications, and agreements defining the scope of data processing.
 
+TRACKS is suggested deployed method is to use Publisher / Developer studio’s configured Google Cloud project.  Other Google Cloud microservices used include Cloud Storage, Cloud Run, Pub/Sub, Cloud Functions, Artifact Registry, and App Engine. 
+
+The system user: analytics@secondstage.io will be added as an Owner to your Google Cloud Project for operational and management purposes.  
+
+If you are unable to use GCP for deployment, Second Stage can host TRACKS in an isolated environment. This would require change in your EULA as Second Stage will need to host attribution data in the account.   
+
 ## Data Handling under GDPR regulations
 
 Second Stage TRACKS is fully compliant with GDPR regulations. There are two integration options available:
@@ -28,7 +34,9 @@ For marketing campaigns involving a website, TRACKS distinguishes between market
 
 ## Data Retention
 
-PLACEHOLDER
+Event data retention is by default 18 months and resets with new activity. This period can be adjusted upon request. Event data tables will contain one-way SHA256 hashed user IPs, user_ids, event and other supplied parameters like os_platform, storefront, acquisition source etc.  
+
+However, granular log history of the attribution inserts, such as in-game events and web visits, have a 30-day data retention period and can not be increased for only logging, error handling and record keeping purposes and doesn’t get stored in any database.   
 
 ## EULA information
 
@@ -38,16 +46,22 @@ If you need assistance, we can provide examples of EULAs or privacy agreements.
 
 ## TRACKS GDPR API
 
-For those with existing data management systems, TRACKS‘ GDPR APIs can be integrated to centralize your GDPR compliance.
+For those with existing data management systems, TRACKS‘ GDPR APIs can be integrated to centralize your GDPR compliance. 
 
-Under GDPR, personal data includes the following:
+Under GDPR, personal data includes the following: 
 
 - Online identifiers
 - IP addresses
 - User location data
-- Behavioral and demographic profiling data
+- Behavioral and demographic profiling data 
 
-Please refer to our 
+User opt-outs are managed through the GDPR Forget API, which will be provided once TRACKS is integrated into production.  
+
+Data Removal by User_id and Data Request by User_id is available via GDPR API. 
+
+The parameter for identifying a user is the user_id, using this key in your GDPR forget API call, deletes all records of the user_id permanently, and blocks the same user_id from new entries.  
+
+IP parameters will not be returned openly from the GDPR API call as they are stored with SHA256 hash.  
 
 ## Right to Access / Erasure
 
