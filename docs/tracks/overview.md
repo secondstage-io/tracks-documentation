@@ -92,12 +92,6 @@ This streamlined process enhances both security and user experience by avoiding 
 
 After logging in, you'll be directed to the main overview. Initially, you'll see our demo dashboard, along with an option to add your own game. After you've set up one or multiple games, they will be presented here as well. 
 
-test shadow 
-
-![Overview](/assets/overview_home.png#shadow "Overview")
-
-old
-
 ![Overview](/assets/overview_home.png "Overview")
 
 In the main menu under "Your Games," you'll find this overview. The "Attribution Tracking" section provides a high-level summary of our in-house attribution tracking solution and overall campaign setup. For more details, check out our FAQ, which addresses common questions.
@@ -106,15 +100,15 @@ By clicking on the profile icon or your email address/profile name, you'll find 
 
 The footer menu provides links to Imprint, Terms & Conditions and the Privacy Policy.
 
-> ![Navigation](/assets/overview_navigation.png "Navigation")
+![Navigation](/assets/overview_navigation.png "Navigation")
 
 To view a demo of our campaign dashboards, please click on the demo tile.
 
-> ![Demo](/assets/overview_demo.png "Demo")
+![Demo](/assets/overview_demo.png "Demo")
 
 In the dashboard view, use the menu on the left to navigate between different analytics dashboards for your game. The available dashboards vary based on your plan.
 
-> ![Dashboards](/assets/overview_dashboards.png "Dashboards")
+![Dashboards](/assets/overview_dashboards.png "Dashboards")
 
 ### User Account Settings 
 
@@ -122,7 +116,7 @@ In the user account option, you can add more information to your account, such a
 
 This information helps us to have more inisghts and get in touch with you if we need to, but is completely optional, as we deliberately try to collect as little personal information as possible.
 
-> ![User Account](/assets/overview_profile.png "User Account")
+![User Account](/assets/overview_profile.png "User Account")
 
 ### Game / Campaign Setup
 
