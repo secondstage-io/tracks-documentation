@@ -218,16 +218,36 @@ The TRACKS attribution solution will then be ready to collect both web and in-ga
 
 !!! tip "Important:"
 
-    Required for Measured Attribution Tracking and, Measured Attribution Tracking + Modeling. If you only plan to use Modeled Attribution Tracking, please continue with 3. Web (Landing Page) Setup
-Hybrid Cloud Approach 
+    Required for Measured Attribution Tracking and, Measured Attribution Tracking + Modeling. If you only plan to use Modeled Attribution Tracking, please refer to Web (Landing Page) Setup in the Marketing Analytics section.
+
+#### Hybrid Cloud Approach
 
 The recommended deployment approach for TRACKS is a "hybrid-hosted" solution, similar to an on-premise setup, where all granular data is processed and stored on the publisher or developer studio’s Google Cloud servers. This method can be considered as an enterprise level solution, and we are of the opinion that it is the optimal choice for the video game industry.
 This approach has been streamlined by the Second Stage team to maximize the effectiveness of performance media campaigns in gaming, without introducing latency or errors to game servers. It also ensures maximum data privacy, safeguards player data, and fully complies with GDPR regulations.
 
+![Deplyoment](/assets/attribution_deployment-1.png)
+
+*Branded Domain*
+
+Once the TRACKS backend is deployed in your Google Cloud Platform instance, you'll have the option to whitelabel the Measurement API endpoint domain. This feature is not only for branding purposes but also provides greater control over privacy and compliance with client-side CORS (Cross-Origin Resource Sharing) policies.
+To enable your branded domain, the Second Stage team will provide a CNAME record for you to add through your DNS provider. The default suggested domain is a subdomain: tracks./[mygame/].com.
+
+#### Managed Service Approach
+ 
+We do not recommend integrating the attribution measuement solution if your game lacks a backend server for telemetry and event logging, whether planned or currently in use. In such cases, instead of implementing TRACKS Attribution Measurement API or any other vendor's solution, we suggest leveraging our attribution modeling.
+
+However, if you do have a telemetry backend server but are unable to use Google Cloud Platform for deployment, the Second Stage team can assist by hosting the attribution solution in a dedicated cloud environment for you.
 
 ### TRACKS Attribution Measurement API
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+!!! tip "Important:"
+
+    Required for Measured Attribution Tracking and, Measured Attribution Tracking + Modeling. If you only plan to use Modeled Attribution Tracking, please refer to Web (Landing Page) Setup in the Marketing Analytics section.
+
+To integrate with TRACKS Attribution, you'll need to create and implement a lightweight server-side HTTP request as a webhook on your backend, as the Measurement API is the only supported method. You can view a pseudo-code example for building the API request by clicking "View Sample Code Snippet" below.
+
+For each game added, the Second Stage Analytics team provides full support for integration, deployment, and testing, starting with the onboarding call.
+
 
 ### Postbacks 
 
