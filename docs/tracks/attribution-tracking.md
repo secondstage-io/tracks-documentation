@@ -342,7 +342,7 @@ To track media channel acquisition sources, you need to implement the API endpoi
 ???+ tip "Implementation API endpoint"
 
     Please see pseudo code examples for API endpoint implementation here.
-
+    
     === "API endpoint `collect`"
 
         *API Endpoint:* `/collect`
@@ -398,7 +398,7 @@ To track media channel acquisition sources, you need to implement the API endpoi
         track_acquisition(acquisition_data)
         ```
 
-    === "API Endpoint `measure`"
+    === "API Endpoint measure"
 
         *API Endpoint:* `/measure`
 
