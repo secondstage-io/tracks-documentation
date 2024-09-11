@@ -14,11 +14,11 @@ Marketing analytics refers to the process of collecting, measuring, and analyzin
 
 **Why it’s important**:
 
-- **Optimizes Spend**: Helps allocate budget to the most effective campaigns and creative assets.
+- [x] **Optimizes Spend**: Helps allocate budget to the most effective campaigns and creative assets.
 
-- **Improves Targeting**: By understanding which ads work for specific audiences, gaming companies can sharpen their user acquisition strategies.
+- [x] **Improves Targeting**: By understanding which ads work for specific audiences, gaming companies can sharpen their user acquisition strategies.
 
-- **Increases Engagement**: Marketing analytics helps ensure that campaigns are not only driving installs but also leading to long-term engagement and in-game purchases. 
+- [x] **Increases Engagement**: Marketing analytics helps ensure that campaigns are not only driving installs but also leading to long-term engagement and in-game purchases. 
 
 !!! tip "Important:"
 
@@ -30,11 +30,11 @@ Attribution tracking is the process of identifying and measuring which marketing
 
 **Why it’s important**:
 
-- **Maximizes ROAS**: It helps allocate resources to the most effective campaigns.
+- [x] **Maximizes ROAS**: It helps allocate resources to the most effective campaigns.
 
-- **Optimizes User Acquisition**: By knowing which sources bring in high-quality players, companies can focus on attracting more of them.
+- [x] **Optimizes User Acquisition**: By knowing which sources bring in high-quality players, companies can focus on attracting more of them.
 
-- **Informs Strategy**: Data-driven insights from attribution tracking help improve future marketing efforts and boost overall performance. 
+- [x] **Informs Strategy**: Data-driven insights from attribution tracking help improve future marketing efforts and boost overall performance. 
 
 !!! tip "Important:"
 
