@@ -4,10 +4,9 @@
 
 TRACKS integrates ad, website and attribution data into an holistic view to enable easy comparison between channels, GEOs, beats and more at a glance. Created using the combined experience and perspective of performance media and gaming experts over the years, our marketing analytics reports are designed to show each dimension combination to provide clear picture to campaign performance.
 
-??? question "What type of data is tracked?"
+???+ question "What type of data is tracked?"
 
     TRACKS combines Media Performance, Website and Attribution Data.
-
 
 ## Setup
 
@@ -17,8 +16,66 @@ Next, follow the steps below to allow us to connect your campaign data to our ma
 
 ### Media Platforms & Ad Networks Integration
 
-Some text
-Example Gsheet for Tracking Links
+This section outlines the integration of major media channels for media analytics reporting, ad operations, and postbacks. It is recommended that you complete the integration of each channel one at a time, in collaboration with the Second Stage team, to ensure proper attribution setup.
+
+!!!+ info "One-time configuration"
+
+    Once a channel is integrated, there's no need to return to this step for future campaigns. This one-time platform configuration will enable comprehensive marketing analytics reporting for TRACKS. With the ad operations guide, you can easily launch new campaigns without further assistance.
+
+#### Google Ads Integration
+
+In your Google Ads account, click the Admin icon.
+
+1. Navigate to Access and Security, then click the `plus` icon to add a new user.
+2. Invite analytics@secondstage.io with `Standard` access permissions.
+3. Follow the Campaign, Ad Set, and Ad naming conventions provided in the builder sheet shared by the Second Stage team.
+4. Ensure your ad creatives use a UTM-tagged link template.
+
+[→ Google Ads Setup Guide](https://support.google.com/google-ads/answer/6372672)
+
+![Google Ads Setup](/assets/marketinganalytics_googleads.png)
+
+#### Meta Ads Integration
+
+1. Invite analytics@secondstage.io to your Ad Account and Business Manager with `Reader` permissions (ads reporting).
+2. Share your Ad Account ID and Business Manager ID with the Second Stage team.
+3. Follow the Campaign, Ad Set, and Ad naming conventions provided in the builder sheet shared by the Second Stage team.
+4. Ensure your ad creatives use a UTM-tagged link template.
+
+![Meta Ads Setup](/assets/marketinganalytics_meta.png)
+
+#### TikTok Ads Integration
+
+1. Log in to your TikTok for Business account.
+2. Navigate to the Members tab and click Invite Member.
+3. Invite analytics@secondstage.io to your Ad Account and Business Manager with `Standard` permissions (assets and ad accounts).
+4. Follow the Campaign, Ad Set, and Ad naming conventions provided in the builder sheet shared by the Second Stage team.
+5. Ensure your ad creatives use a UTM-tagged link template.
+
+![TikTok Ads Setup](/assets/marketinganalytics_tiktok.png)
+
+#### X Ads Integration
+
+1. In your ads account, select "Edit access to account" from the drop-down menu.
+2. On the multi-user page, click "Add access" and grant access to @2s-analytics with `Account Administrator` permissions (or invite analytics@secondstage.io).
+3. Share your handle and ad account details with the Second Stage team.
+4. Follow the Campaign, Ad Set, and Ad naming conventions provided in the builder sheet shared by the Second Stage team.
+5. Use UTM-tagged links in your ad creatives. (Note: X Ads does not support macros, so ensure each ad creative has the correct landing page URL.)
+
+![X Ads Setup](/assets/marketinganalytics_xads.png)
+
+#### Reddit Ads Integration
+
+1. Contact the Reddit team to have your ad account whitelisted for using the Reddit Ads API.
+2. In the upper right-hand corner, click your account name and select ‘Switch user’ from the drop-down menu.
+3. Choose the account you want to manage.
+4. Grant Business Member access to analytics@secondstage.io with the following permissions: Ad Account Editor, Conversions, Reporting, History, and Analytics.
+5. Follow the Campaign, Ad Set, and Ad naming conventions provided in the builder sheet shared by the Second Stage team.
+6. Ensure your ad creatives use UTM-tagged links.
+
+[→ Reddit Ads Setup Guide](https://business.reddithelp.com/helpcenter/s/article/Add-users-to-a-Reddit-Ads-account)
+
+![Reddit Ads Setup](/assets/marketinganalytics_reddit.png)
 
 ### Web Analytics Integration (Landing page)
 
@@ -46,72 +103,6 @@ If your game is available on Steam, please grant us access by sending an invitat
 You can find the "Invite New User" section in Steamworks by navigating to Steamworks → Users & Permissions → Invite New User.
 
 ![Steamworks Setup](/assets/marketinganalytics_steamaccess.png "Steamworks Setup")
-
-## Guide
-
-This guide provides a comprehensive overview of each marketing analytics dashboard within the TRACKS platform, including visible metrics, key insights, and best practices for maximizing their usefulness.
-
-### Campaign Overview
-
-Something about this view etc
-
-### Installs & UA Overview
-
-*Available only when using Attribution Tracking*
-
-Something about this view etc
-
-### Performance Overview
-
-Something about this view etc
-
-### Creative Performance
-
-*Available with Silver, Gold or Enterprise plans*
-
-In TRACKS, the Creative Performance feature shows detailed performance of individual creatives and helps to optimize towards best performing creatives and avoid ad fatigue.
-
-Key Dimensions:
-- Display and Video Performance
-- Creative Performance by GEO, Audience
-- A/B Comparison
-
-### Audience Insights
-
-*Available with Silver, Gold or Enterprise plans*
-
-TRACKS is able to provide granular insights into audiences based on day-to-day campaign performance, providing detailed socio-demographic information on the userbase of your game.
-
-Key Dimensions:
-- Users per country / city / gender / age
-- Campaign KPI per age and gender
-- User interest and engagement
-
-### Awareness Tracker
-
-*Available with Gold or Enterprise plans*
-
-To deliver granular reporting on top-of-funnel activations, the TRACKS Awareness Tracker delivers detailed breakdowns on metrics such as Impressions, Views, Engagement Rates or Viewability.
-
-Key Dimensions:
-- Ad Viewability
-- Ad Engagement
-- Reach & Penetration Rates
-
-### Brand Health Tracker
-
-*Available with Gold or Enterprise plans*
-
-The TRACKS Brand Health Tracker allows to highlight top-of-funnel awareness from social, media and UGC and enables to make data-driven key decisions on strategic direction and timings.
-
-Key Dimensions:
-- Presence Score vs Competition
-- Share of Voice (SoV)
-- Social Buzz
-
-### Week over Week Comparison
-
-Something about this view etc
 
 ## Media Services
 
