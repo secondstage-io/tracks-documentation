@@ -80,6 +80,8 @@ markdown_extensions:
       permalink: true
       title: Table of contents
       permalink: true
+  - pymdownx.tabbed:
+      alternate_style: true
 
 plugins:
   - search
