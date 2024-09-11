@@ -299,7 +299,7 @@ The Measurement API Endpoint requires the following parameters:
 - Platform
 - Storefront
 
-??? question "API Request Pseudo-code example"
+??? abstract "API Request Pseudo-code example"
 
     ```json
     # Example Python Code for server-side telemetry
@@ -375,44 +375,46 @@ To track media channel acquisition sources, you need to implement the API endpoi
 
     Here is an example of source code for your reference:
 
-    ```json
-    # Example Python Code for web client-side
-    import config
-    import requests
+    ??? abstract "Pseudo-code example"
 
-
-    def track_acquisition(data):
-       headers = {
-           'Authorization': f'Bearer {config.API_KEY}',
-           'Content-Type': 'application/json'
-       }
-       try:
-           response = requests.post(f"{https://tracks.yourgame.com/v1/collect", json=data, headers=headers)
-           response.raise_for_status()
-           print('Acquisition event recorded:', response.json())
-       except requests.exceptions.HTTPError as err:
-           print('Error recording acquisition event:', err.response.json())
-
-
-    acquisition_data = {
-       "event_name": "web_visit",
-       "timestamp": "2024-08-29T12:00:00Z",
-       "channel": "paid_search",
-       "campaign": "summer_sale",
-       "source": "google",
-       "medium": "cpc",
-       "term": "steamsale",
-       "content": "ad_1",
-       "clientId": "12345",
-       "sessionId": "abcdef123456",
-       "ip": "175.124.248.15",
-       "device": "mobile",
-       "browser": "chrome"
-    }
-
-
-    track_acquisition(acquisition_data)
-    ```
+        ```json
+        # Example Python Code for web client-side
+        import config
+        import requests
+    
+    
+        def track_acquisition(data):
+           headers = {
+               'Authorization': f'Bearer {config.API_KEY}',
+               'Content-Type': 'application/json'
+           }
+           try:
+               response = requests.post(f"{https://tracks.yourgame.com/v1/collect", json=data, headers=headers)
+               response.raise_for_status()
+               print('Acquisition event recorded:', response.json())
+           except requests.exceptions.HTTPError as err:
+               print('Error recording acquisition event:', err.response.json())
+    
+    
+        acquisition_data = {
+           "event_name": "web_visit",
+           "timestamp": "2024-08-29T12:00:00Z",
+           "channel": "paid_search",
+           "campaign": "summer_sale",
+           "source": "google",
+           "medium": "cpc",
+           "term": "steamsale",
+           "content": "ad_1",
+           "clientId": "12345",
+           "sessionId": "abcdef123456",
+           "ip": "175.124.248.15",
+           "device": "mobile",
+           "browser": "chrome"
+        }
+    
+    
+        track_acquisition(acquisition_data)
+        ```
 
 === "API Endpoint `measure`"
 
@@ -429,27 +431,52 @@ To track media channel acquisition sources, you need to implement the API endpoi
     `Content-Type: application/json`
 
     Here is an example of source code for your reference:
+    
+    ??? abstract "Pseudo-code example"
 
-    ```json
-    # Example Python Code for server-side 
-    import requests
+        ```json
+        # Example Python Code for server-side telemetry
+        import requests
+        
+        
+        url = "https://tracks.your-game.com/measure"  
+        
+        
+        payload = {
+         'user_id': '1a23fd44c21f8l5r',
+         'event_name': 'game_open',
+         'ip': '175.124.248.15',
+         'time_stamp': '1724094783',
+         'platform': 'pc',
+         'storefront': 'steam'
+        }
+        headers = {
+         'Authorization': 'Bearer API_KEY_TOKEN'
+        }
+        response = requests.request("POST", url, headers=headers, data=payload)
+        print(response.text)   
+        ```
 
-    url = "https://tracks.yourgame.com/v1/measure" 
-
-    payload = {
-     'user_id': '1a23fd44c21f8l5r',
-     'event_name': 'game_open',
-     'ip': '175.124.248.15',
-     'timestamp': '2024-08-29T12:00:00Z',
-     'platform': 'pc',
-     'storefront': 'steam'
-    }
-    headers = {
-      'Authorization': f'Bearer {config.API_KEY}',
-    }
-    response = requests.request("POST", url, headers=headers, data=payload)
-    print(response.text)
-    ```
+        ```json
+        # Example Python Code for server-side 
+        import requests
+    
+        url = "https://tracks.yourgame.com/v1/measure" 
+    
+        payload = {
+         'user_id': '1a23fd44c21f8l5r',
+         'event_name': 'game_open',
+         'ip': '175.124.248.15',
+         'timestamp': '2024-08-29T12:00:00Z',
+         'platform': 'pc',
+         'storefront': 'steam'
+        }
+        headers = {
+          'Authorization': f'Bearer {config.API_KEY}',
+        }
+        response = requests.request("POST", url, headers=headers, data=payload)
+        print(response.text)
+        ```
 
 #### Architecture 
 
@@ -485,25 +512,26 @@ If GA4 is not already set up on your site, provide us with access to Google Tag 
 
 Here is an example of source code for your reference:
 
-```json
-<script>
-// TRACKS by Second STAGE Web Snippet
-(function (A, S, D, F, W, E) {
- (A.tracks =
-   A.tracks ||
-   function () {
-     (A.tracks.q = A.tracks.q || []).push(arguments);
-   }),
-   (A.tracks.q = []),
-   (A.tracks.r = 1 * new Date());
- (W = S.createElement(D)), (E = S.getElementsByTagName(D)[0]);
- W.async = 1;
- W.src = F;
- E.parentNode.insertBefore(W, E);
-})(window, document, "script", "https://cdn.secondstage.io/tracks.js");
-tracks("page_view", "2S-XXXXXX");
-</script>
-```
+??? abstract "Pseudo-code example"
+    ```json
+    <script>
+    // TRACKS by Second STAGE Web Snippet
+    (function (A, S, D, F, W, E) {
+     (A.tracks =
+       A.tracks ||
+       function () {
+         (A.tracks.q = A.tracks.q || []).push(arguments);
+       }),
+       (A.tracks.q = []),
+       (A.tracks.r = 1 * new Date());
+     (W = S.createElement(D)), (E = S.getElementsByTagName(D)[0]);
+     W.async = 1;
+     W.src = F;
+     E.parentNode.insertBefore(W, E);
+    })(window, document, "script", "https://cdn.secondstage.io/tracks.js");
+    tracks("page_view", "2S-XXXXXX");
+    </script>
+    ```
 
 Each game will be assigned a unique token to replace "2S-XXXXX." After granting Google Tag Manager access, you'll be able to see the TRACKS JavaScript snippet deployed in your GTM container.
 
