@@ -24,7 +24,7 @@ Second Stage TRACKS is fully compliant with GDPR regulations. For the highest le
 
 Data Sent to the customers’ server: In this method, all data is sent directly to the customer’s server at their location. TRACKS does not collect any data on its side. This means it is the customer’s responsibility to ensure that proper opt-in and opt-out mechanisms are in place. 
 
-Our suggested deployed method is to use publisher's or studio’s configured Google Cloud project.  Other Google Cloud microservices used include Cloud Storage, Cloud Run, Pub/Sub, Cloud Functions, Artifact Registry, and App Engine. The system user analytics@secondstage.io will be added as an Owner to your Google Cloud Project for operational and management purposes. Learn more about this solution in our [deplyoment guide](/tracks/attribution-tracking/#deployment).
+Our suggested deployed method is to use publisher's or studio’s configured Google Cloud project.  Other Google Cloud microservices used include Cloud Storage, Cloud Run, Pub/Sub, Cloud Functions, Artifact Registry, and App Engine. The system user analytics@secondstage.io will be added as an Owner to your Google Cloud Project for operational and management purposes. Learn more about this solution in our [deployment guide](/tracks/attribution-tracking/#deployment).
 
 If you are unable to use GCP for deployment, Second Stage can support you in setting up an account. 
 
