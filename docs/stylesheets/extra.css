@@ -4,6 +4,6 @@
   --md-primary-fg-color--dark:  #90030C;
 }
 
-img[src$="#shadow"] {
-  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5); 
+.mdx-columns {
+  columns: 2 auto;
 }
