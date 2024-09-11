@@ -376,8 +376,8 @@ To track media channel acquisition sources, you need to implement the API endpoi
 
     Here is an example of source code for your reference:
 
-    ??? abstract "Pseudo-code example"
-
+    ??? abstract "Pseudo-code example"    
+    ```
         ```json
         # Example Python Code for web client-side
         import config
@@ -416,16 +416,17 @@ To track media channel acquisition sources, you need to implement the API endpoi
     
         track_acquisition(acquisition_data)
         ```
+    ```
 
 === "API Endpoint `measure`"
-
+    ```
     *API Endpoint:* `/measure`
 
     Description: This endpoint records web events, capturing details about the acquisition source.
 
     *Method:* `POST`
 
-    *Endpoint URL:* `https://tracks.yourgame.com/v1/collect`
+    *Endpoint URL:* `https://tracks.yourgame.com/v1/measure`
 
     *Headers:*
     `Authorization:` Bearer `<API_KEY>`
@@ -434,32 +435,8 @@ To track media channel acquisition sources, you need to implement the API endpoi
     Here is an example of source code for your reference:
     
     ??? abstract "Pseudo-code example"
-
         ```json
         # Example Python Code for server-side telemetry
-        import requests
-        
-        
-        url = "https://tracks.your-game.com/measure"  
-        
-        
-        payload = {
-         'user_id': '1a23fd44c21f8l5r',
-         'event_name': 'game_open',
-         'ip': '175.124.248.15',
-         'time_stamp': '1724094783',
-         'platform': 'pc',
-         'storefront': 'steam'
-        }
-        headers = {
-         'Authorization': 'Bearer API_KEY_TOKEN'
-        }
-        response = requests.request("POST", url, headers=headers, data=payload)
-        print(response.text)   
-        ```
-
-        ```json
-        # Example Python Code for server-side 
         import requests
     
         url = "https://tracks.yourgame.com/v1/measure" 
@@ -478,6 +455,7 @@ To track media channel acquisition sources, you need to implement the API endpoi
         response = requests.request("POST", url, headers=headers, data=payload)
         print(response.text)
         ```
+    ```
 
 #### Architecture 
 
