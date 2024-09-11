@@ -24,13 +24,21 @@ These install metrics can be further broken down by storefront or platform, such
 
 Based on your average unit price, TRACKS can estimate revenue per install and report ROAS (Return on Ad Spend) percentages. This allows you to compare and analyze performance across multiple dimensions, including
 
-| :material-check: Date | :material-check: Target |
-| :material-check: Channel  | :material-check: Target Audience | 
-| :material-check: Campaign | :material-check: Targeting |  
-| :material-check: AdGroup (Ad Set)| :material-check: Targeting |   
-| :material-check: Creative (Ad)| :material-check: Ad Type |  
-| :material-check: GEO| :material-check: Ad Format |   
-| :material-check: Strategy| :material-check: Placement | 
+<div class="mdx-columns" markdown>
+:material-check: Date 
+:material-check: Channel 
+:material-check: Campaign 
+:material-check: AdGroup (Ad Set)
+:material-check: Creative (Ad)| 
+:material-check: GEO| 
+:material-check: Strategy
+:material-check: Target 
+:material-check: Target Audience 
+:material-check: Targeting   
+:material-check: Ad Type | 
+:material-check: Ad Format  
+:material-check: Placement 
+</div>
  
 In addition to tracking in-game events, web conversions are critical to understanding the user journey. TRACKS can report on web conversions such as Steam, PS, Xbox, Nintendo and Epic storefront button clicks, completing the event funnel for your user acquisition media campaigns.
 
@@ -80,13 +88,15 @@ This method calculates conversions using our data modeling solution. Due to the 
    
 The following metrics will be available:
 
-- Measured Installs (from Steamworks UTM Analytics)
-- Modeled Installs
-- Estimated CPI
-- eCPI
-- Web Conversions
-- CR% (Conversion Rate)
-- ROAS (Return on Ad Spend)
+<div class="mdx-columns" markdown>
+- [x] Measured Installs (from Steamworks UTM Analytics)
+- [x] Modeled Installs
+- [x] Estimated CPI
+- [x] eCPI
+- [x] Web Conversions
+- [x] CR% (Conversion Rate)
+- [x] ROAS (Return on Ad Spend)
+</div>
 
 TRACKS uses a Marketing Mix Modeling (MMM) approach enhanced with Steam UTM Analytics, Traffic Breakdown data and Google Analytics (GA4) data. If you don't have a website or don't use it as a landing page, the efficiency of the model is reduced by 30% because it relies solely on Steam UTM Analytics, Visits and Traffic data.
 
