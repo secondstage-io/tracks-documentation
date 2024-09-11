@@ -509,8 +509,11 @@ Each game will be assigned a unique token to replace "2S-XXXXX." After granting 
 
 If you have already set up these accounts with Second Stage as part of the [Marketing Analytics](/marketing-analytics) setup for TRACKS, there is no additional step to take.
 For more information,
+
 - please refer to our section [Marketing Analytics > Setup > Google Tag Manager](marketing-analytics/#google-tag-manager-integration-access) on how to set up Google Tag Manager for TRACKS
+  
 - please refer to our section [Marketing Analytics > Setup > Google Analytics (GA4)](/marketing-analytics/#google-analytics-integration-access)  on how to set up Google Analytics  for TRACKS.
+  
 - please refer to our section [Marketing Analytics > Setup > Steamworks](/marketing-analytics/#steamworks-integration) on how to set up Steamworks for TRACKS.
 
 
