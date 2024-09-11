@@ -140,26 +140,27 @@ If any of these parameters are not currently collected by your telemetry server,
 
 Below is a pseudocode snippet that demonstrates how to build the API request. The API should be triggered every time a game_open (session start) event is logged in your telemetry system. If you choose to host TRACKS Attribution on your cloud servers, the API endpoint domain will be updated accordingly.
 
-```json
-# Example Python Code for server-side
-   import requests
-
-
-   url = "https://api.secondstage.io/tracks"  # (or https://api.your-game.com/tracks)
-   payload = {
-     'user_id': '1a23fd44c21f8l5r',
-     'event_name': 'game_open',
-     'ip': '175.124.248.15',
-     'time_stamp': '1724094783',
-     'platform': 'pc',
-     'storefront': 'steam'
-   }
-   headers = {
-     'Authorization': 'Bearer API_KEY_TOKEN'
-   }
-   response = requests.request("POST", url, headers=headers, data=payload)
-   print(response.text)   
-```
+??? abstract "Pseudo-code example"
+    ```json
+    # Example Python Code for server-side
+       import requests
+    
+    
+       url = "https://api.secondstage.io/tracks"  # (or https://api.your-game.com/tracks)
+       payload = {
+         'user_id': '1a23fd44c21f8l5r',
+         'event_name': 'game_open',
+         'ip': '175.124.248.15',
+         'time_stamp': '1724094783',
+         'platform': 'pc',
+         'storefront': 'steam'
+       }
+       headers = {
+         'Authorization': 'Bearer API_KEY_TOKEN'
+       }
+       response = requests.request("POST", url, headers=headers, data=payload)
+       print(response.text)   
+    ```
 
 Implementation on your end can be managed by a DevOps or backend developer, or by your business intelligence / data science teams - game developers do not need to be directly involved. On average, the process should take about 2 hours for a mid-level backend developer or data engineer.
 
