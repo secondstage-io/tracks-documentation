@@ -32,7 +32,7 @@ Alternatively we are able to host TRACKS in an isolated environment. Here, the d
 
 *Data Transfer Compliance:* Transferring data from an EU client to the US requires a strict EULA agreement and user consent. TRACKS’ default cloud servers are located in the EU (Google Cloud Frankfurt). Per request, Second Stage can offer both EU-based and US-based cloud servers. 
 
-!!! tip "PII Compliance"
+!!! info "PII Compliance"
 
     TRACKS handles PII in a standard manner, similar to other telemetric data collection vendors. While data is collected at the user level, it is processed in a pseudonymized and aggregated form. The primary PII concern is the client IP, which is collected as a parameter through the API. This information is not stored openly but is instead hashed using a non-reversible method, with a 30-day data retention period. The reporting suite only provides aggregated data, not user-level data, ensuring that no PII is stored or accessible.
 
