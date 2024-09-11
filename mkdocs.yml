@@ -87,6 +87,7 @@ markdown_extensions:
 
 plugins:
   - search
+  - glightbox
 
 copyright: |
   &copy; 2024 <a href="https://secondstage.io"  target="_blank" rel="noopener">Second Stage GmbH</a>
