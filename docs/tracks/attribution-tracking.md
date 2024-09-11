@@ -26,17 +26,29 @@ Based on your average unit price, TRACKS can estimate revenue per install and re
 
 <div class="mdx-columns" markdown>
 :material-check: Date 
+    
 :material-check: Channel 
+
 :material-check: Campaign 
+
 :material-check: AdGroup (Ad Set)
-:material-check: Creative (Ad)| 
-:material-check: GEO| 
+
+:material-check: Creative (Ad)
+
+:material-check: GEO
+
 :material-check: Strategy
-:material-check: Target 
+
+:material-check: Target
+
 :material-check: Target Audience 
-:material-check: Targeting   
-:material-check: Ad Type | 
-:material-check: Ad Format  
+
+:material-check: Targeting 
+
+:material-check: Ad Type
+
+:material-check: Ad Format
+
 :material-check: Placement 
 </div>
  
