@@ -338,10 +338,6 @@ If your organization does not use Google Workspace (Gsuite email account), you c
 **Step 3: API Endpoints** 
 
 To track media channel acquisition sources, you need to implement the API endpoint that records acquisition events.
-
-???+ tip "Implementation API endpoint"
-
-    Please see pseudo code examples for API endpoint implementation here.
     
     === "API endpoint `collect`"
 
