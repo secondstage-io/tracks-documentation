@@ -82,6 +82,8 @@ markdown_extensions:
       permalink: true
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
 
 plugins:
   - search
