@@ -339,92 +339,101 @@ If your organization does not use Google Workspace (Gsuite email account), you c
 
 To track media channel acquisition sources, you need to implement the API endpoint that records acquisition events.
 
-*API Endpoint:* `/collect`
+???+ tip "Implementation API endpoint"
 
-*Description:* This endpoint records web events, capturing details about the acquisition source.
+    Please see pseudo code examples for API endpoint implementation here.
 
-*Method:* POST
+    === "API endpoint `collect`"
 
-*Endpoint URL:* `https://tracks.yourgame.com/v1/collect`
+        *API Endpoint:* `/collect`
 
-*Headers:*
-`Authorization:` Bearer `<API_KEY>`
-`Content-Type: application/json`
+        *Description:* This endpoint records web events, capturing details about the acquisition source.
 
-Here is an example of source code for your reference:
+        *Method:* POST
 
-```json
-# Example Python Code for web client-side
-import config
-import requests
+        *Endpoint URL:* `https://tracks.yourgame.com/v1/collect`
 
+        *Headers:*
+        `Authorization:` Bearer `<API_KEY>`
+        `Content-Type: application/json`
 
-def track_acquisition(data):
-   headers = {
-       'Authorization': f'Bearer {config.API_KEY}',
-       'Content-Type': 'application/json'
-   }
-   try:
-       response = requests.post(f"{https://tracks.yourgame.com/v1/collect", json=data, headers=headers)
-       response.raise_for_status()
-       print('Acquisition event recorded:', response.json())
-   except requests.exceptions.HTTPError as err:
-       print('Error recording acquisition event:', err.response.json())
+        Here is an example of source code for your reference:
+
+        ```json
+        # Example Python Code for web client-side
+        import config
+        import requests
 
 
-acquisition_data = {
-   "event_name": "web_visit",
-   "timestamp": "2024-08-29T12:00:00Z",
-   "channel": "paid_search",
-   "campaign": "summer_sale",
-   "source": "google",
-   "medium": "cpc",
-   "term": "summer+shoes",
-   "content": "ad_1",
-   "clientId": "12345",
-   "sessionId": "abcdef123456",
-   "ip": "175.124.248.15",
-   "device": "mobile",
-   "browser": "chrome"
-}
+        def track_acquisition(data):
+           headers = {
+               'Authorization': f'Bearer {config.API_KEY}',
+               'Content-Type': 'application/json'
+           }
+           try:
+               response = requests.post(f"{https://tracks.yourgame.com/v1/collect", json=data, headers=headers)
+               response.raise_for_status()
+               print('Acquisition event recorded:', response.json())
+           except requests.exceptions.HTTPError as err:
+               print('Error recording acquisition event:', err.response.json())
 
 
-track_acquisition(acquisition_data)
-```
-
-To track media channel acquisition sources, you need to implement the API endpoint that records acquisition events.
-API Endpoint: `/measure`
-Description: This endpoint records web events, capturing details about the acquisition source.
-Method: `POST`
-Endpoint URL: `https://tracks.yourgame.com/v1/collect`
-Headers:
-`Authorization:` Bearer `<API_KEY>`
-`Content-Type: application/json`
-
-Here is an example of source code for your reference:
-
-```json
-# Example Python Code for server-side 
-import requests
+        acquisition_data = {
+           "event_name": "web_visit",
+           "timestamp": "2024-08-29T12:00:00Z",
+           "channel": "paid_search",
+           "campaign": "summer_sale",
+           "source": "google",
+           "medium": "cpc",
+           "term": "steamsale",
+           "content": "ad_1",
+           "clientId": "12345",
+           "sessionId": "abcdef123456",
+           "ip": "175.124.248.15",
+           "device": "mobile",
+           "browser": "chrome"
+        }
 
 
-url = "https://tracks.yourgame.com/v1/measure" 
+        track_acquisition(acquisition_data)
+        ```
 
+    === "API Endpoint `measure`"
 
-payload = {
- 'user_id': '1a23fd44c21f8l5r',
- 'event_name': 'game_open',
- 'ip': '175.124.248.15',
- 'timestamp': '2024-08-29T12:00:00Z',
- 'platform': 'pc',
- 'storefront': 'steam'
-}
-headers = {
-  'Authorization': f'Bearer {config.API_KEY}',
-}
-response = requests.request("POST", url, headers=headers, data=payload)
-print(response.text)
-```
+        *API Endpoint:* `/measure`
+
+        Description: This endpoint records web events, capturing details about the acquisition source.
+
+        *Method:* `POST`
+
+        *Endpoint URL:* `https://tracks.yourgame.com/v1/collect`
+
+        *Headers:*
+        `Authorization:` Bearer `<API_KEY>`
+        `Content-Type: application/json`
+
+        Here is an example of source code for your reference:
+
+        ```json
+        # Example Python Code for server-side 
+        import requests
+
+        url = "https://tracks.yourgame.com/v1/measure" 
+
+        payload = {
+         'user_id': '1a23fd44c21f8l5r',
+         'event_name': 'game_open',
+         'ip': '175.124.248.15',
+         'timestamp': '2024-08-29T12:00:00Z',
+         'platform': 'pc',
+         'storefront': 'steam'
+        }
+        headers = {
+          'Authorization': f'Bearer {config.API_KEY}',
+        }
+        response = requests.request("POST", url, headers=headers, data=payload)
+        print(response.text)
+        ```
 
 **Step 4: Testing**
 
@@ -516,13 +525,72 @@ For more information,
   
 - please refer to our section [Marketing Analytics > Setup > Steamworks](/marketing-analytics/#steamworks-integration) on how to set up Steamworks for TRACKS.
 
-
-
 ### Postbacks 
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+Postbacks are HTTP requests, typically GET or POST, sent to external servers. TRACKS can transmit installation and in-game event data back to advertising channels using a click ID as the key identifier. This enables platforms like Meta, Google, X, TikTok, and Reddit to identify users with similar behaviors. Instead of focusing solely on clicks, it's more effective to send postbacks for installs and in-game events to optimize campaign performance.
 
+The click ID, collected on the landing page via the TRACKS JavaScript snippet after an ad click, is the only identifier passed along with event data to these advertising channels.
+
+Most media platforms offer an Event/Conversion API module designed for developers. TRACKS' backend can integrate with these platforms' Conversion APIs to post back in-game events, such as installs, that match the click ID collected during attribution. Enabling postbacks closes the loop on tracking and targeting, enhancing media platforms' algorithms to optimize for valuable in-game conversions rather than just ad clicks, engagements, or web conversions. This is particularly beneficial for performance marketing campaigns focused on conversion objectives.
+
+However, for campaigns with objectives such as driving traffic, optimizing for web conversions may be more advantageous, as these occur earlier in the user journey.
+
+Below is an example postback guide template for mapping the Conversion API for various platforms. By utilizing the access provided for media platforms, TRACKS can automatically deploy each platform’s Conversion API from its backend. The TRACKS postback solution can be activated simply by granting editor access for the Events/Dataset management of the media platform.
+
+This one-time setup for each media platform allows TRACKS to implement the Conversion API for your ad accounts without consuming developer resources or relying on third-party solutions like Customer Data Platforms (CDPs).
+
+![Postbacks](/assets/attribution_postbacks.png)
+
+**Meta Conversion API Guide:**
+
+[→ Conversions API Setup Guide for Meta](https://www.facebook.com/business/help/232481544843294?id=818859032317965)
+
+Editor access for the Data Source Asset to analytics@secondstage.io is required.
+
+**Google Conversion API Guide:**
+
+[→ Conversions API Setup Guide for Google](https://developers.google.com/google-ads/api/docs/get-started/dev-token)
+
+A manager account (MCC) is needed to enable Conversion API for Google ads. Follow the guide above to activate your API (Apply for access to the Google Ads API). 
+Share the developer token from the “API Center” after you complete your API access process.
+
+**TikTok Conversion API Guide:**
+
+[→ Conversions API Setup Guide for TikTok](https://business-api.tiktok.com/portal/docs?id=1738855176671234)
+
+TikTok business developers account is needed for the Conversion API. Follow registration steps by choosing “Direct Advertiser”. After your developer profile is approved, inform your Second Stage contact to handle creating the [Business App](https://business-api.tiktok.com/portal/docs?id=1738855242728450) and configuring the [Web Events API](https://business-api.tiktok.com/portal/docs?id=1739584855420929). 
+
+**Reddit Conversion API Guide:**
+
+[→ Conversions API Setup Guide for TikTok](https://business.reddithelp.com/helpcenter/s/article/Conversions-API)
+
+Reddit access given prior would be sufficient for TRACKS to activate Conversion API for Reddit. Developer access token can be created through Reddit Events Manager.
+
+For your reference Reddit’s documentation that are required for CAPI listed here: 
+[→ Reddit Conversion Access Token](https://business.reddithelp.com/helpcenter/s/article/conversion-access-token)
+[→ Conversions API Setup Guide for Reddit](https://business.reddithelp.com/helpcenter/s/article/using-the-API-for-conversions)
+
+**X Ads Conversion API Guide:**
+
+Use your company Twitter handle to create a developer account and apply to have Ads API access. 
+
+Sign up for Developer Access [here](https://developer.twitter.com/en/portal/petition/essential/basic-info) (select free). Then send a request for Conversions Only Access. Once approved, inform your Second Stage contact to deploy X Ads CAPI for TRACKS.  
+
+[→ Conversions API Setup Guide for X](https://developer.x.com/en/docs/x-ads-api/measurement/web-conversions/conversion-api)
 
 ### Test Environment 
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+**Test the Integration:**
+
+- Click on the UTM-tagged test link and open the game for the first time.
+- Ensure your server is running and correctly configured to handle HTTP requests.
+- Trigger acquisition events manually or through your application to test the integration.
+- Check Cloud Run logging to confirm that the endpoint logs show no errors.
+- Verify on the attribution tool dashboard that acquisition events are tracked accurately.
+- Ensure that the data (channels, campaigns, sources) aligns with your expectations.
+  
+**Troubleshooting:**
+
+- Invalid Credentials: Confirm that your API key and secret are correct and have the necessary permissions.
+- Network Errors: Review your server’s network configuration and API base URL.
+- Data Mismatches: Ensure the event payload matches the required schema and that timestamp formats are correct.
