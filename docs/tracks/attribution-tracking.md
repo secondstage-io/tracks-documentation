@@ -256,7 +256,7 @@ However, if you do have a telemetry backend server but are unable to use Google 
 
 The Measurement API tracks the customer acquisition source, enabling you to identify which channels, campaigns, ads drive install and other in-game events. By integrating with TRACKS Attribution, you can accurately attribute conversions to the correct media sources, helping you optimize your marketing efforts.
 
-**Prerequisites**
+#### Prerequisites
 
 Before you begin, please ensure the following:
 
@@ -315,13 +315,13 @@ The integration process involves the following steps:
 3. API Endpoints: Utilize the Measurement API endpoints to send data. Use /measure for game events (e.g., game opens) from your telemetry server, and /collect for web visits containing traffic acquisition sources from your website.
 4. Test the Integration: Verify that acquisition data is being tracked accurately.
 
-**Step 1: Obtain API Credentials**
+##### Step 1: Obtain API Credentials
 
 1. Log in to your TRACKS account.
 2. Navigate to Settings > API Credentials.
 3. Copy the API key and secret for use in your server configuration.
 
-**Step 2: Set Up Google Cloud Platform (GCP) Environment**
+##### Step 2: Set Up Google Cloud Platform (GCP) Environment
 
 1. Go to [Google Cloud Console](https://console.cloud.google.com/), sign in with your email address. Create a new Project.
 If your organization does not use Google Workspace (Gsuite email account), you can link your email following these steps: https://support.google.com/accounts/answer/176347)
@@ -335,7 +335,7 @@ If your organization does not use Google Workspace (Gsuite email account), you c
 4. The Second Stage team will be notified after access is granted and TRACKS Attribution Measurement microservices are deployed for your instance.
 5. [Your API key and secret will be entered as environment variables to Google Cloud Run functions](https://cloud.google.com/functions/docs/configuring/env-var) 
 
-**Step 3: API Endpoints** 
+##### Step 3: API Endpoints
 
 To track media channel acquisition sources, you need to implement the API endpoint that records acquisition events.
     
@@ -431,7 +431,7 @@ To track media channel acquisition sources, you need to implement the API endpoi
     print(response.text)
     ```
 
-**Architecture** 
+#### Architecture 
 
 ![Architecture](/assets/attribution_architecture.png)
 
