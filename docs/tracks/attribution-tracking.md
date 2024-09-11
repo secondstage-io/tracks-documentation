@@ -355,99 +355,121 @@ If your organization does not use Google Workspace (Gsuite email account), you c
         3. Nulla tempor lobortis orci
         ```
 
+=== "C"
+
+    ``` c
+    #include <stdio.h>
+
+    int main(void) {
+      printf("Hello world!\n");
+      return 0;
+    }
+    ```
+
+=== "C++"
+
+    ``` c++
+    #include <iostream>
+
+    int main(void) {
+      std::cout << "Hello world!" << std::endl;
+      return 0;
+    }
+    ```
+
 To track media channel acquisition sources, you need to implement the API endpoint that records acquisition events.
     
-    === "API endpoint `collect`"
+=== "API endpoint `collect`"
 
-        *API Endpoint:* `/collect`
+    *API Endpoint:* `/collect`
 
-        *Description:* This endpoint records web events, capturing details about the acquisition source.
+    *Description:* This endpoint records web events, capturing details about the acquisition source.
 
-        *Method:* POST
+    *Method:* POST
 
-        *Endpoint URL:* `https://tracks.yourgame.com/v1/collect`
+    *Endpoint URL:* `https://tracks.yourgame.com/v1/collect`
 
-        *Headers:*
-        `Authorization:` Bearer `<API_KEY>`
-        `Content-Type: application/json`
+    *Headers:*
+    `Authorization:` Bearer `<API_KEY>`
+    `Content-Type: application/json`
 
-        Here is an example of source code for your reference:
+    Here is an example of source code for your reference:
 
-        ```json
-        # Example Python Code for web client-side
-        import config
-        import requests
-
-
-        def track_acquisition(data):
-           headers = {
-               'Authorization': f'Bearer {config.API_KEY}',
-               'Content-Type': 'application/json'
-           }
-           try:
-               response = requests.post(f"{https://tracks.yourgame.com/v1/collect", json=data, headers=headers)
-               response.raise_for_status()
-               print('Acquisition event recorded:', response.json())
-           except requests.exceptions.HTTPError as err:
-               print('Error recording acquisition event:', err.response.json())
+    ```json
+    # Example Python Code for web client-side
+    import config
+    import requests
 
 
-        acquisition_data = {
-           "event_name": "web_visit",
-           "timestamp": "2024-08-29T12:00:00Z",
-           "channel": "paid_search",
-           "campaign": "summer_sale",
-           "source": "google",
-           "medium": "cpc",
-           "term": "steamsale",
-           "content": "ad_1",
-           "clientId": "12345",
-           "sessionId": "abcdef123456",
-           "ip": "175.124.248.15",
-           "device": "mobile",
-           "browser": "chrome"
-        }
+    def track_acquisition(data):
+       headers = {
+           'Authorization': f'Bearer {config.API_KEY}',
+           'Content-Type': 'application/json'
+       }
+       try:
+           response = requests.post(f"{https://tracks.yourgame.com/v1/collect", json=data, headers=headers)
+           response.raise_for_status()
+           print('Acquisition event recorded:', response.json())
+       except requests.exceptions.HTTPError as err:
+           print('Error recording acquisition event:', err.response.json())
 
 
-        track_acquisition(acquisition_data)
-        ```
+    acquisition_data = {
+       "event_name": "web_visit",
+       "timestamp": "2024-08-29T12:00:00Z",
+       "channel": "paid_search",
+       "campaign": "summer_sale",
+       "source": "google",
+       "medium": "cpc",
+       "term": "steamsale",
+       "content": "ad_1",
+       "clientId": "12345",
+       "sessionId": "abcdef123456",
+       "ip": "175.124.248.15",
+       "device": "mobile",
+       "browser": "chrome"
+    }
 
-    === "API Endpoint `measure`"
 
-        *API Endpoint:* `/measure`
+    track_acquisition(acquisition_data)
+    ```
 
-        Description: This endpoint records web events, capturing details about the acquisition source.
+=== "API Endpoint `measure`"
 
-        *Method:* `POST`
+    *API Endpoint:* `/measure`
 
-        *Endpoint URL:* `https://tracks.yourgame.com/v1/collect`
+    Description: This endpoint records web events, capturing details about the acquisition source.
 
-        *Headers:*
-        `Authorization:` Bearer `<API_KEY>`
-        `Content-Type: application/json`
+    *Method:* `POST`
 
-        Here is an example of source code for your reference:
+    *Endpoint URL:* `https://tracks.yourgame.com/v1/collect`
 
-        ```json
-        # Example Python Code for server-side 
-        import requests
+    *Headers:*
+    `Authorization:` Bearer `<API_KEY>`
+    `Content-Type: application/json`
 
-        url = "https://tracks.yourgame.com/v1/measure" 
+    Here is an example of source code for your reference:
 
-        payload = {
-         'user_id': '1a23fd44c21f8l5r',
-         'event_name': 'game_open',
-         'ip': '175.124.248.15',
-         'timestamp': '2024-08-29T12:00:00Z',
-         'platform': 'pc',
-         'storefront': 'steam'
-        }
-        headers = {
-          'Authorization': f'Bearer {config.API_KEY}',
-        }
-        response = requests.request("POST", url, headers=headers, data=payload)
-        print(response.text)
-        ```
+    ```json
+    # Example Python Code for server-side 
+    import requests
+
+    url = "https://tracks.yourgame.com/v1/measure" 
+
+    payload = {
+     'user_id': '1a23fd44c21f8l5r',
+     'event_name': 'game_open',
+     'ip': '175.124.248.15',
+     'timestamp': '2024-08-29T12:00:00Z',
+     'platform': 'pc',
+     'storefront': 'steam'
+    }
+    headers = {
+      'Authorization': f'Bearer {config.API_KEY}',
+    }
+    response = requests.request("POST", url, headers=headers, data=payload)
+    print(response.text)
+    ```
 
 **Architecture** 
 
