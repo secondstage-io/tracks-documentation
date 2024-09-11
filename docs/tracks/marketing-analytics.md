@@ -35,11 +35,17 @@ Below is an sample image of the Google Tag Manager integration code that needs t
 
 In Google Analytics (GA4), please grant Editor access to analytics@secondstage.io. For guidance on creating a GA4 account, refer to the documentation [here](https://support.google.com/analytics/answer/9304153). Alternatively, the Second Stage team can create one for you if needed.
 
+![Google Analytics Integration](/assets/marketinganalytics_g4access-1.png "Google Analytics Setup")
+
+![Google Analytics Integration](/assets/marketinganalytics_g4access-2.png "Google Analytics Setup")
+
 ### Steamworks Integration
 
 If your game is available on Steam, please grant us access by sending an invitation to analytics@secondstage.io with "View Marketing Traffic Data" permissions only.
 
 You can find the "Invite New User" section in Steamworks by navigating to Steamworks → Users & Permissions → Invite New User.
+
+![Steamworks Setup](/assets/marketinganalytics_steamaccess.png "Steamworks Setup")
 
 ## Guide
 
