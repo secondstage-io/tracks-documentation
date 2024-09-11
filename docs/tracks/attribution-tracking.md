@@ -394,7 +394,7 @@ To track media channel acquisition sources, you need to implement the API endpoi
         track_acquisition(acquisition_data)
         ```
 
-    === "API Endpoint measure"
+    === "API Endpoint `measure`"
 
         *API Endpoint:* `/measure`
 
@@ -430,23 +430,6 @@ To track media channel acquisition sources, you need to implement the API endpoi
         response = requests.request("POST", url, headers=headers, data=payload)
         print(response.text)
         ```
-
-**Step 4: Testing**
-
-Test the Integration:
-
-- Click on the UTM-tagged test link and open the game for the first time.
-- Ensure your server is running and correctly configured to handle HTTP requests.
-- Trigger acquisition events manually or through your application to test the integration.
-- Check Cloud Run logging to confirm that the endpoint logs show no errors.
-- Verify on the attribution tool dashboard that acquisition events are tracked accurately.
-- Ensure that the data (channels, campaigns, sources) aligns with your expectations.
-  
-Troubleshooting:
-
-- Invalid Credentials: Confirm that your API key and secret are correct and have the necessary permissions.
-- Network Errors: Review your server’s network configuration and API base URL.
-- Data Mismatches: Ensure the event payload matches the required schema and that timestamp formats are correct.
 
 **Architecture** 
 
