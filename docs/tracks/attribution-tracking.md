@@ -112,8 +112,9 @@ The following metrics will be available:
 
 TRACKS uses a Marketing Mix Modeling (MMM) approach enhanced with Steam UTM Analytics, Traffic Breakdown data and Google Analytics (GA4) data. If you don't have a website or don't use it as a landing page, the efficiency of the model is reduced by 30% because it relies solely on Steam UTM Analytics, Visits and Traffic data.
 
-> If you're interested in this method but don't have a landing page or are unsure of your current setup, Second Stage can help you create a landing page or game website for marketing purposes. [Contact us](https://secondstage.io/contact/) for a quote!
+??? question "How do I create a landing page?"
 
+    If you're interested in this method but don't have a landing page or are unsure of your current setup, Second Stage can help you create a landing page or game website for marketing purposes. [Contact us](https://secondstage.io/contact/) for a quote!
 
 ### Measured Attribution Tracking
 
@@ -162,8 +163,9 @@ Below is a pseudocode snippet that demonstrates how to build the API request. Th
 
 Implementation on your end can be managed by a DevOps or backend developer, or by your business intelligence / data science teams - game developers do not need to be directly involved. On average, the process should take about 2 hours for a mid-level backend developer or data engineer.
 
-> For each game added, the Second Stage Analytics team will fully support the integration, deployment and testing, starting with your onboarding call.
+!!! info "Support"
 
+    For each game added, the Second Stage Analytics team will fully support the integration, deployment and testing, starting with your onboarding call.
 
 ### Measured Attribution Tracking + Modeling
 
@@ -188,8 +190,10 @@ TRACKS uses the UMM methodology to integrate three different data sources:
 - **Web Analytics (GA4):** Leverages Markov Chain for multi-touch attribution
 - **Steam UTM Analytics & Traffic Breakdown:** For Marketing Mix Modeling (MMM)
 
-> For more information on Markov Chain Attribution, Marketing Mix Modeling, or Unified Marketing Measurement, please visit our [Further Reading](https://documentation.secondstage.io/resources/) section.
+!!! info "Further Reading"
 
+    For more information on Markov Chain Attribution, Marketing Mix Modeling, or Unified Marketing Measurement, please visit our [Further Reading](https://documentation.secondstage.io/resources/) section.
+    
 ---
 
 ## Integration 
