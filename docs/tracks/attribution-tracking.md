@@ -24,20 +24,14 @@ These install metrics can be further broken down by storefront or platform, such
 
 Based on your average unit price, TRACKS can estimate revenue per install and report ROAS (Return on Ad Spend) percentages. This allows you to compare and analyze performance across multiple dimensions, including
 
-- Date 
-- Channel  
-- Campaign 
-- AdGroup (Ad Set)  
-- Creative (Ad)  
-- GEO  
-- Strategy  
-- Target  
-- Target Audience  
-- Targeting  
-- Ad Type  
-- Ad Format  
-- Placement
-
+| :material-check: Date | :material-check: Target |
+| :material-check: Channel  | :material-check: Target Audience | 
+| :material-check: Campaign | :material-check: Targeting |  
+| :material-check: AdGroup (Ad Set)| :material-check: Targeting |   
+| :material-check: Creative (Ad)| :material-check: Ad Type |  
+| :material-check: GEO| :material-check: Ad Format |   
+| :material-check: Strategy| :material-check: Placement | 
+ 
 In addition to tracking in-game events, web conversions are critical to understanding the user journey. TRACKS can report on web conversions such as Steam, PS, Xbox, Nintendo and Epic storefront button clicks, completing the event funnel for your user acquisition media campaigns.
 
 To enable web conversion tracking, a TRACKS JavaScript snippet wraps your landing page's storefront button click URLs to ensure that Steam and other storefront UTM analytics capture as many UTM-tagged visits as possible. We recommend avoiding redirect tracking links and instead using a plain landing page URL with UTM tags for seamless integration with media platforms.
@@ -50,18 +44,18 @@ Impression → Click → Web Visit → Web Conversion (button click) → Steam V
 
 Metrics available in TRACKS include
 
-- Media Metrics  
-- Web Analytics Metrics  
-- Steamworks metrics  
-- Attribution Metrics  
-- Awareness Metrics
+- [x] Media Metrics  
+- [x] Web Analytics Metrics  
+- [x] Steamworks metrics  
+- [x] Attribution Metrics  
+- [x] Awareness Metrics
 
 In addition, based on your onboarding call and the status of your game release, optional metrics may include
 
-- Steam wishlist and pre-order metrics  
-- DLC installs and in-game purchases metrics (requires an additional measurement API call)  
-- Influencer / Streamer Analytics metrics  
-- Brand Health metrics
+- [x] Steam wishlist and pre-order metrics  
+- [x] DLC installs and in-game purchases metrics (requires an additional measurement API call)  
+- [x] Influencer / Streamer Analytics metrics  
+- [x] Brand Health metrics
 
 ---
 
