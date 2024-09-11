@@ -362,23 +362,21 @@ To track media channel acquisition sources, you need to implement the API endpoi
     
 === "API endpoint `collect`"
 
-    *API Endpoint:* `/collect`
+    API Endpoint: `/collect`
 
-    *Description:* This endpoint records web events, capturing details about the acquisition source.
+    Description: This endpoint records web events, capturing details about the acquisition source.
 
-    *Method:* POST
+    Method: `POST`
 
-    *Endpoint URL:* `https://tracks.yourgame.com/v1/collect`
+    Endpoint URL: `https://tracks.yourgame.com/v1/collect`
 
-    *Headers:*
+    Headers:
     `Authorization:` Bearer `<API_KEY>`
     `Content-Type: application/json`
 
     Here is an example of source code for your reference:
 
-    ??? abstract "Pseudo-code example"    
     ```
-        ```json
         # Example Python Code for web client-side
         import config
         import requests
@@ -415,27 +413,24 @@ To track media channel acquisition sources, you need to implement the API endpoi
     
     
         track_acquisition(acquisition_data)
-        ```
     ```
 
 === "API Endpoint `measure`"
     ```
-    *API Endpoint:* `/measure`
+    API Endpoint: `/measure`
 
     Description: This endpoint records web events, capturing details about the acquisition source.
 
-    *Method:* `POST`
+    Method: `POST`
 
-    *Endpoint URL:* `https://tracks.yourgame.com/v1/measure`
+    Endpoint URL: `https://tracks.yourgame.com/v1/measure`
 
-    *Headers:*
+    Headers:
     `Authorization:` Bearer `<API_KEY>`
     `Content-Type: application/json`
 
     Here is an example of source code for your reference:
     
-    ??? abstract "Pseudo-code example"
-        ```json
         # Example Python Code for server-side telemetry
         import requests
     
@@ -454,7 +449,6 @@ To track media channel acquisition sources, you need to implement the API endpoi
         }
         response = requests.request("POST", url, headers=headers, data=payload)
         print(response.text)
-        ```
     ```
 
 #### Architecture 
