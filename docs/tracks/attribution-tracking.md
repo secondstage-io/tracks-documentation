@@ -252,7 +252,7 @@ The TRACKS attribution solution will then be ready to collect both web and in-ga
 #### Hybrid Cloud Approach
 
 The recommended deployment approach for TRACKS is a "hybrid-hosted" solution, similar to an on-premise setup, where all granular data is processed and stored on the publisher or developer studio’s Google Cloud servers. This method can be considered as an enterprise level solution, and we are of the opinion that it is the optimal choice for the video game industry.
-This approach has been streamlined by the Second Stage team to maximize the effectiveness of performance media campaigns in gaming, without introducing latency or errors to game servers. It also ensures maximum data privacy, safeguards player data, and fully complies with GDPR regulations.
+This approach has been streamlined by the Second Stage team to maximize the effectiveness of performance media campaigns in gaming, without introducing latency or errors to game servers. It also ensures maximum data privacy and safeguards player data.
 
 ![Deplyoment](/assets/attribution_deployment-1.png)
 
