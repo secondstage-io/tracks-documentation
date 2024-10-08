@@ -133,3 +133,7 @@ Once the form is submitted, our team will get back to you within 24 hours with a
 ### Game / Campaign Settings 
 
 In an upcoming TRACKS update, you will be able to edit a game's title, change the cover image, and invite additional users to your dashboard. Until these features are available on the platform, please contact us directly to request any of these changes.
+
+### Customer Support
+
+Second Stage offers customer support through email or our contact form from Monday to Friday, excluding public holidays in Berlin. Customer support is provided from 9:00 a.m. to 6:00 p.m. (CET) at Second Stage business hours. Second Stage will respond by email within 24 hours.
