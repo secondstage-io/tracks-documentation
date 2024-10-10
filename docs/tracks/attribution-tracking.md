@@ -501,7 +501,7 @@ Here is an example of source code for your reference:
      W.async = 1;
      W.src = F;
      E.parentNode.insertBefore(W, E);
-    })(window, document, "script", "https://cdn.secondstage.io/tracks.js");
+    })(window, document, "script", "https://cdn.tracks-2s.com/collect.js");
     tracks("page_view", "2S-XXXXXX");
     </script>
     ```
