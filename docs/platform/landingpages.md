@@ -189,7 +189,45 @@ Click **Invite**. We'll receive an email invitation and confirm once access is s
 
 ## Google Analytics Integration & Access
 
-In Google Analytics (GA4), please grant Editor access to analytics@secondstage.io. For guidance on creating a GA4 account, refer to the documentation [here](https://support.google.com/analytics/answer/9304153). Alternatively, the Second Stage team can create one for you if needed.
+In Google Analytics (GA4), please grant **Editor** access to `analytics@secondstage.io`. The Editor role lets the Second Stage team audit and configure conversion events and settings without being able to manage other users. For guidance on creating a GA4 account, refer to the documentation [here](https://support.google.com/analytics/answer/9304153). Alternatively, the Second Stage team can create one for you if needed.
+
+### Granting Second Stage Access to GA4
+
+<ol class="setup-steps" markdown="1">
+
+<li markdown="block">
+
+### Open Access Management
+
+In Google Analytics, click **Admin** (gear icon). Under the **Account** column, click **Account access management**. Granting access at the account level ensures we can configure the relevant property and its conversion events.
+
+</li>
+
+<li markdown="block">
+
+### Add Users
+
+Click the **+** button in the top right corner and choose **Add users**.
+
+</li>
+
+<li markdown="block">
+
+### Enter Email and Select Role
+
+Enter the email address `analytics@secondstage.io`. Leave **Notify new users by email** checked. Under **Standard roles**, select **Editor** — "Edit all data and settings for account. Cannot manage users."
+
+</li>
+
+<li markdown="block">
+
+### Add
+
+Click **Add** in the top right corner to send the invitation. We'll confirm once access is set up.
+
+</li>
+
+</ol>
 
 <figure markdown="span">
   ![Google Analytics 4 — grant Editor access](../assets/marketinganalytics_g4access-1.png)
