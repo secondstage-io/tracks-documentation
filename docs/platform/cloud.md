@@ -60,6 +60,19 @@ The Second Stage team will be notified after access is granted and TRACKS Attrib
 
 </ol>
 
+!!! info "What we configure on your Google Cloud"
+
+    After access is granted, the Second Stage team deploys and configures the following services in your project:
+
+    - **Cloud Run** — hosts the APIs: receives in-game session events from your telemetry backend and handles web-side event ingestion from your landing page.
+    - **Pub/Sub** — handles event messaging between services.
+    - **Firestore** — powers the shorten link feature.
+    - **BigQuery** — stores and processes data through Dataform.
+    - **Cloud Scheduler** — triggers periodic jobs, e.g. for postback processing.
+    - **Cloud Storage, Artifact Registry & Cloud Build** — Docker image containers and deployment.
+
+    For more detail on the architecture hosted on Google Cloud, see the [Measurement API](../attribution/measurementapi.md).
+
 ## Next
 
 With the cloud environment set up, continue with the rest of [Platform Integration](overview.md) (media channels, landing page, storefronts). The [Attribution](../attribution/overview.md) section then covers [Telemetry](../attribution/telemetry.md) and the [Measurement API](../attribution/measurementapi.md) that run on this cloud project.

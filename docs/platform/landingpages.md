@@ -70,7 +70,7 @@ Each game will be assigned a unique token to replace "2S-XXXXX." After granting 
 
 ## Google Tag Manager Integration & Access
 
-In Google Tag Manager, please grant Publish access to analytics@secondstage.io. TRACKS will implement events and conversion pixels on your website to optimize landing page interactions and improve media platform targeting algorithms, as detailed above.
+TRACKS implements events and conversion pixels on your website to optimize landing page interactions and improve media platform targeting algorithms, as detailed above. This requires a Google Tag Manager container on your landing page and Publish access for the Second Stage team — see [Inviting Second Stage to Your GTM Account](#inviting-second-stage-to-your-gtm-account) below.
 
 ### Setting Up Google Tag Manager
 
@@ -131,12 +131,61 @@ Click **Submit** in the top right corner to publish your container, making the c
 
 </ol>
 
-Below is a sample image of the Google Tag Manager integration code that needs to be implemented on your landing page.
+### Implementing the GTM Code on Your Landing Page
+
+When you create your container, GTM opens an **Install Google Tag Manager** dialog with two code snippets (shown below). Each snippet starts with `<!-- Google Tag Manager -->` and ends with `<!-- End Google Tag Manager -->`, and both contain your unique container ID in the form `GTM-XXXXXXX`. If you closed the dialog, you can reopen it any time from **Admin → Install Google Tag Manager**, or by clicking your container ID (`GTM-XXXXXXX`) in the top bar of the GTM workspace.
+
+Add both snippets to **every page** of your landing page:
+
+- **Snippet 1 (the `<script>` block):** Copy it and paste it into the `<head>` of your page, as high up as possible — ideally as the first item in the `<head>`.
+- **Snippet 2 (the `<noscript>` block):** Copy it and paste it immediately after the opening `<body>` tag.
+
+If your landing page is built on a CMS or page builder, add Snippet 1 to the global header/`<head>` section and Snippet 2 to the global body-open section so they load on every page. Once both are in place, use the **Test your website** field in the same dialog (or the **Preview** button) to confirm the container is detected, then **Submit** to publish.
 
 <figure markdown="span">
   ![Google Tag Manager installation snippets](../assets/marketing-analytics_gtm.png)
   <figcaption>GTM install — paste snippet 1 in <code>&lt;head&gt;</code>, snippet 2 right after <code>&lt;body&gt;</code></figcaption>
 </figure>
+
+### Inviting Second Stage to Your GTM Account
+
+So that the Second Stage team can implement and maintain the TRACKS events and conversion pixels, please grant **Publish** access to `analytics@secondstage.io`. Publish is the highest container permission and lets us deploy changes live without you having to publish each one manually.
+
+<ol class="setup-steps" markdown="1">
+
+<li markdown="block">
+
+### Open User Management
+
+In Google Tag Manager, open **Admin**. Under the **Container** column, click **User Management**.
+
+</li>
+
+<li markdown="block">
+
+### Add a User
+
+Click the **+** button in the top right corner and choose **Add users**. Enter the email address `analytics@secondstage.io`.
+
+</li>
+
+<li markdown="block">
+
+### Set Container Permissions
+
+Under **Container Permissions**, enable **Publish** (this automatically includes Read, Edit, and Approve). Leave account permissions at the default **User** level.
+
+</li>
+
+<li markdown="block">
+
+### Send the Invitation
+
+Click **Invite**. We'll receive an email invitation and confirm once access is set up.
+
+</li>
+
+</ol>
 
 ## Google Analytics Integration & Access
 
