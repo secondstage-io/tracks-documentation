@@ -36,8 +36,11 @@ TRACKS adheres to the principle of data minimization by collecting only what is 
 | **No Cookies** | TRACKS does not set cookies, use LocalStorage, or place any persistent identifiers on the client device. |
 | **Hashed IP Addresses** | IP addresses are never stored in plain text. They are cryptographically salted and hashed immediately upon receipt. |
 | **Salt Rotation** | The "salt" used for hashing is rotated regularly, preventing long-term re-identification or cross-referencing of users. |
-| **30-Day Log Retention** | The raw logs used for attribution (`collect_logs` and `measure_logs`) are automatically deleted after 30 days. |
+| **30-Day Raw Log Retention** | The raw logs used for attribution (`collect_logs` and `measure_logs`) are automatically deleted after 30 days. |
+| **18-Month Event Data Retention** | The pseudonymized event data derived from those logs — salt-hashed IPs, pseudonymized `user_id`s, and event parameters — is retained for 18 months by default, resetting on new activity from the same `user_id`. Configurable to your own retention policy on request. |
 | **Encryption** | All data is encrypted during transmission (TLS) and at rest on your servers. |
+
+Both retention tiers sit in your own BigQuery dataset, and the [Right to Forget](#right-to-forget) API clears a given `user_id` from both. For the field-level breakdown, see [Data Collection and Processing](datacollection.md#data-deletion-and-retention).
 
 ## Infrastructure & Control
 
@@ -86,4 +89,8 @@ To ensure transparency, you should disclose the use of TRACKS in your privacy po
     The data is processed for the purpose of analyzing the use of our website and our products, optimizing our offering, and to evaluate the effectiveness of our marketing and sales channels. In addition, the pseudonymous linking of website visits and product usage events enables better technical control and error analysis of our offering.
 
     **5. Duration of storage**
-    The data is stored pseudonymously and automatically deleted after 30 days at the latest.
+    The raw access and event logs are stored pseudonymously and automatically deleted after 30 days. The pseudonymized event data derived from them — salt-hashed IP addresses, pseudonymized user IDs, and the associated event parameters — is stored for a maximum of 18 months from the last recorded activity and is then deleted. Data subjects can request erasure of the data relating to them at any time, using the contact details given in this privacy policy.
+
+!!! warning "Check the retention figures before you publish"
+
+    The 30-day and 18-month periods above are the TRACKS defaults. If your event data retention has been configured differently, state your actual period. Publishing a shorter period than you operate is an Art. 13 accuracy problem, so confirm the configured value with us before adopting this text.
