@@ -59,7 +59,8 @@ For the highest level of security and transparency, TRACKS operates on a scalabl
 The "privacy-by-design" architecture of TRACKS also supports compliance with US frameworks regarding Personally Identifiable Information (PII).
 
 * **No Sensitive PII:** TRACKS does not collect sensitive PII such as names, emails, phone numbers, or physical addresses.
-* **De-identification:** By hashing IP addresses and avoiding persistent storage, TRACKS reduces the risk associated with PII storage, supporting compliance with data minimization principles found in the CCPA and CPRA.
+* **Pseudonymization:** IP addresses are salt-hashed and user IDs are pseudonymized before storage, so records cannot be attributed to an identifiable person without additional information. This reduces the risk associated with PII storage and supports the data minimization principles found in the CCPA and CPRA.
+* **Pseudonymized is not anonymized:** The data held in your project is pseudonymized, and pseudonymized data remains **personal data** under the GDPR — it stays in scope for data subject rights and for your records of processing. Only the aggregated figures passed to the Second Stage datalake are anonymized. Keep the two apart in your documentation.
 
 ## Right to Forget
 
