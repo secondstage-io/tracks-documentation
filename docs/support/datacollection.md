@@ -41,6 +41,15 @@ This page describes how TRACKS collects and processes data through its two API e
 Records from `/measure` can be matched to `/collect` logs using the salt-hashed IP address.  
 This enables user-level telemetry by linking game activity to prior visits.
 
+### What reporting exposes
+
+The user-level data described above stays in your own dataset. How it surfaces depends on which interface you use:
+
+- **TRACKS Reporting Suite** — aggregated reporting only. No `user_id`-level report is available in the reporting UI.
+- **Reporting API** — can expose `user_id`s where you need that granularity. It reads exclusively from your own datalake, never from Second Stage infrastructure.
+
+This is why only anonymized, aggregated data reaches the Second Stage datalake, as described in [Architecture](architecture.md#hybrid-hosted-deployment).
+
 ## Data Storage and Security
 
 - Data storage is handled on a server deployed on the client side.  
@@ -55,13 +64,13 @@ Retention is tiered. The raw request logs and the event data derived from them a
 | Data | Retention |
 | :--- | :--- |
 | **Raw logs** (`collect_logs`, `measure_logs`) — the granular request-level records described above | **30 days**, then automatically deleted. |
-| **Event data** — pseudonymized event rows holding salt-hashed IPs, pseudonymized `user_id`s, and event parameters (storefront, platform, acquisition source) | **18 months by default**, resetting on new activity from the same `user_id`. Configurable to your own retention policy on request. |
+| **Event data** — pseudonymized event rows holding salt-hashed IPs, pseudonymized `user_id`s, and event parameters (storefront, platform, acquisition source) | **9 months by default**, resetting on new activity from the same `user_id`. Configurable to your own retention policy on request. |
 
 Both tiers live in your own BigQuery dataset. A "forget API" is available to delete all records associated with a given `user_id` on request, across both tiers — see [GDPR API](../attribution/gdprapi.md).
 
 !!! warning "Reflect your configured period in your privacy policy"
 
-    The 18-month figure is the default. If you have asked us to change it, state your actual configured period in your privacy policy and records of processing — not the default.
+    The 9-month figure is the default. If you have asked us to change it, state your actual configured period in your privacy policy and records of processing — not the default.
 
 ## Technical Notes
 
