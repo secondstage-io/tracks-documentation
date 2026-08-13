@@ -17,7 +17,7 @@ This page describes how TRACKS collects and processes data through its two API e
 - Page URL, UTM parameters, `document.referrer`
 - IP address (salt-hashed)
 - User-Agent (used to detect device type, e.g., mobile vs. desktop)
-- Cookie-consent flag (used to control whether media-sharing is enabled)
+- Marketing-consent flag from your landing page's consent banner (controls whether [postbacks](../attribution/postbacks/index.md) to ad channels may fire — see [Postback consent](datasecurity.md#lawful-basis-for-processing))
 
 **Storage:** Data is stored in pseudonymized logs (`collect_logs`).  
 **Retention:** Logs are stored for 30 days and then automatically deleted.  
@@ -65,6 +65,6 @@ Both tiers live in your own BigQuery dataset. A "forget API" is available to del
 
 ## Technical Notes
 
-- No browser cookies or local storage are used unless media-sharing requires it.  
+- Core attribution uses no browser cookies and no local storage. Cookies are only involved where the optional [postback](../attribution/postbacks/index.md) function is enabled, which depends on the marketing consent captured by your landing page's consent banner — never on an in-game prompt.  
 - Only minimal data fields are collected (no persistent device identifiers).  
 - IP addresses are never stored in raw form but are salted and hashed before storage.
