@@ -41,6 +41,15 @@ This page describes how TRACKS collects and processes data through its two API e
 Records from `/measure` can be matched to `/collect` logs using the salt-hashed IP address.  
 This enables user-level telemetry by linking game activity to prior visits.
 
+### What reporting exposes
+
+The user-level data described above stays in your own dataset. How it surfaces depends on which interface you use:
+
+- **TRACKS Reporting Suite** — aggregated reporting only. No `user_id`-level report is available in the reporting UI.
+- **Reporting API** — can expose `user_id`s where you need that granularity. It reads exclusively from your own datalake, never from Second Stage infrastructure.
+
+This is why only anonymized, aggregated data reaches the Second Stage datalake, as described in [Architecture](architecture.md#hybrid-hosted-deployment).
+
 ## Data Storage and Security
 
 - Data storage is handled on a server deployed on the client side.  
