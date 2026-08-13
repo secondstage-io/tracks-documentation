@@ -55,13 +55,13 @@ Retention is tiered. The raw request logs and the event data derived from them a
 | Data | Retention |
 | :--- | :--- |
 | **Raw logs** (`collect_logs`, `measure_logs`) — the granular request-level records described above | **30 days**, then automatically deleted. |
-| **Event data** — pseudonymized event rows holding salt-hashed IPs, pseudonymized `user_id`s, and event parameters (storefront, platform, acquisition source) | **18 months by default**, resetting on new activity from the same `user_id`. Configurable to your own retention policy on request. |
+| **Event data** — pseudonymized event rows holding salt-hashed IPs, pseudonymized `user_id`s, and event parameters (storefront, platform, acquisition source) | **9 months by default**, resetting on new activity from the same `user_id`. Configurable to your own retention policy on request. |
 
 Both tiers live in your own BigQuery dataset. A "forget API" is available to delete all records associated with a given `user_id` on request, across both tiers — see [GDPR API](../attribution/gdprapi.md).
 
 !!! warning "Reflect your configured period in your privacy policy"
 
-    The 18-month figure is the default. If you have asked us to change it, state your actual configured period in your privacy policy and records of processing — not the default.
+    The 9-month figure is the default. If you have asked us to change it, state your actual configured period in your privacy policy and records of processing — not the default.
 
 ## Technical Notes
 
