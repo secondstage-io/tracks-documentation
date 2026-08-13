@@ -16,7 +16,7 @@ TRACKS attribution combines four sources, all consolidated into a partitioned Bi
 
 Media platforms, GA4 (via GTM), and Steamworks integrate by granting access to our service account `analytics@secondstage.io`. The Measurement API is the exception — it runs inside your own GCP environment (more on that below).
 
-Once the ELT pipeline is in place, every source feeds a partitioned BigQuery table. Data retention, GDPR specifics, and the DPA are covered in [Data Handling & Security](datasecurity.md).
+Once the ELT pipeline is in place, every source feeds a partitioned BigQuery table. Data retention and GDPR specifics are covered in [Data Handling & Security](datasecurity.md).
 
 <figure markdown="span">
   ![TRACKS data flow — sources into BigQuery](../assets/attribution_flow-1.png)
@@ -31,7 +31,7 @@ Only **anonymized, aggregated** results cross the boundary into the Second Stage
 
 This "hybrid-hosted" model exists for three reasons:
 
-- **Privacy & compliance** — your player data never crosses into a third-party tenant. Easier DPAs, easier audits, no shared-tenant footguns.
+- **Privacy & compliance** — your player data never crosses into a third-party tenant. Fewer processors to account for, easier audits, no shared-tenant footguns.
 - **Latency & isolation** — your game servers talk to an endpoint inside your own cloud topology. No cross-vendor hops in the hot path.
 - **Control** — you own the keys, the bucket, and the data. If you ever stop using TRACKS, the data stays put.
 

@@ -21,7 +21,7 @@ The architecture of TRACKS is unique in that it places the customer in full cont
 
 TRACKS is built to enable data processing under **Article 6(1)(f) GDPR (Legitimate Interest)**.
 
-* **Legitimate Interest:** TRACKS is designed to help you measure campaign success, analyze product performance, and optimize marketing spend. Independent legal analysis confirms that this constitutes a legitimate business interest. Because the data is pseudonymized, subject to defined retention limits, and places no persistent identifiers on the player's device, this interest typically outweighs the impact on user privacy.
+* **Legitimate Interest:** TRACKS is designed to help you measure campaign success, analyze product performance, and optimize marketing spend. Independent legal analysis supports treating this as a legitimate business interest. That analysis is not a binding assessment of your specific deployment — as controller, you remain responsible for carrying out and documenting your own balancing of interests. Because the data is pseudonymized, subject to defined retention limits, and places no persistent identifiers on the player's device, this interest typically outweighs the impact on user privacy.
 * **No Consent Required (Standard):** Consequently, you generally do not need to obtain explicit end-user consent (e.g., via a cookie banner) for standard attribution functions, provided you inform users in your privacy policy.
 
 !!! info "Exception: Postback Functionality"
