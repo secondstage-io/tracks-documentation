@@ -45,7 +45,7 @@ For the highest level of security and transparency, TRACKS operates on a scalabl
 
 * **Your Cloud Environment:** Our deployment method uses your own configured Google Cloud project. Services include Cloud Storage, Cloud Run, Pub/Sub, and Cloud Functions.
 * **Full Control:** You decide the server location (e.g., EU-only data centers), access rights, and security configurations.
-* **No External Transfer:** Personal data is sent directly to your server endpoints. TRACKS does not collect or mirror this data on Second Stage servers.
+* **No External Transfer of Personal Data:** Personal data is sent directly to your server endpoints. TRACKS does not collect or mirror it on Second Stage servers. Only **anonymized, aggregated** results — figures that cannot be traced back to an individual player — are passed to the Second Stage datalake that powers the TRACKS Reporting Suite. No per-user records, hashed identifiers, or raw logs leave your project.
 
 ## PII & Global Compliance (CCPA, CPRA)
 

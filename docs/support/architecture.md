@@ -27,6 +27,8 @@ Once the ELT pipeline is in place, every source feeds a partitioned BigQuery tab
 
 The TRACKS Measurement API is **deployed into your [Google Cloud Platform](../glossary.md#g) project**, not ours. All granular per-user data — IPs, pseudonymized user IDs, event timestamps — is processed and stored on your own GCP. Second Stage's service account holds only the permissions needed to run and update the pipeline.
 
+Only **anonymized, aggregated** results cross the boundary into the Second Stage datalake, which is the layer the [Reporting Suite](../overview/functionality.md) reads from. Per-user records, hashed identifiers, and raw logs stay inside your project — they are never copied to Second Stage.
+
 This "hybrid-hosted" model exists for three reasons:
 
 - **Privacy & compliance** — your player data never crosses into a third-party tenant. Easier DPAs, easier audits, no shared-tenant footguns.
