@@ -14,7 +14,7 @@ TRACKS attribution combines four sources, all consolidated into a partitioned Bi
 - **Steamworks UTM analytics** — traffic and click-through data from Steam.
 - **TRACKS Measurement API** — in-game `game_open` and `session_start` events forwarded from your telemetry backend.
 
-Media platforms, GA4 (via GTM), and Steamworks integrate by granting access to our service account `analytics@secondstage.io`. The Measurement API is the exception — it runs inside your own GCP environment (more on that below).
+Media platforms, GA4 (via GTM), and Steamworks are integrated by granting access to `analytics@secondstage.io`, a named Second Stage account. These platforms authenticate via OAuth user login and cannot accept a service account, so a named account is the only option available. The Measurement API is the exception — it runs inside your own GCP environment and is operated by a dedicated service account (more on that below).
 
 Once the ELT pipeline is in place, every source feeds a partitioned BigQuery table. Data retention and GDPR specifics are covered in [Data Handling & Security](datasecurity.md).
 
@@ -25,7 +25,7 @@ Once the ELT pipeline is in place, every source feeds a partitioned BigQuery tab
 
 ## Hybrid-hosted deployment
 
-The TRACKS Measurement API is **deployed into your [Google Cloud Platform](../glossary.md#g) project**, not ours. All granular per-user data — IPs, pseudonymized user IDs, event timestamps — is processed and stored on your own GCP. Second Stage's service account holds only the permissions needed to run and update the pipeline.
+The TRACKS Measurement API is **deployed into your [Google Cloud Platform](../glossary.md#g) project**, not ours. All granular per-user data — IPs, pseudonymized user IDs, event timestamps — is processed and stored on your own GCP. Deployment and pipeline operation are carried out by a dedicated Google Cloud service account that authenticates with its own credentials and is never used for interactive sign-in. You grant the roles it holds in your project, and you can reduce them to a least-privilege set once the deployment is validated.
 
 Only **anonymized, aggregated** results cross the boundary into the Second Stage datalake, which is the layer the [Reporting Suite](../overview/functionality.md) reads from. Per-user records, hashed identifiers, and raw logs stay inside your project — they are never copied to Second Stage.
 
