@@ -115,7 +115,7 @@
     <rect class="blue-card" x="400" y="0" width="320" height="80" rx="12"/>
     <text class="label blue" x="420" y="24">SECOND STAGE · DATALAKE</text>
     <text class="title fg" x="420" y="48">BigQuery</text>
-    <text class="tiny muted" x="420" y="66">Aggregated, anonymized data — processed by us</text>
+    <text class="tiny muted" x="420" y="66">Anonymized, aggregated data only — no personal data</text>
 
     <!-- Arrow down from BigQuery only -->
     <line class="arrow-primary" x1="560" y1="84" x2="560" y2="120"/>

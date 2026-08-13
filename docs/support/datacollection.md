@@ -17,7 +17,7 @@ This page describes how TRACKS collects and processes data through its two API e
 - Page URL, UTM parameters, `document.referrer`
 - IP address (salt-hashed)
 - User-Agent (used to detect device type, e.g., mobile vs. desktop)
-- Cookie-consent flag (used to control whether media-sharing is enabled)
+- Marketing-consent flag from your landing page's consent banner (controls whether [postbacks](../attribution/postbacks/index.md) to ad channels may fire — see [Postback consent](datasecurity.md#lawful-basis-for-processing))
 
 **Storage:** Data is stored in pseudonymized logs (`collect_logs`).  
 **Retention:** Logs are stored for 30 days and then automatically deleted.  
@@ -50,11 +50,21 @@ This enables user-level telemetry by linking game activity to prior visits.
 
 ## Data Deletion and Retention
 
-- Both endpoints apply a 30-day retention period. After that, data is automatically deleted.  
-- A "forget API" is available to delete all records associated with a given user ID on request.
+Retention is tiered. The raw request logs and the event data derived from them are kept for different periods:
+
+| Data | Retention |
+| :--- | :--- |
+| **Raw logs** (`collect_logs`, `measure_logs`) — the granular request-level records described above | **30 days**, then automatically deleted. |
+| **Event data** — pseudonymized event rows holding salt-hashed IPs, pseudonymized `user_id`s, and event parameters (storefront, platform, acquisition source) | **18 months by default**, resetting on new activity from the same `user_id`. Configurable to your own retention policy on request. |
+
+Both tiers live in your own BigQuery dataset. A "forget API" is available to delete all records associated with a given `user_id` on request, across both tiers — see [GDPR API](../attribution/gdprapi.md).
+
+!!! warning "Reflect your configured period in your privacy policy"
+
+    The 18-month figure is the default. If you have asked us to change it, state your actual configured period in your privacy policy and records of processing — not the default.
 
 ## Technical Notes
 
-- No browser cookies or local storage are used unless media-sharing requires it.  
+- Core attribution uses no browser cookies and no local storage. Cookies are only involved where the optional [postback](../attribution/postbacks/index.md) function is enabled, which depends on the marketing consent captured by your landing page's consent banner — never on an in-game prompt.  
 - Only minimal data fields are collected (no persistent device identifiers).  
 - IP addresses are never stored in raw form but are salted and hashed before storage.
