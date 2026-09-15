@@ -13,7 +13,7 @@ The Measurement API tracks the customer acquisition source, enabling you to iden
 
 ## Prerequisites
 
-Before you begin, please ensure the following:
+Before you begin, please ensure the following. These apply to the server-side integration described below. The plugin route has its own, much shorter, requirements — see [Telemetry](telemetry.md).
 
 - A Google Cloud Platform account with billing enabled (Google Cloud Platform microservices will auto-scale as needed for your game).
 - Access to Measurement API credentials (API key and secret — these are delivered to you via a setup email from Second Stage once your cloud project is provisioned).
@@ -24,7 +24,7 @@ Before you begin, please ensure the following:
 
 ## Integration approach
 
-To integrate with TRACKS Attribution, you'll need to create and implement a lightweight server-side HTTP request as a webhook on your backend. The Measurement API is the only supported method for this integration.
+To integrate with TRACKS Attribution, you'll need to create and implement a lightweight server-side HTTP request as a webhook on your backend. This is the recommended integration method. If your game has no telemetry backend, see [Telemetry](telemetry.md) for the plugin option.
 
 The webhook should trigger every time a game open (session start) event is logged in your telemetry system.
 
