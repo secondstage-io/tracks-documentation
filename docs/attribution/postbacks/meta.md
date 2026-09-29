@@ -48,7 +48,11 @@ Click **Generate Access Token**. Copy the token and send it to the Second Stage 
 
 </ol>
 
-Once complete, ensure the data source asset is shared with the active Ad Account so your campaigns can access and utilize the data.
+Once complete, ensure the data source asset is shared with the active Ad Account so your campaigns can access and utilize the data, and with `analytics@secondstage.io` so Second Stage can configure and manage the postbacks.
+
+## Conversion event mapping
+
+Install postbacks are sent under the standard Meta event **Purchase**. Tell your Second Stage contact if you would like them mapped to a different conversion event.
 
 <figure markdown="span">
   ![Meta Events Manager — Conversions API configuration](../../assets/Meta_capi_doc1.png)
