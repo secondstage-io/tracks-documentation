@@ -49,7 +49,7 @@ For LTV math and how lifecycle data should feed back into acquisition decisions,
 
 ## What you can slice and compare
 
-Reporting can be sliced across channel, geography (GEO), campaign beat, ad group, creative, audience, and player cohort — combined with any of the metrics above. Dashboards aggregate media, web, and attribution data in one place so cross-channel comparisons are possible without separate exports. Term definitions for every KPI live in the [Glossary](../glossary.md).
+Reporting can be sliced across channel, geography (GEO), campaign beat, ad group, creative, audience, and player cohort — combined with any of the metrics above. Dashboards aggregate media, web, and attribution data in one place so cross-channel comparisons are possible without separate exports. Term definitions for every KPI live in the [Glossary](../glossary.md). TRACKS installs, platform-reported conversions, and ad-platform audience sizes each count something different, so they will not match: see [Conversions & Audiences](../attribution/postbacks/conversions-audiences.md).
 
 ## Next
 
