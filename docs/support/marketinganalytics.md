@@ -51,6 +51,8 @@ For LTV math and how lifecycle data should feed back into acquisition decisions,
 
 Reporting can be sliced across channel, geography (GEO), campaign beat, ad group, creative, audience, and player cohort — combined with any of the metrics above. Dashboards aggregate media, web, and attribution data in one place so cross-channel comparisons are possible without separate exports. Term definitions for every KPI live in the [Glossary](../glossary.md).
 
+TRACKS installs, platform-reported conversions, and ad-platform audience sizes each count something different, so they will not match. [Conversions, Postbacks & Audiences](../attribution/postbacks/conversions-audiences.md) explains why the numbers differ and which one to use for reporting, optimisation, and audience building.
+
 ## Next
 
 - For the **acquisition-funnel deep dive** (measured + probabilistic attribution, postbacks), see [Attribution Tracking](attribution.md).
