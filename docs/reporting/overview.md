@@ -38,6 +38,22 @@ These guides explain the numbers in your TRACKS dashboards: where each metric co
 
     [:octicons-arrow-right-24: Demo conversion](demo-conversion.md)
 
+-   :material-puzzle-outline:{ .lg .middle } &nbsp; __DLC Tracking__
+
+    ---
+
+    DLC activations per channel, campaign and country: how to send them and how to read Units vs Unique.
+
+    [:octicons-arrow-right-24: DLC Tracking](dlc.md)
+
+-   :material-gamepad-variant-outline:{ .lg .middle } &nbsp; __Free-to-Play Games__
+
+    ---
+
+    Accounts, installs, purchases and revenue for free-to-play titles, end to end.
+
+    [:octicons-arrow-right-24: Free-to-Play guide](../support/free-to-play.md)
+
 </div>
 
 ## Related

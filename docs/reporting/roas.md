@@ -71,7 +71,7 @@ ROAS % is an **estimated** metric, not a revenue report. Keep these points in mi
 
 !!! note "Free-to-play games"
 
-    Free-to-play titles that send purchase events to TRACKS get a different ROAS: it is calculated from the actual purchase revenue those events report, not from a store price, and is shown as (paid revenue − cost) ÷ cost. A negative value there means paid revenue has not yet covered spend.
+    Free-to-play titles that send purchase events to TRACKS get a different ROAS: it is calculated from the actual purchase revenue those events report, not from a store price, and is shown as (paid revenue − cost) ÷ cost. A negative value there means paid revenue has not yet covered spend. See [TRACKS for Free-to-Play Games](../support/free-to-play.md#metric-definitions).
 
 ## Related
 

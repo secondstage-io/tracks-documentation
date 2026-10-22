@@ -3,7 +3,7 @@ site_url: https://documentation.secondstage.io
 
 # Update version to force new CSS to load
 extra_css:
-  - stylesheets/extra.css?v=74
+  - stylesheets/extra.css?v=75
 
 extra_javascript:
   - javascripts/extra.js
@@ -143,12 +143,14 @@ nav:
       - Reddit Ads: platform/mediachannels/reddit-ads.md
       - DV360: platform/mediachannels/dv360.md
     - Landing Page Integration: platform/landingpages.md
+    - Website Tracking & Consent: platform/website-tracking.md
     - Steamworks Integration: platform/steamworks.md
     - Custom Domains: platform/domains.md
   - Attribution:
     - Overview: attribution/overview.md
     - TRACKS Measurement API: attribution/measurementapi.md
     - Telemetry Setup: attribution/telemetry.md
+    - Console Launch Playbook: attribution/console-launch.md
     - Postbacks:
       - Overview: attribution/postbacks/index.md
       - Conversions & Audiences: attribution/postbacks/conversions-audiences.md
@@ -164,6 +166,7 @@ nav:
     - ROAS %: reporting/roas.md
     - Player Lifecycle: reporting/player-lifecycle.md
     - Demo → Full Game Conversion: reporting/demo-conversion.md
+    - DLC Tracking: reporting/dlc.md
   - Operations:
     - Ad Ops Guide: support/adopshelper.md
     - Tracking Links: support/trackinglinks.md
@@ -172,6 +175,7 @@ nav:
     - Architecture: support/architecture.md
     - Attribution Tracking: support/attribution.md
     - Marketing Analytics: support/marketinganalytics.md
+    - Free-to-Play Games: support/free-to-play.md
     - Data Collection: support/datacollection.md
     - Data Handling & Security: support/datasecurity.md
     - Further Reading: support/furtherreading.md

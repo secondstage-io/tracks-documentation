@@ -238,3 +238,7 @@ Click **Add** in the top right corner to send the invitation. We'll confirm once
   ![Google Analytics 4 — role confirmation](../assets/marketinganalytics_g4access-2.png)
   <figcaption>Confirm Editor access so TRACKS can audit and configure conversion events</figcaption>
 </figure>
+
+## Related
+
+- [Website Tracking & Consent](website-tracking.md) — GTM best practice, Google Consent Mode, ad pixels and the store-click tags we add.

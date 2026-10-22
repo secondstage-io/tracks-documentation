@@ -33,3 +33,6 @@ It is free on the Unity Asset Store. Setup is one config asset plus the endpoint
 ## Next
 
 Once telemetry is in place, wire in-game events into TRACKS through the [Measurement API](measurementapi.md) (see its [Integration approach](measurementapi.md#integration-approach) section for the expected payload fields).
+
+- Shipping on PlayStation, Xbox or Nintendo? Read the [Console Launch Playbook](console-launch.md) before your first console build.
+- Selling DLC? See [DLC Tracking](../reporting/dlc.md) for how to send DLC ownership on the same events.

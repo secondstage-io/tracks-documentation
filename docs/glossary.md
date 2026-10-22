@@ -81,6 +81,9 @@ The medium through which marketing messages are delivered, such as gaming websit
 **Churn 30d**  
 The share of Matured Installs (installed 30 or more days ago) with no game session on days 1 to 30 after install. See [Player Lifecycle](reporting/player-lifecycle.md).
 
+**Consent Mode (GCS)**  
+Google Consent Mode v2 tells Google tags, and through GTM the other ad platforms, what a website visitor agreed to. Google records it as a GCS code on every hit: G100 (nothing allowed), G101 (analytics only) or G111 (analytics and advertising). See [Website Tracking & Consent](platform/website-tracking.md).
+
 **Cohort Matrix**  
 A table tracking user retention by identifying specific groups (cohorts) based on their install date and monitoring their return rate over subsequent days (Day 0 to Day 12).
 
@@ -131,6 +134,9 @@ The share of demo players who later launched the full game. See [Demo → Full G
 **Direct**  
 A user who was not exposed to any advertising campaign and has no referrer, but accessed the store directly (e.g., by typing the URL or using a bookmark).
 
+**DLC Activations (Units / Unique)**  
+The first time the game detects a player's DLC entitlement. Units count every DLC a player activated; Unique counts purchases, so an edition and the packs unlocked with it count once. See [DLC Tracking](reporting/dlc.md).
+
 **DLC Installs**  
 The number of installs of downloadable content (DLC) for a game.
 
@@ -152,6 +158,9 @@ The estimated cost per install of a game, calculated based on various data sourc
 The specific time at which an event or action, such as a user interaction or conversion, occurs.
 
 ## F
+
+**F2P (Free-to-Play)**  
+A game that is free to download and earns revenue from in-game purchases or memberships. TRACKS measures F2P titles through accounts, first gameplay and purchase events. See [TRACKS for Free-to-Play Games](support/free-to-play.md).
 
 ## G
 
