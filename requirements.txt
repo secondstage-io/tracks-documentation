@@ -2,3 +2,10 @@ mkdocs==1.6.1
 mkdocs-material==9.7.6
 mkdocs-glightbox==0.5.2
 mkdocs-redirects==1.2.3
+
+# Transitive dependency of mkdocs-glightbox, pinned because it is not pinned
+# upstream. selectolax 1.0.0 (2026-10-03) changed node semantics, so the
+# insert_child() + replace_with() pair glightbox uses to wrap images destroys
+# every content <img> instead of wrapping it. Builds silently lose 46 images.
+# Hold at the last 0.x release until glightbox supports selectolax 1.x.
+selectolax==0.4.9
