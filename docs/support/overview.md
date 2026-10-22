@@ -25,6 +25,7 @@ Narrative documentation explaining how TRACKS works — from the system architec
       <li><a href="../attribution/">Attribution Tracking</a></li>
       <li><a href="../marketinganalytics/">Marketing Analytics</a></li>
       <li><a href="../datacollection/">Data Collection</a></li>
+      <li><a href="../free-to-play/">Free-to-Play Games</a></li>
     </ol>
     <div class="journey-card__foot">
       <a class="journey-card__primary" href="../attribution/">Start with Attribution →</a>

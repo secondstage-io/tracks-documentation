@@ -654,7 +654,7 @@ body, .md-typeset { font-size-adjust: none; }
 }
 @media screen and (min-width: 76.25em) {
   .tracks-footer__sitemap {
-    grid-template-columns: 1.8fr repeat(5, 1fr);
+    grid-template-columns: 1.6fr repeat(6, 1fr);
     gap: 2.25rem;
   }
 }

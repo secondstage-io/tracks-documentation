@@ -93,6 +93,7 @@
       <li><a href="platform/cloud/">Cloud Setup</a></li>
       <li><a href="platform/mediachannels/">Media Platform Access</a></li>
       <li><a href="platform/landingpages/">Landing Page Integration</a></li>
+      <li><a href="platform/website-tracking/">Website Tracking &amp; Consent</a></li>
       <li><a href="platform/steamworks/">Steamworks Integration</a></li>
       <li><a href="platform/domains/">Custom Domains</a></li>
     </ul>
@@ -104,6 +105,7 @@
       <li><a href="attribution/overview/">Overview</a></li>
       <li><a href="attribution/measurementapi/">Measurement API</a></li>
       <li><a href="attribution/telemetry/">Telemetry Setup</a></li>
+      <li><a href="attribution/console-launch/">Console Launch Playbook</a></li>
       <li><a href="attribution/postbacks/">Postbacks</a></li>
       <li><a href="attribution/gdprapi/">GDPR API</a></li>
     </ul>
@@ -117,6 +119,7 @@
       <li><a href="reporting/roas/">ROAS %</a></li>
       <li><a href="reporting/player-lifecycle/">Player Lifecycle</a></li>
       <li><a href="reporting/demo-conversion/">Demo → Full Game</a></li>
+      <li><a href="reporting/dlc/">DLC Tracking</a></li>
     </ul>
   </div>
 
@@ -135,6 +138,7 @@
       <li><a href="support/architecture/">Architecture</a></li>
       <li><a href="support/attribution/">Attribution Tracking</a></li>
       <li><a href="support/marketinganalytics/">Marketing Analytics</a></li>
+      <li><a href="support/free-to-play/">Free-to-Play Games</a></li>
       <li><a href="support/datacollection/">Data Collection</a></li>
       <li><a href="support/datasecurity/">Data Handling &amp; Security</a></li>
       <li><a href="support/furtherreading/">Further Reading</a></li>

@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 302" width="100%" height="auto" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif">
+  <style>
+    .fg { fill: #1d1d20; }
+    .muted { fill: #65656b; }
+    .card { fill: #ffffff; stroke: #e3e3e6; stroke-width: 1; }
+    .muted-card { fill: #f5f5f7; stroke: #d8d8dc; stroke-width: 1; }
+    .primary { fill: #dc2626; }
+    .primary-card { fill: #fef2f2; stroke: #fecaca; stroke-width: 1; }
+    .amber { fill: #b45309; }
+    .amber-card { fill: #fffbeb; stroke: #fde68a; stroke-width: 1; }
+    .green { fill: #047857; }
+    .green-card { fill: #ecfdf5; stroke: #a7f3d0; stroke-width: 1; }
+    .blue { fill: #1d4ed8; }
+    .blue-card { fill: #eff6ff; stroke: #bfdbfe; stroke-width: 1; }
+    .arrow { stroke: #65656b; stroke-width: 2; fill: none; }
+    .arrow-tip { fill: #65656b; }
+    .arrow-primary { stroke: #dc2626; stroke-width: 2; fill: none; }
+    .arrow-tip-primary { fill: #dc2626; }
+    text { font-size: 13px; }
+    .label { font-size: 10px; font-weight: 600; letter-spacing: 0.06em; }
+    .title { font-size: 14px; font-weight: 600; }
+    .small { font-size: 11px; }
+    .tiny { font-size: 10px; }
+  </style>
+  <text class="label primary" x="20" y="30">IN YOUR GAME → TRACKS</text>
+  <line class="arrow" x1="179" y1="26" x2="740" y2="26" stroke-width="1" opacity="0.4"/>
+  <rect class="card" x="20" y="46" width="165" height="126" rx="10"/>
+  <circle class="primary-card" cx="42" cy="68" r="12"/>
+  <text class="primary" x="42" y="72" text-anchor="middle" font-weight="700">1</text>
+  <text class="title fg" x="62" y="72">Game reports</text>
+  <text class="tiny muted" x="34" y="94">DLC list in game_open,</text>
+  <text class="tiny muted" x="34" y="108">or one event per DLC</text>
+  <rect class="muted-card" x="34" y="142" width="82" height="20" rx="10"/>
+  <text class="tiny muted" x="75" y="156" text-anchor="middle">Measure API</text>
+  <rect class="card" x="205" y="46" width="165" height="126" rx="10"/>
+  <circle class="primary-card" cx="227" cy="68" r="12"/>
+  <text class="primary" x="227" y="72" text-anchor="middle" font-weight="700">2</text>
+  <text class="title fg" x="247" y="72">Deduplicate</text>
+  <text class="tiny muted" x="219" y="94">One activation per player</text>
+  <text class="tiny muted" x="219" y="108">and DLC, earliest time.</text>
+  <text class="tiny muted" x="219" y="122">Free grants excluded.</text>
+  <rect class="muted-card" x="219" y="142" width="98" height="20" rx="10"/>
+  <text class="tiny muted" x="268" y="156" text-anchor="middle">Units · Unique</text>
+  <rect class="card" x="390" y="46" width="165" height="126" rx="10"/>
+  <circle class="primary-card" cx="412" cy="68" r="12"/>
+  <text class="primary" x="412" y="72" text-anchor="middle" font-weight="700">3</text>
+  <text class="title fg" x="432" y="72">Credit</text>
+  <text class="tiny muted" x="404" y="94">Recent DLC ad click,</text>
+  <text class="tiny muted" x="404" y="108">else install source</text>
+  <text class="tiny muted" x="404" y="122">(≤ 30 days), else Direct</text>
+  <rect class="muted-card" x="404" y="142" width="104" height="20" rx="10"/>
+  <text class="tiny muted" x="456" y="156" text-anchor="middle">First rule wins</text>
+  <rect class="card" x="575" y="46" width="165" height="126" rx="10"/>
+  <circle class="primary-card" cx="597" cy="68" r="12"/>
+  <text class="primary" x="597" y="72" text-anchor="middle" font-weight="700">4</text>
+  <text class="title fg" x="617" y="72">Report</text>
+  <text class="tiny muted" x="589" y="94">DLC page of your</text>
+  <text class="tiny muted" x="589" y="108">dashboard, next to</text>
+  <text class="tiny muted" x="589" y="122">installs and spend</text>
+  <rect class="muted-card" x="589" y="142" width="87" height="20" rx="10"/>
+  <text class="tiny muted" x="633" y="156" text-anchor="middle">Cost per DLC</text>
+  <line class="arrow" x1="189" y1="109.0" x2="195" y2="109.0"/>
+  <polygon class="arrow-tip" points="193,105.0 193,113.0 201,109.0"/>
+  <line class="arrow" x1="374" y1="109.0" x2="380" y2="109.0"/>
+  <polygon class="arrow-tip" points="378,105.0 378,113.0 386,109.0"/>
+  <line class="arrow" x1="559" y1="109.0" x2="565" y2="109.0"/>
+  <polygon class="arrow-tip" points="563,105.0 563,113.0 571,109.0"/>
+  <line class="arrow-primary" x1="657.5" y1="180" x2="657.5" y2="208"/>
+  <polygon class="arrow-tip-primary" points="651.5,204 663.5,204 657.5,214"/>
+  <rect class="blue-card" x="20" y="218" width="520" height="74" rx="12"/>
+  <text class="label blue" x="38" y="240">OPTIONAL</text>
+  <text class="title fg" x="38" y="262">Conversion postbacks to ad platforms</text>
+  <text class="tiny muted" x="38" y="280">Paid DLC activations, once per player, DLC and platform</text>
+  <rect class="green-card" x="560" y="218" width="180" height="74" rx="12"/>
+  <text class="label green" x="650" y="240" text-anchor="middle">OUTPUT</text>
+  <text class="title fg" x="650" y="262" text-anchor="middle">DLC dashboard</text>
+  <text class="tiny muted" x="650" y="280" text-anchor="middle">Units · Unique · CR %</text>
+  <path class="arrow" d="M 472 180 V 204 H 280" stroke-dasharray="4 4"/>
+  <polygon class="arrow-tip" points="274,204 286,204 280,214"/>
+  <path class="arrow" d="M 280 204 V 214" />
+
+</svg>
