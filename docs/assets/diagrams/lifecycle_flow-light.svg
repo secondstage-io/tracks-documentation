@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 322" width="100%" height="auto" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif">
+  <style>
+    .fg { fill: #1d1d20; }
+    .muted { fill: #65656b; }
+    .card { fill: #ffffff; stroke: #e3e3e6; stroke-width: 1; }
+    .muted-card { fill: #f5f5f7; stroke: #d8d8dc; stroke-width: 1; }
+    .primary { fill: #dc2626; }
+    .primary-card { fill: #fef2f2; stroke: #fecaca; stroke-width: 1; }
+    .amber { fill: #b45309; }
+    .amber-card { fill: #fffbeb; stroke: #fde68a; stroke-width: 1; }
+    .green { fill: #047857; }
+    .green-card { fill: #ecfdf5; stroke: #a7f3d0; stroke-width: 1; }
+    .blue { fill: #1d4ed8; }
+    .blue-card { fill: #eff6ff; stroke: #bfdbfe; stroke-width: 1; }
+    .arrow { stroke: #65656b; stroke-width: 2; fill: none; }
+    .arrow-tip { fill: #65656b; }
+    .arrow-primary { stroke: #dc2626; stroke-width: 2; fill: none; }
+    .arrow-tip-primary { fill: #dc2626; }
+    text { font-size: 13px; }
+    .label { font-size: 10px; font-weight: 600; letter-spacing: 0.06em; }
+    .title { font-size: 14px; font-weight: 600; }
+    .small { font-size: 11px; }
+    .tiny { font-size: 10px; }
+  </style>
+  <text class="label primary" x="20" y="30">IN YOUR GAME → TRACKS</text>
+  <line class="arrow" x1="179" y1="26" x2="740" y2="26" stroke-width="1" opacity="0.4"/>
+  <rect class="card" x="20" y="46" width="165" height="112" rx="10"/>
+  <circle class="primary-card" cx="42" cy="68" r="12"/>
+  <text class="primary" x="42" y="72" text-anchor="middle" font-weight="700">1</text>
+  <text class="title fg" x="62" y="72">Game launch</text>
+  <text class="tiny muted" x="34" y="94">Game Open event sent</text>
+  <text class="tiny muted" x="34" y="108">on every launch</text>
+  <rect class="muted-card" x="34" y="128" width="82" height="20" rx="10"/>
+  <text class="tiny muted" x="75" y="142" text-anchor="middle">Measure API</text>
+  <rect class="card" x="205" y="46" width="165" height="112" rx="10"/>
+  <circle class="primary-card" cx="227" cy="68" r="12"/>
+  <text class="primary" x="227" y="72" text-anchor="middle" font-weight="700">2</text>
+  <text class="title fg" x="247" y="72">Install</text>
+  <text class="tiny muted" x="219" y="94">First Game Open marks</text>
+  <text class="tiny muted" x="219" y="108">the install (Day 0)</text>
+  <rect class="muted-card" x="219" y="128" width="121" height="20" rx="10"/>
+  <text class="tiny muted" x="279" y="142" text-anchor="middle">is_first_game_open</text>
+  <rect class="card" x="390" y="46" width="165" height="112" rx="10"/>
+  <circle class="primary-card" cx="412" cy="68" r="12"/>
+  <text class="primary" x="412" y="72" text-anchor="middle" font-weight="700">3</text>
+  <text class="title fg" x="432" y="72">Attribution</text>
+  <text class="tiny muted" x="404" y="94">Install credited to the</text>
+  <text class="tiny muted" x="404" y="108">ad or link click</text>
+  <rect class="muted-card" x="404" y="128" width="121" height="20" rx="10"/>
+  <text class="tiny muted" x="464" y="142" text-anchor="middle">Channel · Campaign</text>
+  <rect class="card" x="575" y="46" width="165" height="112" rx="10"/>
+  <circle class="primary-card" cx="597" cy="68" r="12"/>
+  <text class="primary" x="597" y="72" text-anchor="middle" font-weight="700">4</text>
+  <text class="title fg" x="617" y="72">Active days</text>
+  <text class="tiny muted" x="589" y="94">One active day per player</text>
+  <text class="tiny muted" x="589" y="108">per UTC calendar day</text>
+  <rect class="muted-card" x="589" y="128" width="104" height="20" rx="10"/>
+  <text class="tiny muted" x="641" y="142" text-anchor="middle">Game Open dates</text>
+  <line class="arrow" x1="189" y1="102.0" x2="195" y2="102.0"/>
+  <polygon class="arrow-tip" points="193,98.0 193,106.0 201,102.0"/>
+  <line class="arrow" x1="374" y1="102.0" x2="380" y2="102.0"/>
+  <polygon class="arrow-tip" points="378,98.0 378,106.0 386,102.0"/>
+  <line class="arrow" x1="559" y1="102.0" x2="565" y2="102.0"/>
+  <polygon class="arrow-tip" points="563,98.0 563,106.0 571,102.0"/>
+  <line class="arrow-primary" x1="380" y1="166" x2="380" y2="192"/>
+  <polygon class="arrow-tip-primary" points="374,188 386,188 380,198"/>
+  <rect class="primary-card" x="20" y="206" width="720" height="106" rx="12"/>
+  <text class="label primary" x="38" y="228">PLAYER LIFECYCLE REPORT</text>
+  <text class="title fg" x="38" y="250"></text>
+  <rect class="primary-card" x="44" y="246" width="160" height="26" rx="13"/>
+  <text class="small primary" x="124" y="263" text-anchor="middle">DAU · WAU · MAU</text>
+  <rect class="primary-card" x="217" y="246" width="160" height="26" rx="13"/>
+  <text class="small primary" x="297" y="263" text-anchor="middle">D1–D30 retention</text>
+  <rect class="primary-card" x="390" y="246" width="160" height="26" rx="13"/>
+  <text class="small primary" x="470" y="263" text-anchor="middle">30-day churn</text>
+  <rect class="primary-card" x="563" y="246" width="160" height="26" rx="13"/>
+  <text class="small primary" x="643" y="263" text-anchor="middle">Reactivations</text>
+  <text class="tiny muted" x="380" y="298" text-anchor="middle">Split by country, channel, platform, storefront and version of each player's install</text>
+
+</svg>

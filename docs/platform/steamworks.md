@@ -71,5 +71,6 @@ Confirm to send the invitation. We'll let you know once access is set up and the
 
 ## Related
 
+- [Wishlist Insights](../reporting/wishlist-insights.md) — how TRACKS credits your Steam wishlists to channels, campaigns and ads, and how to read CPWL.
 - [Tracking Links](../support/trackinglinks.md) — UTM-tagged URLs that drive attributable traffic to your Steam page.
 - [Landing Page Integration](landingpages.md) — the TRACKS JavaScript snippet automatically appends UTM parameters to outbound storefront links so Steam traffic is attributed alongside web visits.

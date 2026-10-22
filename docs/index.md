@@ -110,6 +110,17 @@
   </div>
 
   <div class="docs-sitemap__col">
+    <p class="docs-sitemap__heading">Reporting</p>
+    <ul>
+      <li><a href="reporting/overview/">Overview</a></li>
+      <li><a href="reporting/wishlist-insights/">Wishlist Insights</a></li>
+      <li><a href="reporting/roas/">ROAS %</a></li>
+      <li><a href="reporting/player-lifecycle/">Player Lifecycle</a></li>
+      <li><a href="reporting/demo-conversion/">Demo → Full Game</a></li>
+    </ul>
+  </div>
+
+  <div class="docs-sitemap__col">
     <p class="docs-sitemap__heading">Operations</p>
     <ul>
       <li><a href="support/adopshelper/">Ad Ops Guide</a></li>

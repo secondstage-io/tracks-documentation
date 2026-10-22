@@ -1706,10 +1706,10 @@ body, .md-typeset { font-size-adjust: none; }
   margin-bottom: 2.25rem;
 }
 @media screen and (min-width: 48em) {
-  .docs-home__sitemap { grid-template-columns: repeat(3, 1fr); }
+  .docs-home__sitemap { grid-template-columns: repeat(4, 1fr); }
 }
 @media screen and (min-width: 85em) {
-  .docs-home__sitemap { grid-template-columns: repeat(6, 1fr); gap: 1.5rem; }
+  .docs-home__sitemap { grid-template-columns: repeat(4, 1fr); gap: 1.75rem 1.5rem; }
 }
 
 .docs-sitemap__heading {
