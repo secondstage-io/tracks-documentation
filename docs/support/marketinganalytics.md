@@ -19,7 +19,7 @@ For PC and console games, awareness is a first-class KPI — not a vanity metric
 - [**Cost Per Mille (CPM)**](../glossary.md#c)**:** Cost per 1,000 ad impressions — the baseline efficiency metric for awareness campaigns.
 - **View Rate:** Percentage of video ad impressions that meet the platform's viewability threshold.
 - [**Cost Per Qualified View (CPQ)**](../glossary.md#c)**:** A modeled refinement of CPM that counts only views with sustained engagement or downstream action — closer to "real" awareness than raw impressions.
-- **Wishlist additions** *(Steam)* — wishlist activity is a strong leading indicator for sell-through, and TRACKS attributes wishlists back to the campaigns that drove them. See [Steamworks Integration](../platform/steamworks.md).
+- **Wishlist additions** *(Steam)* — wishlist activity is a strong leading indicator for sell-through, and TRACKS attributes wishlists back to the campaigns that drove them. See [Wishlist Insights](../reporting/wishlist-insights.md) and [Steamworks Integration](../platform/steamworks.md).
 - **Brand health signals** — search volume, social mentions, and sentiment, when available.
 
 For more on why awareness is foundational for PC/console marketing, see the Academy's [Brand Health module](https://secondstage.io/academy/fundamentals/brand-health){:target="_blank"} or the blog post [The Hidden Power of Awareness in Video Game Marketing](https://secondstage.io/2025/01/awareness-funnel-in-video-game-marketing/){:target="_blank"}.
@@ -40,9 +40,9 @@ For how to read acquisition data when planning campaigns, see the Academy's [Mea
 
 Acquisition metrics tell you who came in. Post-launch metrics tell you whether they were *worth* acquiring — and they often reshuffle which channels look profitable.
 
-- [**Return on Ad Spend (ROAS)**](../glossary.md#r)**:** Revenue per ad dollar, typically reported over fixed windows: **D1, D7, and D30**. Different game genres mature at different rates — some break even at D7, others not until D30 or later.
+- [**Return on Ad Spend (ROAS)**](../glossary.md#r)**:** Revenue per ad dollar, typically reported over fixed windows: **D1, D7, and D30**. Different game genres mature at different rates — some break even at D7, others not until D30 or later. See [ROAS %](../reporting/roas.md) for how TRACKS estimates it.
 - **Lifetime Value (LTV):** Projected total revenue from a player cohort, accounting for ongoing monetization (DLC, in-game purchases, season passes). LTV-driven budgeting is what separates teams that scale spend profitably from those that don't.
-- [**Retention curves**](../glossary.md#d)**:** D1 / D7 / D30 retention rates, segmented by acquisition source. A channel with high CPI but high D30 retention often beats a "cheap" channel with poor retention.
+- [**Retention curves**](../glossary.md#d)**:** D1 / D7 / D30 retention rates, segmented by acquisition source. A channel with high CPI but high D30 retention often beats a "cheap" channel with poor retention. See [Player Lifecycle](../reporting/player-lifecycle.md).
 - [**Cohort analysis**](../glossary.md#c)**:** Slicing players by acquisition campaign to compare quality across creative, audience, and channel.
 
 For LTV math and how lifecycle data should feed back into acquisition decisions, see the Academy's [Calculating lifetime value](https://secondstage.io/academy/player-lifecycle/calculating-lifetime-value){:target="_blank"} and [Lifecycle-informed marketing](https://secondstage.io/academy/player-lifecycle/lifecycle-informed-marketing){:target="_blank"} modules — or the full [Player Lifecycle path](https://secondstage.io/academy/player-lifecycle){:target="_blank"} for end-to-end coverage.

@@ -79,7 +79,7 @@ The overarching approach used to guide an ad campaign toward its objective. Most
 The medium through which marketing messages are delivered, such as gaming websites or social media platforms.
 
 **Churn 30d**  
-The segment of Matured Installs who have not returned to play the game within the last 30 days.  
+The share of Matured Installs (installed 30 or more days ago) with no game session on days 1 to 30 after install. See [Player Lifecycle](reporting/player-lifecycle.md).
 
 **Cohort Matrix**  
 A table tracking user retention by identifying specific groups (cohorts) based on their install date and monitoring their return rate over subsequent days (Day 0 to Day 12).
@@ -102,6 +102,9 @@ Cost Per Mille (or Cost Per Thousand) represents the amount an advertiser pays f
 **CPQ**  
 Cost Per Quality represents the cost an advertiser pays for 1,000 impressions shown to users who meet a predefined quality threshold (e.g., engaged users or those with a higher likelihood to convert).
 
+**CPWL (Cost Per Wishlist)**  
+Campaign cost divided by Paid Wishlists — what one campaign-attributed Steam wishlist costs. See [Wishlist Insights](reporting/wishlist-insights.md).
+
 **Creative (Ad)**  
 The actual content of the advertisement, including the visual and textual elements.
 
@@ -122,6 +125,9 @@ D1, D3, D7, D14, and D30 retention indicate how many users are still active 1, 3
 **DAU (Daily Active Users)**  
 The total number of unique players who opened the game on a specific day, consisting of both new installs and returning users.   
 
+**Demo-to-FullGame CVR %**  
+The share of demo players who later launched the full game. See [Demo → Full Game Conversion](reporting/demo-conversion.md).
+
 **Direct**  
 A user who was not exposed to any advertising campaign and has no referrer, but accessed the store directly (e.g., by typing the URL or using a bookmark).
 
@@ -132,6 +138,9 @@ The number of installs of downloadable content (DLC) for a game.
 
 **eCPI**  
 Effective Cost Per Install; the average cost per install including direct and organic installs. It helps assess campaign efficiency across all sources, even those without precise attribution.
+
+**eCPWL (Effective Cost Per Wishlist)**  
+Campaign cost divided by all Steam wishlists, paid and organic. It credits spend with the organic lift campaigns often create. See [Wishlist Insights](reporting/wishlist-insights.md).
 
 **Engaged Visits**  
 A visit of at least 10 seconds, or one that includes two or more page views, or triggers at least one event like button click or scroll down. It replaces bounce rate to provide a more accurate measure of meaningful user interactions on a website.
