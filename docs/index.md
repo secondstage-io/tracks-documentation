@@ -120,6 +120,7 @@
       <li><a href="reporting/player-lifecycle/">Player Lifecycle</a></li>
       <li><a href="reporting/demo-conversion/">Demo → Full Game</a></li>
       <li><a href="reporting/dlc/">DLC Tracking</a></li>
+      <li><a href="reporting/api/">Reporting API</a></li>
     </ul>
   </div>
 
