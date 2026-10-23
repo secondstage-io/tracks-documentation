@@ -2,6 +2,10 @@
 
 Learn more about TRACKS iterations here.
 
+## V1.6 22nd October 2026
+
+New Reporting documentation (Wishlist Insights, ROAS %, Player Lifecycle, Demo → Full Game Conversion, DLC Tracking, Reporting API), plus the Console Launch Playbook, Website Tracking & Consent and Free-to-Play guides.
+
 ## V1.5 18th February 2026
 
 Player Lifecycle Dashboard for retention, churn and reactivation data.

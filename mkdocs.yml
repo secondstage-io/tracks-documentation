@@ -167,6 +167,7 @@ nav:
     - Player Lifecycle: reporting/player-lifecycle.md
     - Demo → Full Game Conversion: reporting/demo-conversion.md
     - DLC Tracking: reporting/dlc.md
+    - Reporting API: reporting/api.md
   - Operations:
     - Ad Ops Guide: support/adopshelper.md
     - Tracking Links: support/trackinglinks.md

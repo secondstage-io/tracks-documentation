@@ -249,6 +249,9 @@ A player who has returned to the game after a period of inactivity lasting 30 da
 **Referrer**  
 The source (such as a website, ad, or platform) that directed a user to a particular page or store, typically captured via HTTP headers or URL parameters.
 
+**Reporting API**  
+A read-only HTTP API that returns your TRACKS performance, attribution and player-lifecycle data as JSON or CSV, served from your own Google Cloud project. See [Reporting API](reporting/api.md).
+
 **Return Rate % (30d Lookback)**  
 The percentage of Matured Installs (users from 30+ days ago) who have successfully returned to play the game at least once in the last 30 days.
 

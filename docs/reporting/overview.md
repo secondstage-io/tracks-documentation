@@ -56,6 +56,10 @@ These guides explain the numbers in your TRACKS dashboards: where each metric co
 
 </div>
 
+## Get the data programmatically
+
+The [Reporting API](api.md) returns the same performance, attribution and player-lifecycle numbers as JSON or CSV, for your own BI tools, warehouse or scripts. It is enabled per client on request.
+
 ## Related
 
 - [Marketing Analytics](../support/marketinganalytics.md): the wider KPI picture these reports belong to.
