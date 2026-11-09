@@ -5,7 +5,7 @@
 !!! tip "Important:"
 
     Required for Modeled Attribution Tracking, Measured Attribution Tracking, Measured Attribution Tracking + Modeling. See [Methodologies](../support/attribution.md#methodologies) for what each tracking mode means.
-    By linking TRACKS with Steamworks, Google Analytics 4 and Google Tag Manager access, you will be able to use [Wishlist Insights](../reporting/wishlist-insights.md) and web-conversion reporting. Please note that postbacks only work if you are using the Measured Attribution Tracking or Measured Attribution Tracking + Modeling solution. 
+    By linking TRACKS with Steamworks, Google Analytics 4 and Google Tag Manager access, you will be able to use [Wishlist Insights](../reporting/wishlist-insights.md) and web-conversion reporting. Please note that Postbacks only work if consent is set up on the landing page or within the game.  
 
 By embedding the TRACKS JavaScript code into your landing page, minimal technical data — such as IP address and user-agent — is passively collected as part of the standard HTTP request. The TRACKS snippet itself sets no cookies and uses no LocalStorage or other client-side storage mechanisms. This data is pseudonymized (through salted hashing of IP addresses), retained as raw logs for 30 days (see [Data Deletion and Retention](../support/datacollection.md#data-deletion-and-retention) for the full retention picture), and only becomes relevant when the second measurement point is triggered. Attribution is based on the combination of both signals. For consent, legal basis, and data handling, see [Data Handling & Security](../support/datasecurity.md).
 
