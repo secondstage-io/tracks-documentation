@@ -51,6 +51,9 @@ Metrics that measure the effectiveness of marketing efforts in generating awaren
 
 ## B
 
+**Beat**  
+A campaign phase, such as Announce, Demo, Launch or Sale, set by date for each game. Use it to compare phases with each other.
+
 **Brand Health Metrics**  
 Metrics that assess the overall health and perception of a brand, including aspects such as brand sentiment or brand equity. These metrics are categorized by source:
 
@@ -77,6 +80,9 @@ The overarching approach used to guide an ad campaign toward its objective. Most
 
 **Channel**  
 The medium through which marketing messages are delivered, such as gaming websites or social media platforms.
+
+**Channel Grouping**  
+Paid or Organic, derived from the channel.
 
 **Churn 30d**  
 The share of Matured Installs (installed 30 or more days ago) with no game session on days 1 to 30 after install. See [Player Lifecycle](reporting/player-lifecycle.md).
@@ -172,8 +178,8 @@ Google Cloud Platform; a suite of cloud computing services offered by Google for
 
 ## H
 
-**Hybrid Cloud**  
-A computing environment that combines private and public cloud services to provide greater flexibility and optimization.
+**Hybrid-hosted**  
+The TRACKS deployment model: the services and per-player data run in your own Google Cloud project, and only aggregated results reach the TRACKS Reporting Suite. See [Architecture](support/architecture.md).
 
 ## I
 
@@ -209,9 +215,6 @@ A statistical technique used to estimate the impact of various marketing activit
 **MAU (Monthly Active Users)**  
 The total count of unique players who opened the game at least once within the last 30 days.
 
-**Measured Installs (from Steamworks UTM Analytics)**  
-The number of installs tracked through Steamworks' UTM parameters, used to measure the effectiveness of marketing campaigns.
-
 **Media Metrics**  
 Metrics that assess the performance of media placements, including impressions, clicks, and engagement rates.
 
@@ -229,6 +232,9 @@ Game installs that occur without being driven by paid advertising. These install
 
 **Paid Installs**  
 New game installations that are directly attributed to a specific advertising or marketing campaign, measured and verified through Tracks Attribution.
+
+**Paid Wishlists**  
+The part of Total Wishlists credited to paid channels. See [Wishlist Insights](reporting/wishlist-insights.md).
 
 **Platform**  
 The system on which a game is played, such as PC, PlayStation, Xbox or Switch.
@@ -265,6 +271,9 @@ The overall plan or approach used to achieve marketing objectives, including the
 
 **Storefront**  
 The digital marketplace where a game or application is sold, such as Steam, PSN, Microsoft Store or eShop.
+
+**Steam UTM Conversions**  
+Wishlists and purchases that Steamworks' UTM report credits to visits that arrived with UTM tags. A sample, not all of your traffic. See [Wishlist Insights](reporting/wishlist-insights.md).
 
 **Steam Wishlist**  
 A feature on Steam that allows users to save games they are interested in and receive notifications about their release or discounts.
@@ -326,6 +335,9 @@ The number of completed actions on a website that align with marketing goals, su
 
 **Web Conversions CVR%**  
 The percentage of website visitors who completed a desired action, such as clicking a 'Buy Now' button or signing up — calculated as conversions divided by total website visitors.
+
+**Web Visits**  
+Sessions on your website, as counted by GA4.
 
 ## X
 
