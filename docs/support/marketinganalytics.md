@@ -40,7 +40,7 @@ For how to read acquisition data when planning campaigns, see the Academy's [Mea
 
 Acquisition metrics tell you who came in. Post-launch metrics tell you whether they were *worth* acquiring — and they often reshuffle which channels look profitable.
 
-- [**Return on Ad Spend (ROAS)**](../glossary.md#r)**:** Gross revenue before Tax per unit of ad spend. TRACKS estimates it from paid installs × the local Steam price × 0.7; free-to-play titles use actual purchase revenue. See [ROAS %](../reporting/roas.md) for how it is calculated.
+- [**Return on Ad Spend (ROAS)**](../glossary.md#r)**:** Revenue after the store's 30% fee, before tax, per unit of ad spend. TRACKS estimates it from paid installs × the local Steam price × 0.7 (the share the studio keeps); free-to-play titles use actual purchase revenue. See [ROAS %](../reporting/roas.md) for how it is calculated.
 - **Lifetime Value (LTV):** Projected total revenue from a player cohort, accounting for ongoing monetization (DLC, in-game purchases, season passes). LTV-driven budgeting is what separates teams that scale spend profitably from those that don't.
 - [**Retention curves**](../glossary.md#d)**:** D1 / D7 / D30 retention rates, segmented by acquisition source. A channel with high CPI but high D30 retention often beats a "cheap" channel with poor retention. See [Player Lifecycle](../reporting/player-lifecycle.md).
 - [**Cohort analysis**](../glossary.md#c)**:** Slicing players by acquisition campaign to compare quality across creative, audience, and channel.
