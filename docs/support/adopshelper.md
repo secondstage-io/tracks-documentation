@@ -35,9 +35,11 @@ Apply the notation consistently in every ad's name and the filtering happens dow
 
 For each integrated media platform, UTM-tagged link templates will be provided through the Ad Ops guide. These templates will include copy-and-paste-ready UTM tracking landing pages for use in your ads and assets.
 
-``
-https://landingpage.mygame.com/?utm_source=2S_socialmedia&utm_medium=meta&utm_campaign={{campaign.name}}&utm_content={{adset.name}}&utm_term={{ad.name}}
-``
+```text
+https://landingpage.mygame.com/?utm_source=meta&utm_medium=social&utm_campaign={{campaign.name}}&utm_content={{adset.id}}&utm_term={{ad.id}}&utm_id={{campaign.id}}&channel=Meta&campaign={{campaign.id}}&campaign_name={{campaign.name}}&ad_group={{adset.id}}&ad_group_name={{adset.name}}&ad={{ad.id}}&ad_name={{ad.name}}&placement={{placement}}&utm_source_platform={{site_source_name}}
+```
+
+This is the Meta template. Your Ad Ops Helper has one for each platform. TRACKS joins on the **IDs** (campaign, ad set, ad), so keep the ID macros even if you rename campaigns.
 
 For influencer, media-house and organic campaigns, see the [Tracking Link Builders](trackinglinks.md) — sheet-based tools that generate branded vanity URLs (e.g. `connect.yourgame.com/creator`) alongside the standard UTM parameters.
 

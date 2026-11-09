@@ -51,7 +51,7 @@ The Measurement API and tracking links are served from subdomains of *your* doma
 - **Same-origin requests** — browsers block cross-domain requests under CORS. Serving TRACKS from `tracks-m.yourgame.com` keeps requests same-origin, so they slot into your existing consent and privacy framework.
 - **Branding & trust** — players and ad-platform reviewers see your domain on every request, not a third-party tracker.
 
-Setup is a one-time DNS task: Second Stage shares a TXT record for verification and CNAME records that map your subdomains — typically one for the Measurement API (e.g. `tracks-m.mygame.com`) and one for tracking links (e.g. `tracks-c.mygame.com`) — to the TRACKS backend. Full record details are in [Custom Domains](../platform/domains.md).
+Setup is a one-time DNS task: Second Stage shares a TXT record for verification and address records that map your subdomains — typically `tracks-m.` for the Measurement API (e.g. `tracks-m.mygame.com`), `tracks-c.` for the website tag and `connect.` for tracking links — to the TRACKS backend. Full record details are in [Custom Domains](../platform/domains.md).
 
 ## Next
 

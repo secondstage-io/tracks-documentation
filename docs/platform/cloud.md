@@ -52,9 +52,9 @@ The Second Stage team will be notified after access is granted and TRACKS Attrib
 
 <li markdown="block">
 
-### Configure environment variables
+### Configure the API key
 
-[Your API key and secret will be entered as environment variables to Google Cloud Run functions](https://cloud.google.com/functions/docs/configuring/env-var).
+Your Measurement API key is stored as an [environment variable on the Cloud Run services](https://cloud.google.com/run/docs/configuring/services/environment-variables). We send it to you once it's set.
 
 </li>
 
