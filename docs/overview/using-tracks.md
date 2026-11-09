@@ -15,7 +15,7 @@ After logging in, you'll be directed to the main overview. Initially, you'll see
   <figcaption>TRACKS home — demo dashboard + Add a New Game option</figcaption>
 </figure>
 
-In the main menu under "Your Games," you'll find this overview. The "Attribution Tracking" section provides a high-level summary of our in-house attribution tracking solution and overall campaign setup. For more details, check out our FAQ, which addresses common questions.
+In the main menu under "Your Games," you'll find this overview. The "Attribution Tracking" section provides a high-level summary of our in-house attribution tracking solution and overall campaign setup.
 
 By clicking on the profile icon or your email address/profile name, you'll find links to "Profile" options as well as a sign-out option.
 
@@ -44,7 +44,7 @@ In the dashboard view, use the menu on the left to navigate between different an
 
 In the user account option, you can add more information to your account, such as a profile picture, company, job title, or LinkedIn account.
 
-This information helps us to have more inisghts and get in touch with you if we need to, but is completely optional, as we deliberately try to collect as little personal information as possible.
+This information helps us to have more insights and get in touch with you if we need to, but is completely optional, as we deliberately try to collect as little personal information as possible.
 
 <figure class="browser-frame" markdown="span">
   ![TRACKS user account settings](../assets/overview_profile.png)

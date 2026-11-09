@@ -5,7 +5,7 @@
 !!! tip "Important:"
 
     Required for Modeled Attribution Tracking, Measured Attribution Tracking, Measured Attribution Tracking + Modeling. See [Methodologies](../support/attribution.md#methodologies) for what each tracking mode means.
-    By linking TRACKS with Steamworks, Google Analytics 4 and Google Tag Manager access, you will be able to use the Modeled Installs reporting feature. Please note that postbacks only work if you are using the Measured Attribution Tracking or Measured Attribution Tracking + Modeling solution. 
+    By linking TRACKS with Steamworks, Google Analytics 4 and Google Tag Manager access, you will be able to use [Wishlist Insights](../reporting/wishlist-insights.md) and web-conversion reporting. Please note that postbacks only work if you are using the Measured Attribution Tracking or Measured Attribution Tracking + Modeling solution. 
 
 By embedding the TRACKS JavaScript code into your landing page, minimal technical data — such as IP address and user-agent — is passively collected as part of the standard HTTP request. The TRACKS snippet itself sets no cookies and uses no LocalStorage or other client-side storage mechanisms. This data is pseudonymized (through salted hashing of IP addresses), retained as raw logs for 30 days (see [Data Deletion and Retention](../support/datacollection.md#data-deletion-and-retention) for the full retention picture), and only becomes relevant when the second measurement point is triggered. Attribution is based on the combination of both signals. For consent, legal basis, and data handling, see [Data Handling & Security](../support/datasecurity.md).
 
@@ -34,7 +34,7 @@ If GA4 is not already set up on your site, provide us with access to Google Tag 
 The code snippet below is what the Second Stage team deploys on your behalf through GTM — you don't need to paste it yourself. It's included here for reference so you can see what ends up in your container.
 
 ??? abstract "Pseudo-code example"
-    ```json
+    ```html
     <script>
     // TRACKS by Second STAGE Web Snippet
     (function (A, S, D, F, W, E) {
@@ -54,7 +54,7 @@ The code snippet below is what the Second Stage team deploys on your behalf thro
     </script>
     ```
 
-Each game will be assigned a unique token to replace "2S-XXXXX." After granting Google Tag Manager access, you'll be able to see the TRACKS JavaScript snippet deployed in your GTM container.
+Each game will be assigned a unique token to replace `2S-XXXXXX`. After granting Google Tag Manager access, you'll be able to see the TRACKS JavaScript snippet deployed in your GTM container. Some sites load the tag from your own `tracks-c.` domain instead of our CDN, for example when a strict Content-Security-Policy blocks third-party scripts.
 
 *Example*
 

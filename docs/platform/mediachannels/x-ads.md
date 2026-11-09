@@ -55,7 +55,7 @@ Use UTM-tagged links in your ad creatives.
 
 !!! note
 
-    X Ads does not support macros, so ensure each ad creative has the correct landing page URL hard-coded.
+    X Ads has very limited URL macro support, so give each ad its full tracking URL from the Ad Ops Helper.
 
 </li>
 
