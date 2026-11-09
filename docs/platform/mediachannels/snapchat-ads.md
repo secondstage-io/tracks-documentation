@@ -4,6 +4,10 @@
 
 Grant Second Stage access to Snapchat Business Manager and the Snap Pixel so TRACKS can read campaign performance and pixel-level events.
 
+!!! tip "Next"
+
+    Once access is in place, enable install + in-game event postbacks via the [Snapchat Conversions API](../../attribution/postbacks/snapchat.md).
+
 <ol class="setup-steps" markdown="1">
 
 <li markdown="block">

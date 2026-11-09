@@ -11,7 +11,7 @@ TRACKS combines **marketing analytics** and **attribution tracking** for PC and 
 - **Marketing analytics** — aggregates ad spend, impressions, clicks, web sessions, and storefront events across every channel into one dashboard. Sliceable by date, channel, GEO, campaign, creative, audience, and player cohort. See [Marketing Analytics](../support/marketinganalytics.md).
 - **Attribution tracking** — matches installs back to the campaigns that drove them via measured deterministic attribution + probabilistic Markov-chain modelling. Reaches up to 96% accuracy on PC/console. See [Attribution Tracking](../support/attribution.md).
 - **Awareness & brand health** — CPM, CPQ, view rate, wishlist additions, brand sentiment signals — first-class KPIs for PC/console where the consideration window is long.
-- **Postbacks** — server-to-server conversion signals back to Meta, Google, TikTok, Reddit, X, Snapchat, and Discord, so ad-network algorithms optimize on real installs rather than proxy events. See [Postbacks](../attribution/postbacks/index.md).
+- **Postbacks** — server-to-server conversion signals back to Meta, Google Ads, TikTok, Reddit, Snapchat, X, GA4 and DV360, so ad-network algorithms optimize on real installs rather than proxy events. See [Postbacks](../attribution/postbacks/index.md).
 
 ## Across the marketing timeline
 

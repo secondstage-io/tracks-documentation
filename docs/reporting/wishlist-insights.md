@@ -20,6 +20,10 @@ TRACKS combines all three. Steam is the source of truth for **how many** wishlis
 
 The model runs every time your pipeline refreshes, for each day and each country separately.
 
+!!! info "Without Financial Data access"
+
+    Steam's daily wishlist totals aren't available, so the ceiling for each day and country is modelled instead: from a Steam wishlist export you upload, or from public estimates when no export is available. Paid wishlists are still credited the same way, and the totals are marked as estimates. See [Steamworks Integration](../platform/steamworks.md).
+
 <ol class="setup-steps" markdown="1">
 
 <li markdown="block">
