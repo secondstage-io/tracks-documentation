@@ -8,7 +8,7 @@ Once the TRACKS backend is deployed in your Google Cloud Platform instance, you'
 
     Browsers block web requests that cross domain boundaries. Serving TRACKS from a subdomain of your own site (e.g. `tracks-m.yourgame.com`) keeps requests same-origin, so you avoid CORS blocks and can rely on your existing consent/privacy framework.
 
-To enable your branded domain, the Second Stage team will provide a CNAME record for you to add through your DNS provider. A **TXT record** proves you own the domain (Google reads it during verification). The **CNAME records** route traffic from your chosen subdomains to the TRACKS backend. 
+To enable your branded domain, the Second Stage team will provide the DNS records for you to add through your DNS provider. A **TXT record** proves you own the domain (Google reads it during verification). The **address records** route traffic from your chosen subdomains to the TRACKS backend. 
 
 ## Whitelabeling TRACKS API Endpoints
 
@@ -29,7 +29,7 @@ This is typically done **after testing** is complete and you're ready to move to
 Please complete the following steps in your DNS provider's console.  
 _Alternatively, you can send these instructions to your webmaster or IT team._
 
-The Second Stage Analytics team will provide you with the required TXT and CNAME records during the integration process.
+The Second Stage Analytics team will provide you with the required TXT and address records during the integration process.
 The values shown below are for example purposes only.
 
 ---
@@ -42,13 +42,36 @@ The values shown below are for example purposes only.
 
 ---
 
-#### 2. **CNAME Records (Example Values)**
+#### 2. **Address Records (recommended)**
+
+Each subdomain gets the same four A records:
+
+| Type | Name | Value |
+|------|------|-------|
+| A | `tracks-m` | `216.239.32.21` |
+| A | `tracks-m` | `216.239.34.21` |
+| A | `tracks-m` | `216.239.36.21` |
+| A | `tracks-m` | `216.239.38.21` |
+
+Repeat the same four A records for `tracks-c` and `connect`. **Don't add AAAA (IPv6) records.**
+
+- `tracks-m` — the Measurement API
+- `tracks-c` — the endpoint for the TRACKS website tag
+- `connect` — tracking links
+
+!!! warning "Cloudflare"
+
+    If your DNS is on Cloudflare, set these records to **DNS only** (grey cloud). Proxied records change the visitor IP address that TRACKS sees.
+
+#### Alternative: CNAME Records
 
 | Type  | Name       | Target                  |
 |-------|------------|--------------------------|
 | CNAME | `tracks-m` | `ghs.googlehosted.com.` |
 | CNAME | `tracks-c` | `ghs.googlehosted.com.` |
 | CNAME | `connect`  | `ghs.googlehosted.com.` |
+
+CNAME records are simpler, but some visitors then connect over IPv6, which makes country and click matching less accurate. Use them only if your DNS provider can't take A records.
 
 ---
 

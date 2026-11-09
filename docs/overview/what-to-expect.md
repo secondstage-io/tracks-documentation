@@ -88,7 +88,7 @@ The first three areas can run in parallel; attribution is the final piece, compl
 
     **Who:** webmaster or marketing-ops lead (Google Tag Manager) plus your Steamworks admin.
 
-    **You provide:** Editor access to Google Tag Manager — plus GA4 and Steamworks if you have them. We can set GA4 up from scratch if you don't.
+    **You provide:** Publish access to Google Tag Manager — plus GA4 and Steamworks if you have them. We can set GA4 up from scratch if you don't.
 
     **We handle:** tracking snippet deployment, GA4 configuration, conversion pixels, and Steam UTM setup.
 

@@ -16,7 +16,7 @@ The Measurement API tracks the customer acquisition source, enabling you to iden
 Before you begin, please ensure the following. These apply to the server-side integration described below. The plugin route has its own, much shorter, requirements — see [Telemetry](telemetry.md).
 
 - A Google Cloud Platform account with billing enabled (Google Cloud Platform microservices will auto-scale as needed for your game).
-- Access to Measurement API credentials (API key and secret — these are delivered to you via a setup email from Second Stage once your cloud project is provisioned).
+- Your Measurement API key (a bearer token), sent to you in a setup email once your cloud project is provisioned.
 - A TRACKS account with the attribution package enabled and ready for integration.
 - Basic knowledge of server-side programming, cloud services, and API integrations.
 - A telemetry server capable of reading and collecting client IPs via HTTP headers or X-Forwarded-For (XFF).
@@ -28,136 +28,74 @@ To integrate with TRACKS Attribution, you'll need to create and implement a ligh
 
 The webhook should trigger every time a game open (session start) event is logged in your telemetry system.
 
-The Measurement API endpoint requires the following parameters:
+Every event needs `event_name`, `user_id` and `ip`. The other fields decide how far the reports can break down, so send all of them from day one.
 
-- IP address
-- User ID
-- Event timestamp
-- Platform
-- Storefront
+| Field | Required | Example | Notes |
+|---|---|---|---|
+| `event_name` | Required | `game_open` | One event on every launch. The name is agreed per game. |
+| `user_id` | Required | `1dc642cc12345` | Stable per player, and the same on every event. |
+| `ip` | Required | `203.0.113.15` | The player's public IP, not your server's and not a LAN address. |
+| `timestamp` | Recommended | `2026-08-20T12:00:00Z` | ISO 8601, with `Z` or an offset such as `+02:00`. |
+| `is_first_game_open` | Required for installs | `true` | `true` only on the player's very first launch. |
+| `first_session_timestamp` | Optional | `2026-08-20T12:00:00Z` | The install time. An alternative install signal when no first-open flag exists. |
+| `platform`, `storefront` | Recommended | `PC`, `Steam` | The values are agreed with us before launch. |
+| `version` | Recommended | `1.0.3` | The build version. It splits demo and full game. |
+
+Selling DLC or in-game items? See [DLC Tracking](../reporting/dlc.md) and [Free-to-Play Games](../support/free-to-play.md) for the extra fields.
 
 For each game added, the Second Stage Analytics team provides comprehensive support for integration, deployment, and testing, starting with an onboarding call.
 
-??? abstract "API Request pseudo-code example"
+??? abstract "API request example"
 
-    ```json
-    # Example Python Code for server-side telemetry
+    ```python
+    # Example Python code for server-side telemetry
     import requests
 
-
-    url = "https://tracks.your-game.com/measure"  
-
+    url = "https://tracks-m.yourgame.com/measure"
 
     payload = {
-     'user_id': '1a23fd44c21f8l5r',
-     'event_name': 'game_open',
-     'ip': '175.124.248.15',
-     'time_stamp': '1724094783',
-     'platform': 'pc',
-     'storefront': 'steam'
+        "user_id": "1a23fd44c21f8l5r",
+        "event_name": "game_open",
+        "ip": "203.0.113.15",
+        "timestamp": "2026-08-20T12:00:00Z",
+        "is_first_game_open": True,
+        "platform": "PC",
+        "storefront": "Steam",
+        "version": "1.0.3",
     }
-    headers = {
-     'Authorization': 'Bearer API_KEY_TOKEN'
-    }
-    response = requests.request("POST", url, headers=headers, data=payload)
-    print(response.text)   
+    headers = {"Authorization": "Bearer API_KEY"}
+
+    # json= sends the body as JSON and sets Content-Type: application/json
+    response = requests.post(url, json=payload, headers=headers, timeout=10)
+    print(response.status_code, response.text)
     ```
+
+!!! tip "Test traffic"
+
+    Any event whose body contains the text `test` (in any case, anywhere in the body) is treated as QA traffic and dropped. Watch for words such as *latest* or *contest* in IDs and names. For integration tests, send `"version": "0.0.1-test"`.
 
 ## Endpoints
 
-To track media channel acquisition sources, you need to implement the API endpoints that record acquisition events.
-
 !!! note "Which endpoint do I implement?"
 
-    `/collect` is triggered client-side from your landing page. The Second Stage team deploys it for you via Google Tag Manager — see [Landing Page Integration](../platform/landingpages.md). You do **not** need to call it from your backend.
+    `/collect` is called by the TRACKS web tag that we deploy through Google Tag Manager — see [Landing Page Integration](../platform/landingpages.md). You don't call it yourself, and it needs no API key.
 
-    `/measure` is triggered server-side when a game-open (session start) event is logged. This is the endpoint you need to implement in your own telemetry backend using the pseudo-code example above.
+    `/measure` is called server-side when a game-open (session start) event is logged. This is the endpoint you implement in your own telemetry backend, using the example above.
 
-### `POST /collect` — Record web acquisition events
-
-| Field | Value |
-|---|---|
-| **Endpoint URL** | `https://tracks.yourgame.com/v1/collect` |
-| **Method** | `POST` |
-| **Auth** | `Authorization: Bearer <API_KEY>` |
-| **Content-Type** | `application/json` |
-
-**Description:** Records web events, capturing details about the acquisition source.
-
-**Example:**
-
-```
-    # Example Python Code for web client-side
-    import config
-    import requests
-
-
-    def track_acquisition(data):
-       headers = {
-           'Authorization': f'Bearer {config.API_KEY}',
-           'Content-Type': 'application/json'
-       }
-       try:
-           response = requests.post("https://tracks.yourgame.com/v1/collect", json=data, headers=headers)
-           response.raise_for_status()
-           print('Acquisition event recorded:', response.json())
-       except requests.exceptions.HTTPError as err:
-           print('Error recording acquisition event:', err.response.json())
-
-
-    acquisition_data = {
-       "event_name": "web_visit",
-       "timestamp": "2024-08-29T12:00:00Z",
-       "channel": "paid_search",
-       "campaign": "summer_sale",
-       "source": "google",
-       "medium": "cpc",
-       "term": "steamsale",
-       "content": "ad_1",
-       "clientId": "12345",
-       "sessionId": "abcdef123456",
-       "ip": "175.124.248.15",
-       "device": "mobile",
-       "browser": "chrome"
-    }
-
-
-    track_acquisition(acquisition_data)
-```
-
-### `POST /measure` — Record game session events
+### `POST /measure` — Record in-game events
 
 | Field | Value |
 |---|---|
-| **Endpoint URL** | `https://tracks.yourgame.com/v1/measure` |
+| **Endpoint URL** | `https://tracks-m.yourgame.com/measure` |
 | **Method** | `POST` |
 | **Auth** | `Authorization: Bearer <API_KEY>` |
-| **Content-Type** | `application/json` |
+| **Content-Type** | `application/json` (required — a form-encoded body is rejected with `400`) |
 
-**Description:** Records web events, capturing details about the acquisition source.
+**Description:** Records in-game events: game open, DLC and purchase events. The response carries a `message_id` for the accepted event.
 
-**Example:**
+### `GET /ip` — Look up the caller's public IP
 
-```
-    # Example Python Code for server-side telemetry
-    import requests
-
-    url = "https://tracks.yourgame.com/v1/measure" 
-
-    payload = {
-     'user_id': '1a23fd44c21f8l5r',
-     'event_name': 'game_open',
-     'ip': '175.124.248.15',
-     'timestamp': '2024-08-29T12:00:00Z',
-     'platform': 'pc',
-     'storefront': 'steam'
-    }
-    headers = {
-      'Authorization': f'Bearer {config.API_KEY}',
-    }
-    response = requests.request("POST", url, headers=headers, data=payload)
-    print(response.text)
-```
+Returns the caller's public IP address, for example `{"ip": "203.0.113.15"}`. Use it when the game client can't read its own public IP. If your backend forwards the events, it must still send the player's IP, not the server's.
 
 ## Testing
 
@@ -172,16 +110,16 @@ To track media channel acquisition sources, you need to implement the API endpoi
 
 ## Troubleshooting
 
-- **Invalid Credentials:** Confirm that your API key and secret are correct and have the necessary permissions.
+- **Invalid Credentials:** Confirm that your API key is correct and sent as `Bearer <API_KEY>`.
 - **Network Errors:** Review your server’s network configuration and API base URL.
 - **Data Mismatches:** Ensure the event payload matches the required schema and that timestamp formats are correct.
 
 ### HTTP status codes
 
-- **200 / 204** — Request accepted. Event is queued for processing.
-- **400** — Malformed payload. Check the required fields (`user_id`, `event_name`, `ip`, `timestamp`, `platform`, `storefront`) and the timestamp format.
-- **401** — Missing or invalid `Authorization` header. Verify the bearer token is sent exactly as `Bearer <API_KEY>`.
-- **403** — Credentials are valid but don't have permission for this endpoint. Contact the Second Stage team to confirm API key scope.
+- **200** — Request accepted. The event is queued for processing, and the response carries a `message_id`.
+- **400** — `ip` missing, `event_name` or `user_id` missing, or the body isn't JSON (send `Content-Type: application/json`).
+- **401** — No `Authorization: Bearer <API_KEY>` header.
+- **403** — The key is not valid for this endpoint. Check you are using this game's key.
 - **5xx** — Transient server-side error. Retry with exponential backoff; if it persists, contact the Second Stage team.
 
 If problems persist after checking the above, reach out via the [support channels](../support/contact.md).
