@@ -103,7 +103,7 @@ Cost Per Install; the amount an advertiser pays to acquire one user who installs
 Cost Per Mille (or Cost Per Thousand) represents the amount an advertiser pays for 1,000 ad impressions.
 
 **CPQ**  
-Cost Per Quality; what you pay for attention that meets a quality bar (engaged web visits, ad engagements and video watches) rather than for raw impressions. Lower is better, and it predicts installs well before launch.
+Cost Per Quality; what you pay for attention that meets a quality bar (engaged web visits, ad engagements and video watches) rather than for raw impressions. Lower is better.
 
 **CPWL (Cost Per Wishlist)**  
 Campaign cost divided by Paid Wishlists — what one campaign-attributed Steam wishlist costs. See [Wishlist Insights](reporting/wishlist-insights.md).
