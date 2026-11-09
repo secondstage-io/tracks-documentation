@@ -58,7 +58,7 @@ These guides explain the numbers in your TRACKS dashboards: where each metric co
 
 ## Get the data programmatically
 
-The [Reporting API](api.md) returns the same performance, attribution and player-lifecycle numbers as JSON or CSV, for your own BI tools, warehouse or scripts. It is enabled per client on request.
+The [Reporting API](api.md) returns the same performance, attribution and player-lifecycle numbers as JSON or CSV, for your own BI tools, warehouse or scripts. It is enabled per client on request. Estimated revenue and ROAS % are dashboard-only for now.
 
 ## Related
 

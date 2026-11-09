@@ -85,7 +85,7 @@ The share of Matured Installs (installed 30 or more days ago) with no game sessi
 Google Consent Mode v2 tells Google tags, and through GTM the other ad platforms, what a website visitor agreed to. Google records it as a GCS code on every hit: G100 (nothing allowed), G101 (analytics only) or G111 (analytics and advertising). See [Website Tracking & Consent](platform/website-tracking.md).
 
 **Cohort Matrix**  
-A table tracking user retention by identifying specific groups (cohorts) based on their install date and monitoring their return rate over subsequent days (Day 0 to Day 12).
+A table of install cohorts (players grouped by install date) showing how many players from each cohort were active on each day after install (Day 0 to Day 30).
 
 **CPA**  
 Cost Per Action; the average amount spent to drive one user to complete a desired action on the website — such as clicking the 'Buy Now' button or completing a sign-up. Calculated as campaign cost divided by number of conversions.
@@ -103,7 +103,7 @@ Cost Per Install; the amount an advertiser pays to acquire one user who installs
 Cost Per Mille (or Cost Per Thousand) represents the amount an advertiser pays for 1,000 ad impressions.
 
 **CPQ**  
-Cost Per Quality represents the cost an advertiser pays for 1,000 impressions shown to users who meet a predefined quality threshold (e.g., engaged users or those with a higher likelihood to convert).
+Cost Per Quality; what you pay for attention that meets a quality bar (engaged web visits, ad engagements and video watches) rather than for raw impressions. Lower is better, and it predicts installs well before launch.
 
 **CPWL (Cost Per Wishlist)**  
 Campaign cost divided by Paid Wishlists — what one campaign-attributed Steam wishlist costs. See [Wishlist Insights](reporting/wishlist-insights.md).
@@ -123,7 +123,7 @@ The number of installs attributed to the same day (within the first 24 hours) wh
 The number of installs attributed to the period from day 0 (day of first ad engagement) up to day N (1, 3, 7, 14, or 30). It includes installs that happen immediately or within the respective number of days after the user first engaged with the ad or campaign.
 
 **D1 / D3 / D7 / D14 / D30 Retention**  
-D1, D3, D7, D14, and D30 retention indicate how many users are still active 1, 3, 7, 14, or 30 days after their first interaction, helping to evaluate user engagement and product quality over time.  
+The share of an install cohort active on **exactly** day N after install (N = 1, 3, 7, 14, 30). Not cumulative: a player who skips day 7 but plays on day 14 counts for D14 only. See [Player Lifecycle](reporting/player-lifecycle.md).  
 
 **DAU (Daily Active Users)**  
 The total number of unique players who opened the game on a specific day, consisting of both new installs and returning users.   
@@ -143,7 +143,7 @@ The number of installs of downloadable content (DLC) for a game.
 ## E
 
 **eCPI**  
-Effective Cost Per Install; the average cost per install including direct and organic installs. It helps assess campaign efficiency across all sources, even those without precise attribution.
+Effective Cost Per Install; cost divided by all installs, paid and organic. CPI uses paid installs only.
 
 **eCPWL (Effective Cost Per Wishlist)**  
 Campaign cost divided by all Steam wishlists, paid and organic. It credits spend with the organic lift campaigns often create. See [Wishlist Insights](reporting/wishlist-insights.md).
@@ -244,7 +244,7 @@ A purchase event triggered through the TRACKS platform by sending a postback. Th
 ## R
 
 **Reactivated Player**  
-A player who has returned to the game after a period of inactivity lasting 30 days or more.
+A player who returns to the game after more than 30 days without playing (31 or more days between active days). Each such return counts as a reactivation.
 
 **Referrer**  
 The source (such as a website, ad, or platform) that directed a user to a particular page or store, typically captured via HTTP headers or URL parameters.
@@ -253,7 +253,7 @@ The source (such as a website, ad, or platform) that directed a user to a partic
 A read-only HTTP API that returns your TRACKS performance, attribution and player-lifecycle data as JSON or CSV, served from your own Google Cloud project. See [Reporting API](reporting/api.md).
 
 **Return Rate % (30d Lookback)**  
-The percentage of Matured Installs (users from 30+ days ago) who have successfully returned to play the game at least once in the last 30 days.
+The share of Matured Installs (installed 30 or more days ago) that played at least once on days 1 to 30 after install. Return Rate and Churn Rate add up to 100%.
 
 **ROAS (Return on Ad Spend)**  
 A metric that measures the revenue generated from advertising campaigns relative to the amount spent on those campaigns.
@@ -302,13 +302,16 @@ Urchin Tracking Module; parameters added to URLs to track the performance of mar
 **View**  
 An instance in which a user sees content such as a video ad, page, or media asset. A 'view' typically implies that the content was rendered and visible on the user’s screen, and in the case of video, often meets minimum playtime and audibility criteria: 
 
-* DV360: 25% video watched
+* Meta: 3-second video views
+* TikTok: video plays (starts)
+* Google Ads / YouTube: TrueView views (30 seconds, the full ad if shorter, or a click)
+* Reddit: video starts (on some accounts, Reddit's own view metric)
+* Snapchat: 2-second video views
+* X: 2 seconds with at least 50% of the video in view
+* DV360: depends on your setup (TrueView views or video starts)
 * Gateway: 25% video watched
-* Google: 5 sec video plays
-* Meta: 3 sec video plays
-* Reddit: 3 sec video plays
-* TikTok: 2 sec video plays
-* YouTube: At least 10 sec of the video watched
+
+Each platform defines a view differently, so don't add video views up across channels.
  
 ## W
 

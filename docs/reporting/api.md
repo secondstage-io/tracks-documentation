@@ -143,6 +143,8 @@ A ratio is never an average of daily ratios: a channel's `cpi` is its total cost
 | `churn_rate_30d_pct` | Share of 30-day-old cohorts that never returned on days 1–30 |
 | `reactivated_players` | Players who came back after 30+ days away |
 
+Not available in the API: estimated revenue, ROAS % and Paid Wishlists. They are shown in the dashboards only.
+
 `/v1/schema/metrics` returns every metric with its kind and, for ratios, the exact numerator and denominator.
 
 ### Dates, currency and freshness

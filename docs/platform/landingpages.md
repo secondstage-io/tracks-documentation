@@ -9,7 +9,7 @@
 
 By embedding the TRACKS JavaScript code into your landing page, minimal technical data — such as IP address and user-agent — is passively collected as part of the standard HTTP request. The TRACKS snippet itself sets no cookies and uses no LocalStorage or other client-side storage mechanisms. This data is pseudonymized (through salted hashing of IP addresses), retained as raw logs for 30 days (see [Data Deletion and Retention](../support/datacollection.md#data-deletion-and-retention) for the full retention picture), and only becomes relevant when the second measurement point is triggered. Attribution is based on the combination of both signals. For consent, legal basis, and data handling, see [Data Handling & Security](../support/datasecurity.md).
 
-To ensure accurate attribution when using your website as the attribution source, it’s important to correctly implement UTM tagging in your paid media or content creator campaigns. We recommend using the TRACKS UTM builder sheet to properly generate tracking links for your landing page (please refer to Marketing Analytics > Setup for more information).
+To ensure accurate attribution when using your website as the attribution source, it’s important to correctly implement UTM tagging in your paid media or content creator campaigns. We recommend using the TRACKS UTM builder sheet to properly generate tracking links for your landing page (see the [Ad Ops Guide](../support/adopshelper.md) and [Tracking Links](../support/trackinglinks.md)).
 
 <figure markdown="span">
   ![Landing-page attribution flow](../assets/attribution_landingpage.png)

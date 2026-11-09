@@ -158,7 +158,10 @@ nav:
       - Google Ads: attribution/postbacks/google.md
       - TikTok: attribution/postbacks/tiktok.md
       - Reddit: attribution/postbacks/reddit.md
+      - Snapchat: attribution/postbacks/snapchat.md
       - X Ads: attribution/postbacks/x.md
+      - GA4: attribution/postbacks/ga4.md
+      - DV360: attribution/postbacks/dv360.md
     - GDPR API: attribution/gdprapi.md
   - Reporting:
     - Overview: reporting/overview.md

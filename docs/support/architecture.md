@@ -7,12 +7,13 @@ How TRACKS is built — the data sources that feed it, the hybrid-hosted deploym
 
 ## Data sources
 
-TRACKS attribution combines four sources, all consolidated into a partitioned BigQuery dataset (`tracks_attribution`):
+TRACKS combines these sources in a BigQuery dataset in your own Google Cloud project:
 
 - **Media analytics** — integrations with media platforms (Google Ads, Meta, TikTok, etc.) for spend, impressions, and clicks.
 - **Web integration** — the TRACKS JS snippet deployed via Google Tag Manager, plus GA4, capturing landing-page sessions and first-touch acquisition data.
 - **Steamworks UTM analytics** — traffic and click-through data from Steam.
 - **TRACKS Measurement API** — in-game `game_open` and `session_start` events forwarded from your telemetry backend.
+- **Tracking links** — clicks on TRACKS short links (`connect.yourgame.com/…`) from influencers, media houses and organic posts.
 
 Media platforms, GA4 (via GTM), and Steamworks are integrated by granting access to `analytics@secondstage.io`, a named Second Stage account. These platforms authenticate via OAuth user login and cannot accept a service account, so a named account is the only option available. The Measurement API is the exception — it runs inside your own GCP environment and is operated by a dedicated service account (more on that below).
 

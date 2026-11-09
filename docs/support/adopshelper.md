@@ -43,7 +43,7 @@ For influencer, media-house and organic campaigns, see the [Tracking Link Builde
 
 ## Other Media Platforms and Ad Networks
 
-For guidance on integrating additional ad platforms not mentioned above, such as Twitch, DV360, Quantcast, Disney Ads, Amazon Ads, CPMstar, Spotify Ads, Microsoft Ads, Snapchat, and others, please contact the Second Stage team. The integration process is generally similar, with seamless integration possible if the platform provides a reporting API. If an API is not available, data import via spreadsheet is recommended.
+For guidance on integrating additional ad platforms not mentioned above, such as Twitch, Quantcast, Disney Ads, Amazon Ads, CPMstar, Spotify Ads, Microsoft Ads, and others, please contact the Second Stage team. The integration process is generally similar, with seamless integration possible if the platform provides a reporting API. If an API is not available, data import via spreadsheet is recommended.
 
 ## Direct Buy Campaigns / Media Houses
 

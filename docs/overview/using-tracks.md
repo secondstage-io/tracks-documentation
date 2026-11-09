@@ -68,7 +68,7 @@ Once the form is submitted, our team will get back to you within 24 hours with a
 
 ## Game / Campaign Settings
 
-Editing a game's title, changing the cover image, and inviting additional users to your dashboard are coming to the TRACKS platform in a future update. Until then, [Contact & Support](../support/contact.md) to request any of these changes.
+**Invite teammates** from your game's settings: enter their email address and they receive a Magic Link to sign in. To edit a game's title or change its cover image, [Contact & Support](../support/contact.md).
 
 ## Next
 

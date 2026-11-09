@@ -6,7 +6,7 @@
 
 ## At a glance
 
-Storefronts strip tracking parameters before they reach you, so the player journey from ad → install is a black box. TRACKS pairs **measured attribution** (deterministic click-IDs that survive the storefront) with **probabilistic modelling** (statistical redistribution of untracked installs) to fill the gap. The default dashboard reports paid and organic installs, where "install" means the first time a player launches the game — not the purchase.
+Storefronts strip tracking parameters before they reach you, so the player journey from ad → install is a black box. TRACKS pairs **measured attribution** (the player's website visit matched to their first game launch: the same browser where possible, otherwise IP address and time window) with **probabilistic modelling** (statistical redistribution of untracked installs) to fill the gap. The default dashboard reports paid and organic installs, where "install" means the first time a player launches the game — not the purchase.
 
 ![TRACKS attribution: from black-box storefronts to measured + probabilistic attribution with ~96% accuracy](../assets/diagrams/attribution-funnel-light.svg#only-light)
 ![TRACKS attribution: from black-box storefronts to measured + probabilistic attribution with ~96% accuracy](../assets/diagrams/attribution-funnel-dark.svg#only-dark)
@@ -43,7 +43,7 @@ TRACKS reports the full lower-funnel sequence:
 
 ### Install metrics
 
-Default install metrics are [**CPI**](../glossary.md#c), [**eCPI**](../glossary.md#e) (effective CPI accounting for modelled installs), and [**CR%**](../glossary.md#c). CPI is broken down by storefront — `CPI (Steam)`, `CPI (Xbox)`, `CPI (PS)`, `CPI (Epic)`, `CPI (Nintendo)` — provided the Measurement API receives the corresponding `storefront` parameter. With an average unit price configured, TRACKS estimates revenue per install and reports [**ROAS**](../glossary.md#r) alongside. DLC installs and in-game purchase metrics are also available, with an additional Measurement API call.
+Default install metrics are [**CPI**](../glossary.md#c), [**eCPI**](../glossary.md#e) (cost over all installs, paid and organic), and [**CR%**](../glossary.md#c). CPI is broken down by storefront — `CPI (Steam)`, `CPI (Xbox)`, `CPI (PS)`, `CPI (Epic)`, `CPI (Nintendo)` — provided the Measurement API receives the corresponding `storefront` parameter. TRACKS estimates revenue per paid install from the local Steam price and reports [**ROAS %**](../reporting/roas.md) alongside. DLC installs and in-game purchase metrics are also available, with an additional Measurement API call.
 
 Attribution data can be sliced by date, channel, campaign, ad group, creative, GEO, and a dozen other dimensions — see [Marketing Analytics](marketinganalytics.md) for the full reporting surface beyond the install funnel. Term definitions live in the [Glossary](../glossary.md).
 
@@ -59,7 +59,7 @@ Outbound storefront-button clicks from your landing page (Steam, PS, Xbox, Ninte
 
 Attribution data is only half the picture. Without postbacks, ad networks are blind to what happens *after* the click — they can't tell which audiences actually convert, which creatives drive installs, or which campaigns deliver ROI. Their algorithms end up optimizing on proxy signals (clicks, impressions, video completions) rather than your real outcomes.
 
-TRACKS automatically sends server-to-server **conversion signals (postbacks)** back to your ad networks the moment an attributed install lands. This closes the feedback loop, giving Meta, Google, TikTok, Reddit, X, Snapchat, and Discord the conversion data their algorithms need to:
+TRACKS automatically sends server-to-server **conversion signals (postbacks)** back to your ad networks several times a day, after each pipeline run. This closes the feedback loop, giving Meta, Google Ads, TikTok, Reddit, Snapchat, X, GA4 and DV360 the conversion data their algorithms need to:
 
 - **Optimize targeting & bidding** on the audiences who actually install your game.
 - **Build lookalikes** based on real high-value players, not proxy events.

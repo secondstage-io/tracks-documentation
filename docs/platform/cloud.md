@@ -30,7 +30,7 @@ If your organization does not use Google Workspace (Gsuite email account), you c
 [Enable billing for your account and link to your Project](https://cloud.google.com/billing/docs/how-to/modify-project#how-to-change-ba).
 
 - Microservices enabled in your Google Cloud will autoscale depending on data ingestion volume.
-- Estimated costs for 2 million installs in a single month should be around ~$40.
+- The ingestion services typically cost under $50 a month, even at millions of installs. BigQuery processing is the larger part and depends on traffic and refresh frequency. We tune it for your volume and share the actual figure after your first month.
 
 </li>
 

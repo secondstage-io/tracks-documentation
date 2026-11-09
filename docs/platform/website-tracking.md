@@ -9,7 +9,7 @@ Your website is where paid traffic lands, so it decides how much of your ad spen
 When these are in place you get:
 
 - Website visits and store clicks per campaign in your TRACKS dashboards
-- Conversions sent back to Meta, Google, Reddit, TikTok and DV360, so their bidding optimises toward real players
+- Conversions sent back to your ad platforms (Meta, Google Ads, TikTok, Reddit, Snapchat, X, DV360), so their bidding optimises toward real players
 - A setup that respects visitor consent in the EU/UK and stays measurable everywhere else
 
 We set this up together, through Google Tag Manager. Everything lives in GTM, so the website code itself does not change: the only requirement on your side is the GTM snippet on your website (see [Landing Page Integration](landingpages.md#google-tag-manager-integration-access)). Your agency or marketing team does not need to do any extra ad-operations work.

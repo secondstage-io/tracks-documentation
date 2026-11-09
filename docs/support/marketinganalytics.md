@@ -18,7 +18,7 @@ For PC and console games, awareness is a first-class KPI — not a vanity metric
 
 - [**Cost Per Mille (CPM)**](../glossary.md#c)**:** Cost per 1,000 ad impressions — the baseline efficiency metric for awareness campaigns.
 - **View Rate:** Percentage of video ad impressions that meet the platform's viewability threshold.
-- [**Cost Per Qualified View (CPQ)**](../glossary.md#c)**:** A modeled refinement of CPM that counts only views with sustained engagement or downstream action — closer to "real" awareness than raw impressions.
+- [**Cost Per Quality (CPQ)**](../glossary.md#c)**:** What you pay for engaged visits, ad engagements and video watches instead of raw impressions — closer to real awareness than CPM.
 - **Wishlist additions** *(Steam)* — wishlist activity is a strong leading indicator for sell-through, and TRACKS attributes wishlists back to the campaigns that drove them. See [Wishlist Insights](../reporting/wishlist-insights.md) and [Steamworks Integration](../platform/steamworks.md).
 - **Brand health signals** — search volume, social mentions, and sentiment, when available.
 
@@ -32,7 +32,7 @@ Once a campaign moves from awareness to conversion-focused, attribution unlocks 
 - [**Cost Per Install (CPI)**](../glossary.md#c)**:** Average cost to acquire one new player.
 - **Click-Through Rate (CTR):** Percentage of impressions that resulted in a click.
 - [**Conversion Rate (CR%)**](../glossary.md#c)**:** Percentage of users who took a desired action (install, purchase) after clicking or viewing an ad.
-- [**Effective CPI (eCPI)**](../glossary.md#e)**:** CPI adjusted to reflect modeled installs in addition to measured ones — useful when probabilistic attribution fills gaps left by deterministic tracking.
+- [**Effective CPI (eCPI)**](../glossary.md#e)**:** Cost divided by all installs, paid and organic. It shows the cost per player when campaigns also lift organic installs.
 
 For how to read acquisition data when planning campaigns, see the Academy's [Measuring what matters](https://secondstage.io/academy/fundamentals/measuring-what-matters){:target="_blank"} module.
 
@@ -40,7 +40,7 @@ For how to read acquisition data when planning campaigns, see the Academy's [Mea
 
 Acquisition metrics tell you who came in. Post-launch metrics tell you whether they were *worth* acquiring — and they often reshuffle which channels look profitable.
 
-- [**Return on Ad Spend (ROAS)**](../glossary.md#r)**:** Revenue per ad dollar, typically reported over fixed windows: **D1, D7, and D30**. Different game genres mature at different rates — some break even at D7, others not until D30 or later. See [ROAS %](../reporting/roas.md) for how TRACKS estimates it.
+- [**Return on Ad Spend (ROAS)**](../glossary.md#r)**:** Net revenue per unit of ad spend. TRACKS estimates it from paid installs × the local Steam price × 0.7; free-to-play titles use actual purchase revenue. See [ROAS %](../reporting/roas.md) for how it is calculated.
 - **Lifetime Value (LTV):** Projected total revenue from a player cohort, accounting for ongoing monetization (DLC, in-game purchases, season passes). LTV-driven budgeting is what separates teams that scale spend profitably from those that don't.
 - [**Retention curves**](../glossary.md#d)**:** D1 / D7 / D30 retention rates, segmented by acquisition source. A channel with high CPI but high D30 retention often beats a "cheap" channel with poor retention. See [Player Lifecycle](../reporting/player-lifecycle.md).
 - [**Cohort analysis**](../glossary.md#c)**:** Slicing players by acquisition campaign to compare quality across creative, audience, and channel.
