@@ -6,7 +6,7 @@
 
 ## At a glance
 
-Storefronts strip tracking parameters before they reach you, so the player journey from ad → install is a black box. TRACKS pairs **measured attribution** (the player's website visit matched to their first game launch: the same browser where possible, otherwise IP address and time window) with **probabilistic modelling** (statistical redistribution of untracked installs) to fill the gap. The default dashboard reports paid and organic installs, where "install" means the first time a player launches the game — not the purchase.
+Storefronts strip tracking parameters before they reach you, so the player journey from ad → install is a black box. TRACKS pairs **measured attribution** (the player's website visit matched to their first game launch through several fingerprint touch points) with **probabilistic modelling** (based on collected events and signals for device graphs) to fill the gap. The default dashboard reports paid and organic installs, where "install" means the first time a player launches the game — not the purchase.
 
 ![TRACKS attribution: from black-box storefronts to measured + probabilistic attribution with ~96% accuracy](../assets/diagrams/attribution-funnel-light.svg#only-light)
 ![TRACKS attribution: from black-box storefronts to measured + probabilistic attribution with ~96% accuracy](../assets/diagrams/attribution-funnel-dark.svg#only-dark)
