@@ -2,6 +2,10 @@
 
 Learn more about TRACKS iterations here.
 
+## V1.7 13th November 2026
+
+Audience Segments: optional *Returned in week 2* and *Lapsed players* postback events for building exclusion, lookalike and retargeting audiences on Meta, TikTok, Reddit, Snapchat and GA4 (and Google Ads through GA4), with a one-time backfill of existing players.
+
 ## V1.6 22nd October 2026
 
 New Reporting documentation (Wishlist Insights, ROAS %, Player Lifecycle, Demo → Full Game Conversion, DLC Tracking, Reporting API), plus the Console Launch Playbook, Website Tracking & Consent and Free-to-Play guides.
