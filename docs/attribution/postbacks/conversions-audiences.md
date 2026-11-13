@@ -48,7 +48,7 @@ A Purchasers audience showing "Below 1,000" while conversions run into the thous
 | **Reddit** | Click date | Possible but small, and needs 1,000 to be valid |
 | **Google Ads** | Click date, with "by conv. time" columns available | **No.** Uploaded conversions never become audience segments. Use the Google tag, GA4, YouTube engagers, or Customer Match |
 | **TikTok** | Platform default | Possible but small, same principles as Meta |
-| **GA4** | Event date | Through GA4 audiences, if linked to Google Ads |
+| **GA4** | Event date | Through GA4 audiences, if linked to Google Ads. The only route for [audience segments](audience-segments.md) into Google Ads |
 
 ## Optimization events
 
@@ -68,7 +68,7 @@ Postbacks arrive hours after the purchase, not seconds, because TRACKS sends the
 | Goal | Use | Avoid |
 |---|---|---|
 | **Retargeting** | Website visitors and store-button clickers, from the browser pixel | Relying on the Purchasers audience for reach |
-| **Excluding buyers** | Website visitors minus Purchasers | Expecting it to catch every buyer, since it only removes identifiable ones |
+| **Excluding buyers** | Website visitors minus Purchasers, or the [Returned in week 2](audience-segments.md) segment | Expecting it to catch every buyer, since it only removes identifiable ones |
 | **Prospecting** | A lookalike seeded from Purchasers, which works under 1,000 | Waiting for the seed to grow first |
 | **Google and YouTube** | Google tag or GA4 audiences, YouTube engagers | Expecting uploaded Purchase conversions to become an audience |
 
@@ -83,6 +83,8 @@ Postbacks arrive hours after the purchase, not seconds, because TRACKS sends the
 | `Lead` | A store-button click on the website | 1 |
 | `Lead_Steam` / `_PS` / `_Xbox` / `_Nintendo` | The same store-button click, split by storefront | 1 |
 | `PageView` | A page view on the marketing landing page | 1 |
+| `TRACKS_Week2_Active` | Optional [audience segment](audience-segments.md): the player played on any day 7–13 after install. Once per player | 0 |
+| `TRACKS_Lapsed_30d` | Optional [audience segment](audience-segments.md): no play for 30 full days. Once each time a player lapses | 0 |
 
 The storefront events are a split of the same installs counted by `Purchase`, so do not add them together in reporting. A demo player who later buys the full game counts once, on the full-game launch. Purchase value is a dynamic per-install price based on Steam regional pricing at the time.
 

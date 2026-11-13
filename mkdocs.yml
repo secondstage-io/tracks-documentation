@@ -154,6 +154,7 @@ nav:
     - Postbacks:
       - Overview: attribution/postbacks/index.md
       - Conversions & Audiences: attribution/postbacks/conversions-audiences.md
+      - Audience Segments: attribution/postbacks/audience-segments.md
       - Meta: attribution/postbacks/meta.md
       - Google Ads: attribution/postbacks/google.md
       - TikTok: attribution/postbacks/tiktok.md
