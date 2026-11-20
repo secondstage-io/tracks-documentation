@@ -141,7 +141,7 @@ The traffic is shown in four ways:
 - **Recent days fill in later.** Steam data is refreshed several times a day, and the most recent day appears once Steam has published it. Until then, wishlist columns for that day show `–`.
 - **Additions, not net change.** Total Wishlists counts wishlists **added**. Deletions and wishlists converted into purchases are not subtracted, so after launch the total is higher than the change in your outstanding wishlist balance.
 - **Paid is usually a small share.** Most wishlists on Steam come from Steam's own discovery, so a 90–98% organic share is normal. Paid campaigns often lift organic wishlists too, which is what eCPWL is meant to capture.
-- **The landing page is the bridge.** Paid wishlists can only be credited to campaigns whose traffic goes through a page with the TRACKS snippet, or whose links carry TRACKS UTM tags. Traffic sent straight to Steam without tags ends up in Organic, unless its channel has an agreed click-to-wishlist rate (see step 2).
+- **The landing page is the bridge.** Paid wishlists can only be credited to campaigns whose traffic goes through a page with the TRACKS snippet, or whose links carry TRACKS UTM tags. Traffic sent straight to Steam without tags ends up in Organic.
 
 ## Requirements
 
