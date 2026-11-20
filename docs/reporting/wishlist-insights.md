@@ -40,8 +40,6 @@ From the Steamworks UTM report, TRACKS calculates what share of each channel's S
 
 Each campaign's Steam clicks from your landing page are multiplied by its channel's rate. Steam's UTM sample misses part of every campaign's effect, such as players who come back later through the Steam app or Steam search. To account for this, a per-channel calibration agreed for your game can be added on top of the measured rate.
 
-Some ads send players straight to the Steam store page, so your landing page never sees the click. For those channels, TRACKS multiplies the ad platform's clicks by a click-to-wishlist rate agreed for your game, and checks it against Steam's UTM report.
-
 </li>
 
 <li markdown="block">
