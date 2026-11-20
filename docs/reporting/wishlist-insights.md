@@ -81,6 +81,17 @@ Steam reports **1,000** wishlists in the United States yesterday. Your landing p
 
 If the campaigns had added up to more than 1,000, every estimate would have been scaled down until the total was exactly 1,000.
 
+## DLC wishlists
+
+A DLC with its own Steam store page has its own wishlists. Steam reports them separately from the base game, per day and per country, and TRACKS attributes them the same way, as a second wishlist number next to the base game's.
+
+- **Same method, its own ceiling.** For each day and country, DLC wishlists add up exactly to the DLC's own Steam total. Channel rates come from the DLC page's UTM visits, and the rest goes to Direct / Organic.
+- **Ads are credited to the page they link to.** When a channel sends players to both the base game's and the DLC's store pages, its clicks are split by the share of Steam UTM visits each page received that day, or on the latest recent day with visits. With no UTM visits on the DLC page, all of the channel's clicks stay with the base game.
+- **Don't add the two together.** One player can wishlist both the game and the DLC, so base-game and DLC wishlists are separate counts, not parts of one total.
+- **After release**, the game reports who actually got the DLC: see [DLC Tracking & Reporting](dlc.md). Wishlist additions keep being counted after launch.
+
+One DLC per game can be modelled. DLC wishlists are available in the [Reporting API](api.md) as `dlc_wishlists`, `paid_dlc_wishlists`, `organic_dlc_wishlists` and `dlc_cpwl` (cost ÷ paid DLC wishlists). Cost covers every campaign, so read `dlc_cpwl` filtered to your DLC campaigns.
+
 ## Reading the dashboard
 
 ### Wishlist Insights
@@ -137,6 +148,7 @@ The traffic is shown in four ways:
 - **Steamworks access** for `analytics@secondstage.io` with both **View Marketing Traffic Data** and **View Financial Data**. Financial data is what lets TRACKS match Steam's exact wishlist totals. See [Steamworks Integration](../platform/steamworks.md).
 - **The TRACKS landing page snippet** or **TRACKS tracking links**, so that campaign tags reach Steam. See [Landing Page Integration](../platform/landingpages.md) and [Tracking Links](../support/trackinglinks.md).
 - **Connected media channels**, so that cost, CPWL and eCPWL can be calculated. See [Media Platform Access](../platform/mediachannels/index.md).
+- **For DLC wishlists:** the DLC's store page under the same Steamworks account, with the same access as above, and DLC ads tagged with TRACKS UTM parameters. Check that ad-platform macros, such as the campaign name, fill in on the live link.
 
 ## Related
 

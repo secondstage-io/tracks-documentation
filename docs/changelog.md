@@ -2,6 +2,10 @@
 
 Learn more about TRACKS iterations here.
 
+## V1.8 20th November 2026
+
+DLC wishlists: a DLC with its own Steam store page gets its own attributed wishlists, with each ad credited to the store page it links to, and new `dlc_wishlists` metrics in the Reporting API. Wishlist Insights now also covers ads that link straight to Steam, and the Reporting API page lists the current wishlist metrics.
+
 ## V1.7 13th November 2026
 
 Audience Segments: optional *Returned in week 2* and *Lapsed players* postback events for building exclusion, lookalike and retargeting audiences on Meta, TikTok, Reddit, Snapchat and GA4 (and Google Ads through GA4), with a one-time backfill of existing players.
