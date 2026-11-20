@@ -1,3 +1,7 @@
+---
+description: "The performance picture beyond attribution — awareness, acquisition, retention and lifetime value — and how TRACKS reports it."
+---
+
 # Marketing Analytics
 
 Marketing analytics covers the wider performance picture beyond attribution: awareness, acquisition, retention, and lifetime value. Where attribution answers *which campaign drove this install*, marketing analytics answers *which campaigns build profitable players over time*. TRACKS combines media, web, and attribution data into a single reporting surface so the same dashboards cover both questions.

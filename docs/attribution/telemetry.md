@@ -1,3 +1,7 @@
+---
+description: "Log in-game events server-side — above all the game-open session start — so TRACKS can attribute installs and activity to media campaigns."
+---
+
 # Telemetry
 
 <p class="docs-audience">For: Game / backend engineer</p>

@@ -1,3 +1,7 @@
+---
+description: "Grant Second Stage access to TikTok for Business so TRACKS can collect campaign and ad-set performance data."
+---
+
 # TikTok Ads Integration
 
 <p class="docs-audience">For: Ad ops / platform admin</p>

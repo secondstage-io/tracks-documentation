@@ -1,3 +1,7 @@
+---
+description: "Grant Second Stage access to your Google Ads account so TRACKS can read campaign, ad group and conversion data."
+---
+
 # Google Ads Integration
 
 <p class="docs-audience">For: Ad ops / platform admin</p>

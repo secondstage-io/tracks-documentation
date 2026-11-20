@@ -1,3 +1,7 @@
+---
+description: "Get Google Tag Manager, consent and ad pixels right on your website so paid traffic stays attributable from click to install."
+---
+
 # Website Tracking Setup: GTM, Consent & Ad Pixels
 
 <p class="docs-audience">For: Web / marketing admin, privacy owner</p>

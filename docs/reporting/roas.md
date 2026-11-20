@@ -1,3 +1,7 @@
+---
+description: "How TRACKS estimates return on ad spend from net game revenue, and how to read the number against your campaigns."
+---
+
 # ROAS %
 
 <p class="docs-audience">For: UA and marketing leads, finance</p>

@@ -1,3 +1,7 @@
+---
+description: "Connect your landing pages to TRACKS so campaign traffic can be matched to Steam wishlists, installs and purchases."
+---
+
 # Landing Page Integration
 
 <p class="docs-audience">For: Web / Marketing admin (GTM access)</p>

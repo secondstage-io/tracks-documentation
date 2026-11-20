@@ -1,3 +1,7 @@
+---
+description: "Grant Second Stage access to Reddit Ads and set up UTM destination URLs so TRACKS can attribute conversions."
+---
+
 # Reddit Ads Integration
 
 <p class="docs-audience">For: Ad ops / platform admin</p>

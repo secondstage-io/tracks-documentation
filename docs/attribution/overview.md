@@ -1,3 +1,7 @@
+---
+description: "The three parts of a TRACKS Attribution integration: a telemetry backend, a measurement endpoint for game-open events, and postbacks to the ad platforms."
+---
+
 # Attribution Integration
 
 TRACKS Attribution integrates with your game infrastructure through three components: a telemetry backend, a measurement endpoint that records game-open events, and postbacks that feed conversion signals back to your media platforms. A GDPR-compliant handling layer sits on top. Follow the paths below in order, or jump to the piece you need.

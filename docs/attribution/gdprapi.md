@@ -1,3 +1,7 @@
+---
+description: "Handle player data access and deletion requests through the TRACKS GDPR API, provisioned per integration once your setup is live."
+---
+
 # GDPR API
 
 <p class="docs-audience">For: Backend engineer / Privacy team</p>

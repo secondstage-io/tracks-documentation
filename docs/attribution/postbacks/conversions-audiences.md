@@ -1,3 +1,7 @@
+---
+description: "Why reporting, optimisation and audience building each count a purchase postback differently, and how to read the gaps between the numbers."
+---
+
 # Conversions & Audiences
 
 <p class="docs-audience">For: Ad ops / performance marketing</p>

@@ -1,3 +1,7 @@
+---
+description: "What the /collect and /measure endpoints gather, how that data is stored, and how long TRACKS retains it."
+---
+
 # Data Collection and Processing
 
 This page describes how TRACKS collects and processes data through its two API endpoints — `/collect` and `/measure` — covering what is gathered, how it is stored, and how long it is retained.

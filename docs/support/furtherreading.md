@@ -1,3 +1,7 @@
+---
+description: "Where to go deeper: Second Stage Academy learning paths and deep-dive articles on individual topics."
+---
+
 # Further Reading
 
 Two ways to go deeper: structured **learning paths** in the Second Stage Academy (free, no signup required) for end-to-end coverage of a topic, and individual **deep-dive articles** for specific questions. Pick the route that matches how you want to read.

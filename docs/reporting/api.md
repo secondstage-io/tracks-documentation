@@ -1,3 +1,7 @@
+---
+description: "Read TRACKS marketing, attribution and player-lifecycle data programmatically through authenticated GET requests to the Reporting API."
+---
+
 # Reporting API
 
 <p class="docs-audience">For: Analysts and data engineers</p>

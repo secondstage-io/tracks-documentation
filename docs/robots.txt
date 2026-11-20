@@ -1,13 +1,26 @@
 User-agent: *
 Allow: /
 
+# Citation crawlers — fetch a page to answer a question and name the source.
+# Allowed deliberately: documentation is what people ask assistants about.
+# Mirrors the policy on secondstage.io.
+User-agent: Applebot
+User-agent: ChatGPT-User
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: Meta-ExternalFetcher
+User-agent: OAI-SearchBot
+User-agent: Perplexity-User
+User-agent: PerplexityBot
+Allow: /
+
+# Training crawlers — take content to train models, no link back, no referral.
 User-agent: AI2Bot
 User-agent: Amazonbot
 User-agent: anthropic-ai
 User-agent: Applebot-Extended
 User-agent: Bytespider
 User-agent: CCBot
-User-agent: ChatGPT-User
 User-agent: ClaudeBot
 User-agent: Claude-Web
 User-agent: cohere-ai
@@ -20,10 +33,8 @@ User-agent: GPTBot
 User-agent: ImagesiftBot
 User-agent: Kangaroo Bot
 User-agent: Meta-ExternalAgent
-User-agent: Meta-ExternalFetcher
 User-agent: Omgili
 User-agent: Omgilibot
-User-agent: PerplexityBot
 User-agent: Timpibot
 User-agent: Webzio-Extended
 User-agent: YouBot

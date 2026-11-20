@@ -1,3 +1,7 @@
+---
+description: "Forward TRACKS conversion events into Google Analytics 4 using the Measurement Protocol."
+---
+
 # GA4 Measurement Protocol
 
 <p class="docs-audience">For: Web / marketing admin</p>

@@ -1,3 +1,7 @@
+---
+description: "Daily DLC activations by channel, campaign and country, and what your game has to send for TRACKS to report them."
+---
+
 # DLC Tracking & Reporting
 
 <p class="docs-audience">For: Game / backend engineer, UA and marketing leads</p>

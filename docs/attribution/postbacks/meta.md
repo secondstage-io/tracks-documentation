@@ -1,3 +1,7 @@
+---
+description: "Connect TRACKS to the Meta Conversions API so install and purchase events feed Meta campaign optimisation."
+---
+
 # Meta Conversion API
 
 <p class="docs-audience">For: Ad ops / backend engineer</p>

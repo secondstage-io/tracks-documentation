@@ -1,3 +1,7 @@
+---
+description: "The Ad Ops Helper Sheet every TRACKS client receives, and how marketing and UA teams use it for campaign setup."
+---
+
 # Ad Ops Helper
 
 <p class="docs-audience">For: Marketing / Ad ops</p>

@@ -1,3 +1,7 @@
+---
+description: "Grant Second Stage access to your Meta Business Manager in six steps so TRACKS can read campaign, ad account and pixel data."
+---
+
 # Meta Ads Integration
 
 <p class="docs-audience">For: Ad ops / platform admin</p>

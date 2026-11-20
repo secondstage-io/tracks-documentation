@@ -1,3 +1,7 @@
+---
+description: "Verify your domain and whitelabel the Measurement API endpoint so tracking runs on your own branded domain."
+---
+
 # Domain Verification & Branded Domain
 
 <p class="docs-audience">For: DevOps / Web admin</p>

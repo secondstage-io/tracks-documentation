@@ -1,3 +1,7 @@
+---
+description: "Grant Steamworks access so TRACKS can match campaign traffic to wishlists, installs and purchases on Steam."
+---
+
 # Steamworks Integration
 
 <p class="docs-audience">For: Steam marketing admin</p>

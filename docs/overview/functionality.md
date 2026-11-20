@@ -1,3 +1,7 @@
+---
+description: "A feature-by-feature tour of TRACKS: marketing analytics and attribution for PC and console games, from awareness through install to retention."
+---
+
 # Platform Functionality
 
 TRACKS combines **marketing analytics** and **attribution tracking** for PC and console games into one platform — covering the full funnel from awareness through install through retention. This page is a feature overview; the conceptual deep-dives live on [Attribution Tracking](../support/attribution.md) and [Marketing Analytics](../support/marketinganalytics.md).

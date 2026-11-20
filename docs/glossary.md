@@ -1,4 +1,16 @@
+---
+description: "Definitions for the marketing, attribution and player-lifecycle terms used across the TRACKS documentation."
+noindex: true
+---
+
 # Glossary
+
+!!! info "Looking for a single term?"
+
+    Every term below also has its own page on
+    [secondstage.io/glossary](https://secondstage.io/glossary), which is the
+    version search engines index. This page keeps all definitions together for
+    reading alongside the documentation.
 
 <nav class="glossary-jump" aria-label="Jump to letter">
   <a href="#a">A</a>

@@ -1,3 +1,7 @@
+---
+description: "How many demo players went on to buy and launch the full game, and which channels brought the players most likely to convert."
+---
+
 # Demo → Full Game Conversion
 
 <p class="docs-audience">For: UA and marketing leads, producers</p>
