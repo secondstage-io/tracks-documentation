@@ -1,3 +1,7 @@
+---
+description: "Grant TRACKS access to each ad platform you run — Google, Meta, TikTok, X, Snapchat, Reddit and DV360 — one channel at a time."
+---
+
 # Media Platforms & Ad Networks Integration
 
 This section outlines the integration of major media channels for media analytics reporting and ad operations. It is recommended that you complete the integration of each channel one at a time, in collaboration with the Second Stage team, to ensure proper attribution setup.

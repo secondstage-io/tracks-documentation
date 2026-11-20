@@ -1,3 +1,7 @@
+---
+description: "Where each number in your TRACKS dashboards comes from, how it is calculated, and what it needs from your integration."
+---
+
 # Reporting
 
 <p class="docs-audience">For: UA and marketing leads, producers, analysts</p>

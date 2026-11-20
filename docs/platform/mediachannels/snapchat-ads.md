@@ -1,3 +1,7 @@
+---
+description: "Grant Second Stage access to Snapchat Business Manager and the Snap Pixel so TRACKS can read campaign and event data."
+---
+
 # Snapchat Ads Integration
 
 <p class="docs-audience">For: Ad ops / platform admin</p>

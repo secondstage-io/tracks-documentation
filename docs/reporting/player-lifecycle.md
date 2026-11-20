@@ -1,3 +1,7 @@
+---
+description: "Retention, churn and reactivation by media channel, built from in-game Game Open events joined to campaign data."
+---
+
 # Player Lifecycle: Retention, Churn & Reactivation
 
 <p class="docs-audience">For: UA and marketing leads, producers</p>

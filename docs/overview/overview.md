@@ -1,3 +1,7 @@
+---
+description: "Start here: what TRACKS does, how an integration runs, and where to go for each part of the setup."
+---
+
 # Get Started
 
 Explore the core features, setup, and capabilities of TRACKS, Second Stage's marketing-intelligence platform designed for PC and console games.

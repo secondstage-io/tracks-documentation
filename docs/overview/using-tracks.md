@@ -1,3 +1,7 @@
+---
+description: "Set up your TRACKS account, find your way around the platform, and register a game or campaign for analytics."
+---
+
 # Using TRACKS
 
 How to set up your TRACKS account, navigate the platform, and register your game or campaign for analytics.

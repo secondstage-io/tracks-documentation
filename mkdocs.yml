@@ -1,5 +1,8 @@
 site_name: TRACKS Documentation
 site_url: https://documentation.secondstage.io
+site_description: >-
+  Setup guides, integration references and metric definitions for TRACKS,
+  Second Stage's marketing intelligence platform for PC and console games.
 
 # Update version to force new CSS to load
 extra_css:
@@ -94,6 +97,8 @@ markdown_extensions:
 
 hooks:
   - hooks/recent_updates.py
+  - hooks/git_dates.py
+  - hooks/llms_txt.py
 
 plugins:
   - search
@@ -110,8 +115,10 @@ plugins:
         - tracks-footer__eu
         - tracks-wordmark__img
         - twemoji
-  # 301-style redirects for URLs that moved during the layout-improvements
-  # restructure. Keeps old external links (emails, bookmarks) working.
+  # Client-side fallbacks for URLs that moved during the layout-improvements
+  # restructure. Production serves these as real 308s from vercel.json, which
+  # run ahead of the filesystem; these stubs cover `mkdocs serve` and any
+  # non-Vercel preview. Keep the two lists in step.
   - redirects:
       redirect_maps:
         overview/adopshelper.md: support/adopshelper.md

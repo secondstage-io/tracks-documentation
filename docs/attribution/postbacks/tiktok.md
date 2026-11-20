@@ -1,3 +1,7 @@
+---
+description: "Connect TRACKS to the TikTok Events API, including event mapping and the setup steps inside TikTok for Business."
+---
+
 # TikTok Conversion API
 
 <p class="docs-audience">For: Ad ops / backend engineer</p>

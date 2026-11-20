@@ -1,3 +1,7 @@
+---
+description: "Connect TRACKS to the X Ads Conversion API so install and purchase events feed X campaign optimisation."
+---
+
 # X Ads Conversion API
 
 <p class="docs-audience">For: Ad ops / backend engineer</p>

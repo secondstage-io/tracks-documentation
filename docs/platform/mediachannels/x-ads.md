@@ -1,3 +1,7 @@
+---
+description: "Grant Second Stage access to your X Ads account and share the details attribution setup needs."
+---
+
 # X Ads Integration
 
 <p class="docs-audience">For: Ad ops / platform admin</p>

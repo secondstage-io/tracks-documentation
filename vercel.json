@@ -1,8 +1,30 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "python3 -m venv .venv && .venv/bin/pip install -r requirements.txt && .venv/bin/mkdocs build --clean",
+  "buildCommand": "git fetch --unshallow --quiet || true; python3 -m venv .venv && .venv/bin/pip install -r requirements.txt && .venv/bin/mkdocs build --clean",
   "outputDirectory": "site",
   "installCommand": "echo 'skip npm install'",
   "framework": null,
-  "trailingSlash": true
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/overview/adopshelper(/)?",
+      "destination": "/support/adopshelper/",
+      "permanent": true
+    },
+    {
+      "source": "/attribution/cloud(/)?",
+      "destination": "/platform/cloud/",
+      "permanent": true
+    },
+    {
+      "source": "/platform/postbacks(/)?",
+      "destination": "/attribution/postbacks/",
+      "permanent": true
+    },
+    {
+      "source": "/platform/trackinglinks(/)?",
+      "destination": "/support/trackinglinks/",
+      "permanent": true
+    }
+  ]
 }

@@ -1,3 +1,7 @@
+---
+description: "How TRACKS handles player data and privacy, and what studios should know about their own obligations."
+---
+
 # Data Handling & Security
 
 !!! tip "Important:"

@@ -1,3 +1,7 @@
+---
+description: "Connect TRACKS to the Reddit Conversions API, including event mapping and the access the setup needs."
+---
+
 # Reddit Conversion API
 
 <p class="docs-audience">For: Ad ops / backend engineer</p>

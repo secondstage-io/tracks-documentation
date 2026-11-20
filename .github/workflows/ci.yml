@@ -21,6 +21,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # Full history: hooks/git_dates.py reads each page's last commit
+          # date for sitemap <lastmod>.
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5

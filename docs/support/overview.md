@@ -1,3 +1,7 @@
+---
+description: "Narrative guides to how TRACKS works, from system architecture to attribution methodology to data handling."
+---
+
 # Guides
 
 Narrative documentation explaining how TRACKS works — from the system architecture to attribution methodology to data handling and privacy.

@@ -1,3 +1,7 @@
+---
+description: "What a TRACKS integration asks of your team, what Second Stage handles, and how long each stage takes."
+---
+
 # What to Expect
 
 Setting up TRACKS is less work than it looks — Second Stage drives most of the integration, and your team's hands-on time stays light.

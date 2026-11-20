@@ -1,3 +1,7 @@
+---
+description: "Two optional postback events — returned in week 2 and lapsed players — that build audiences on the ad platforms rather than measuring conversions."
+---
+
 # Audience Segments
 
 <p class="docs-audience">For: Ad ops / performance marketing</p>

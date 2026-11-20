@@ -1,3 +1,7 @@
+---
+description: "What attribution means in practice, and how the three TRACKS methodologies — modeled, measured, and measured plus modeling — differ."
+---
+
 # Attribution Tracking
 
 !!! tip "Also see"

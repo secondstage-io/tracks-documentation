@@ -1,3 +1,7 @@
+---
+description: "Send game-open and in-game events to the TRACKS Measurement API so installs and activity are attributed back to the campaign that drove them."
+---
+
 # TRACKS Measurement API
 
 <p class="docs-audience">For: Backend engineer</p>

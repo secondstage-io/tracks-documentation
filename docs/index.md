@@ -1,3 +1,7 @@
+---
+description: "Setup guides, integration references and metric definitions for TRACKS, Second Stage's marketing intelligence platform for PC and console games."
+---
+
 <div class="docs-home">
 
 <section class="docs-home__header">

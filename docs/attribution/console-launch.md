@@ -1,3 +1,7 @@
+---
+description: "Integrate the TRACKS Measurement API into your game client on PlayStation 5, Xbox GDK and Nintendo Switch, with Steam as the reference platform."
+---
+
 # Console Launch Playbook
 
 <p class="docs-audience">For: Studio engineering, production and release management</p>

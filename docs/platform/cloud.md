@@ -1,3 +1,7 @@
+---
+description: "How the hybrid-hosted model works, with granular data processing and storage staying inside your own Google Cloud environment."
+---
+
 # Cloud Environment
 
 <p class="docs-audience">For: Cloud / DevOps engineer</p>

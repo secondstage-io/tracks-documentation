@@ -1,3 +1,7 @@
+---
+description: "How to reach the Second Stage team before, during and after launch."
+---
+
 # Contact & Support
 
 Second Stage runs the integration end-to-end and is on hand for any question that comes up — before, during, and after launch.

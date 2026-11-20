@@ -1,3 +1,7 @@
+---
+description: "Connect campaigns to the wishlists Steam actually recorded, using Steam's own figures wherever Financial Data access is granted."
+---
+
 # Wishlist Insights
 
 <p class="docs-audience">For: UA and marketing leads, Steam marketing admin</p>

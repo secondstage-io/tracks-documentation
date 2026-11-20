@@ -1,3 +1,7 @@
+---
+description: "How TRACKS is built: the data sources feeding it, the hybrid-hosted deployment running it, and the branded domain layer in front."
+---
+
 # Architecture
 
 How TRACKS is built — the data sources that feed it, the hybrid-hosted deployment that runs it, and the branded domain layer that ties it back to your game.

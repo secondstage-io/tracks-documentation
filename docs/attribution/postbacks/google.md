@@ -1,3 +1,7 @@
+---
+description: "Set up offline conversion imports so TRACKS install and purchase events reach the Google Ads Conversion API."
+---
+
 # Google Ads Conversion API
 
 <p class="docs-audience">For: Ad ops / backend engineer</p>

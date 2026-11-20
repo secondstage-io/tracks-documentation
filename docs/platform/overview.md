@@ -1,3 +1,7 @@
+---
+description: "Connect TRACKS to the surfaces players arrive from: your cloud environment, ad platforms, landing pages, domains and storefronts."
+---
+
 # Platform Integration
 
 Integrate TRACKS with the surfaces your players arrive from — starting with the cloud environment that hosts TRACKS, then advertising platforms, your own landing pages and domains, and game storefronts.

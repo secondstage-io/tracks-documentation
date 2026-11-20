@@ -1,3 +1,7 @@
+---
+description: "Release notes for the TRACKS platform: what shipped in each version, and when."
+---
+
 # Changelog
 
 Learn more about TRACKS iterations here.

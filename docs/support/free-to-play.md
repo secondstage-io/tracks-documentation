@@ -1,3 +1,7 @@
+---
+description: "How TRACKS joins acquisition, in-game activity and revenue for free-to-play titles to show what each new player is worth."
+---
+
 # TRACKS for Free-to-Play Games
 
 <p class="docs-audience">For: Marketing, analytics and engineering teams at free-to-play studios</p>

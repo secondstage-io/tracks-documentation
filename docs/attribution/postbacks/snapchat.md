@@ -1,3 +1,7 @@
+---
+description: "Connect TRACKS to the Snapchat Conversions API so install and purchase events reach Snap campaign optimisation."
+---
+
 # Snapchat Conversions API
 
 <p class="docs-audience">For: Ad ops / backend engineer</p>
