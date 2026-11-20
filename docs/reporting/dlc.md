@@ -219,6 +219,10 @@ Filter the whole page by date range, Beat (campaign phase), GEO, Channel, Strate
     - The DLC date is when the game first saw the DLC, not the store checkout date; for new players it is within minutes of their first launch.
     - Revenue, refunds and true purchase dates stay in the store reports; DLC ROAS uses a static DLC unit price as an estimate.
 
+## Before release: DLC wishlists
+
+If the DLC has its own Steam store page, Steam records wishlists for it before release, separately from the base game. TRACKS attributes them to channels and campaigns the same way as base-game wishlists, capped at the DLC's own Steam total, and credits each ad to the store page it links to. See [DLC wishlists](wishlist-insights.md#dlc-wishlists). From release, the activations your game reports (above) show who actually got the DLC.
+
 ## Go-live checklist
 
 **Studio**
@@ -232,10 +236,12 @@ Filter the whole page by date range, Beat (campaign phase), GEO, Channel, Strate
 **Marketing**
 
 - [ ] Use TRACKS UTM or redirection [tracking links](../support/trackinglinks.md) on DLC ads
+- [ ] Link DLC ads to the DLC's own Steam store page, and check that macros such as the campaign name fill in on the live link
 - [ ] For ad-platform optimisation: a DLC conversion name per platform, plus the value and currency per activation to send as postbacks
 
 **TRACKS**
 
+- [ ] Before release, if the DLC has a store page: switch on DLC wishlists and backfill from the page's first wishlist day
 - [ ] Configure the event shape (Design B only) and any free-grant exclusions
 - [ ] Confirm QA events reach the pipeline, then remove them before launch reporting
 - [ ] Check DLC rows, channels and costs on the dashboard on launch day and day 3
@@ -253,6 +259,9 @@ Yes. Any Measurement API event counts as player activity for that day, DLC event
 
 **Can we see revenue per DLC?**
 Not from telemetry. Combine paid DLC Units with your store prices, or share the price per DLC and we can add an estimate.
+
+**Can we see wishlists for a DLC before it launches?**
+Yes, if the DLC has its own Steam store page under your Steamworks account. See [DLC wishlists](wishlist-insights.md#dlc-wishlists).
 
 **How fast does data appear?**
 Within the next dashboard refresh, several times a day. Recent campaign dates keep filling in for about a week.

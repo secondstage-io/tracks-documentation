@@ -136,14 +136,17 @@ A ratio is never an average of daily ratios: a channel's `cpi` is its total cost
 | `paid_installs` / `organic_installs` | An exact split of `attribution_installs` by channel grouping |
 | `cpi` | Cost per **paid** install |
 | `ecpi` | Cost over **all** installs |
-| `modeled_wishlists` | Wishlists attributed by the TRACKS wishlist model |
+| `wishlists` | Steam wishlist additions, attributed by the TRACKS wishlist model |
+| `paid_wishlists` / `organic_wishlists` | An exact split of `wishlists` by channel grouping |
+| `cpwl` / `ecpwl` | Cost per **paid** wishlist / cost over **all** wishlists |
+| `dlc_wishlists`, `paid_dlc_wishlists`, `organic_dlc_wishlists`, `dlc_cpwl` | The same for a DLC's own wishlists, where DLC wishlists are switched on. `cost` covers every campaign, so filter `dlc_cpwl` to the DLC's campaigns |
 | `*_cr_pct` | Rate per click |
 | `*_cvr_pct` | Rate per tracked website visit |
 | `retention_dN_pct` | Share of a cohort active on **exactly** day N after install |
 | `churn_rate_30d_pct` | Share of 30-day-old cohorts that never returned on days 1–30 |
 | `reactivated_players` | Players who came back after 30+ days away |
 
-Not available in the API: estimated revenue, ROAS % and Paid Wishlists. They are shown in the dashboards only.
+Not available in the API: estimated revenue and ROAS %. They are shown in the dashboards only.
 
 `/v1/schema/metrics` returns every metric with its kind and, for ratios, the exact numerator and denominator.
 
@@ -239,6 +242,6 @@ All endpoints sit under `/v1`. New metrics and dimensions can be added at any ti
 
 - [Data Collection](../support/datacollection.md#what-reporting-exposes): what the dashboards and the API each expose.
 - [Player Lifecycle](player-lifecycle.md): definitions behind the lifecycle endpoints.
-- [Wishlist Insights](wishlist-insights.md): how `modeled_wishlists` is calculated.
+- [Wishlist Insights](wishlist-insights.md): how `wishlists` and `dlc_wishlists` are calculated.
 
 Questions about your data, your token or a metric definition: [contact Second Stage](../support/contact.md).
