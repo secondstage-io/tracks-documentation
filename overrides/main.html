@@ -16,11 +16,14 @@
   {% set page_url = page.canonical_url if page and page.canonical_url else config.site_url %}
   {% set page_image = config.site_url ~ "assets/og-documentation.png" %}
 
-  {#- Pages that exist for readers but should not compete in search. -#}
+  {#-
+    Pages that exist for readers but should not compete in search. Everything
+    else is left without a robots tag, which means index, follow — the crawler
+    policy lives in docs/robots.txt, and a per-page opt-out here would
+    contradict it.
+  -#}
   {% if page and page.meta and page.meta.noindex %}
-    <meta name="robots" content="noindex, follow, noai, noimageai">
-  {% else %}
-    <meta name="robots" content="noai, noimageai">
+    <meta name="robots" content="noindex, follow">
   {% endif %}
 
   <meta property="og:type" content="website">

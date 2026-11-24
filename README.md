@@ -42,10 +42,10 @@ docs/                 Markdown sources + static assets
   assets/             Images, screenshots, diagrams, logos
   javascripts/        Site JS (Helpscout Beacon, feedback widget)
   stylesheets/        Custom CSS
-  robots.txt          Bot opt-out list
+  robots.txt          Crawler policy — training denied, citation allowed
 overrides/            Material theme overrides
   partials/           Custom header, footer, feedback widget
-  main.html           Injects noai / noimageai meta tags
+  main.html           Page identity meta tags (title, OG/Twitter cards, noindex)
 hooks/                MkDocs build hooks
   recent_updates.py   Parses changelog.md and injects recent entries on the landing page
 mkdocs.yml            Site config, navigation, plugins, redirects
